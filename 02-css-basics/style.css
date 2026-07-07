@@ -1,0 +1,28 @@
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+body {
+    background-color: #c19aeb;
+}
+
+button {
+    font-size: 1em;
+    background-color: #6a0dad;
+    color: white;
+    border: solid-whit 2px #4b0082;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    
+}
