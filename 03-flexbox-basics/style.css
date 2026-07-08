@@ -1,0 +1,26 @@
+header nav{
+  background-color: #249bb2;
+  padding: 15px 30px;
+  border-radius: 30px; /* Gives the header pill-shaped rounded ends */
+  display: flex;
+  flex-direction: row; /* Aligns everything side-by-side */
+  justify-content: flex-start; /* Keeps the links relatively close to the logo */
+    gap: 120px; /* Adds exact, uniform spacing between the logo and links */
+  align-items: center; /* Vertically centers the logo text and links */
+}
+
+div {
+  font-size: 16px;
+  color: #442f2f;
+}
+
+/* Navigation layout */
+nav ul {
+  list-style-type: none; /* Removes default bullet points */
+  margin: 0px; /* Removes default margin */
+  padding: 0px;
+  display: flex; /* Aligns links horizontally */
+  gap: 15px; /* Adds exact, uniform spacing between links */
+}
+
+
