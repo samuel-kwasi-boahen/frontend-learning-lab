@@ -1,6 +1,52 @@
-A block element starts on a new line, takes the entire width of the line and pushes any new element to a new line while an inline element is used within a text.
+# Lesson 04 - Flexbox
 
-Display:flex is the concept that unlocks flexbox
-When I write display:flex, the browser creates to invisible lines including main axis = left to right and cross axis = top to down
+## Objective
 
-Justify-content controls movement along the main-axis i.e everything moves to the center horizontally while align-items controls movement along the cross-axis i.e items are centered vertically
+Today I learned how Flexbox makes it easier to align and arrange elements.
+
+
+## What I Learned
+
+- Flexbox creates a flexible layout.
+- `display: flex` activates Flexbox.
+- The browser creates a Main Axis and a Cross Axis.
+- `justify-content` controls movement along the Main Axis.
+- `align-items` controls movement along the Cross Axis.
+
+
+## Key Takeaways
+
+Flexbox removes much of the complexity of positioning elements and is one of the most commonly used CSS layout systems.
+
+
+## React / Next.js Connection
+
+CSS
+
+```css
+display:flex;
+justify-content:center;
+align-items:center;
+```
+
+Tailwind
+
+```tsx
+className="flex justify-center items-center"
+```
+
+
+## Vue / Nuxt Connection
+
+```vue
+<style>
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+</style>
+```
+
+Nuxt uses the same CSS.
+
