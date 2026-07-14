@@ -4,8 +4,14 @@ body{
 }
 
 header{
-    background:#0052cc;
+    background:#41b1d9;
     color:white;
+    padding:20px;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
     padding:20px;
 }
 
@@ -73,4 +79,11 @@ flex-direction:column;
 
 }
 
+.navbar{
+
+flex-direction:column;
+
+align-items:center;
+
+}
 }
