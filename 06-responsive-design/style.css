@@ -4,6 +4,10 @@ body{
     font-family:Arial, sans-serif;
 }
 
+main {
+    display:flex;
+    flex-direction:column;
+}
 
 header{
     background:#41b1d9;
@@ -25,7 +29,7 @@ section{
 
 .card {
     width:100%;
-    max-width: 500px;
+    max-width: 700px;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -125,7 +129,7 @@ main {
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  max-width: 650px; /* Limits card width on large screens */
+  max-width: 650px; /* Limits card width on large screens and improves readability*/
   width: 100%;
 }
 
@@ -186,7 +190,7 @@ img{
   }
 
   .profile-info {
-    align-items: center; /* Centers text and button on mobile screens */
+    align-items: center;
   }
 
   .contact-btn {
@@ -199,3 +203,43 @@ img{
 }
 
 
+section {
+      max-width: 1200px; 
+      margin: auto;      /* Centers the section horizontally on the page */
+      padding: 40px 20px;
+      font-family: sans-serif;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr; 
+      gap: 20px; 
+    }
+
+    .service-card {
+      padding: 24px;
+      border-radius: 8px; 
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+      background-color: #fff;
+    }
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 0;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
