@@ -101,7 +101,7 @@ align-items:center;
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box;   
 }
 
 body {
@@ -243,3 +243,100 @@ section {
         grid-template-columns: 1fr;
       }
     }
+
+
+    /* Feature Section Layout */
+.features-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+/* Header Text Layout */
+.features-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+}
+
+.features-header h2 {
+  font-size: 2.25rem;
+  color: #1a202c;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.features-header p {
+  font-size: 1.1rem;
+  color: #718096;
+  line-height: 1.6;
+}
+
+/* CSS Grid Configuration for Desktop Layout */
+.features-grid {
+  display: grid;
+  /* Generates exactly 3 equal columns side-by-side */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* Individual Feature Card Styling */
+.feature-card {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  /* Smooth hardware-accelerated transitions for the hover effect */
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+              box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  will-change: transform; /* Hinting to browser for smoother rendering */
+}
+
+/* Functional Hover Animation Requirements */
+.feature-card:hover {
+  transform: translateY(-10px) scale(1.02); /* Smooth upward shift + scale */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12); /* Pronounced deep shadow */
+}
+
+/* Micro-layouts inside the card components */
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+}
+
+.feature-card h3 {
+  font-size: 1.35rem;
+  color: #1a202c;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* Responsive Media Queries */
+/* Tablet Breakpoint (2 columns) */
+@media (max-width: 992px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Breakpoint (1 column) */
+@media (max-width: 768px) {
+  .features-section {
+    padding: 50px 16px;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr; /* Stacks cards cleanly in a vertical layout */
+    gap: 24px;
+  }
+  
+.feature-card {
+    padding: 30px 24px; /* Slightly tighter padding for smaller devices */
+  }
+}
