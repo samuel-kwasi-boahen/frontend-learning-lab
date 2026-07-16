@@ -90,7 +90,7 @@ if (age>=18){
         console.log("withdrawal approved")
     } else {
         console.log ("Insufficient funds")
-    }*/
+    }
 
 let age = 14;
 
@@ -100,4 +100,14 @@ if (age < 13) {
     console.log("Teen Ticket");
 } else {
     console.log("Adult Ticket");
+}*/
+
+let score = 85;
+
+if (score >= 90) {
+    console.log("Grade A");
+} else if (score >= 80) {
+    console.log("Grade B");
+} else {
+    console.log("Below Grade B");
 }
