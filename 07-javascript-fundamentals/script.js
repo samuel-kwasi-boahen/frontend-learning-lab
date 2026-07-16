@@ -100,7 +100,7 @@ if (age < 13) {
     console.log("Teen Ticket");
 } else {
     console.log("Adult Ticket");
-}*/
+}
 
 let score = 85;
 
@@ -110,4 +110,15 @@ if (score >= 90) {
     console.log("Grade B");
 } else {
     console.log("Below Grade B");
+}*/
+
+
+let purchaseAmount = 150;
+
+if (purchaseAmount>=1000) {
+    console.log("20% Discount");
+} else if(purchaseAmount >= 500){
+    console.log("50% Discount")
+} else {
+    console.log("No Discount")
 }
