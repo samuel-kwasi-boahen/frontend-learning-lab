@@ -118,7 +118,7 @@ let purchaseAmount = 150;
 if (purchaseAmount>=1000) {
     console.log("20% Discount");
 } else if(purchaseAmount >= 500){
-    console.log("50% Discount")
+    console.log("10% Discount")
 } else {
     console.log("No Discount")
 }
