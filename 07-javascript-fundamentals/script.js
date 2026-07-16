@@ -65,9 +65,20 @@ console.log("The student is not equal to the minimum age: "+ (age != minimumAge)
 // }
 
 
-let studentName = "Samuel";
+/*let studentName = "Samuel";
 let score = 72;
 
 if (score >= 50) {
     console.log (studentName + " passed the exams.")
-}
+}*/
+
+
+let name = "Kwasi";
+let age = 17;
+
+if (age>=18){
+    console.log(name + " is eligible to drive.");
+} else {
+    console.log(name + " is not eligible to drive.");
+    }
+
