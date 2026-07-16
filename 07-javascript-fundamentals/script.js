@@ -73,7 +73,7 @@ if (score >= 50) {
 }*/
 
 
-let name = "Kwasi";
+/*let name = "Kwasi";
 let age = 17;
 
 if (age>=18){
@@ -82,3 +82,22 @@ if (age>=18){
     console.log(name + " is not eligible to drive.");
     }
 
+
+    let balance = 500;
+    let withdrawal = 700;
+
+    if (balance >=withdrawal) {
+        console.log("withdrawal approved")
+    } else {
+        console.log ("Insufficient funds")
+    }*/
+
+let age = 14;
+
+if (age < 13) {
+    console.log("Child Ticket");
+} else if (age < 18) {
+    console.log("Teen Ticket");
+} else {
+    console.log("Adult Ticket");
+}
