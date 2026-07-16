@@ -39,7 +39,7 @@ apples = 10;
 
 console.log(fruits);*/
 
-let studentName = "Samuel"
+/*let studentName = "Samuel"
 let age = 22;
 let minimumAge = 18;
 
@@ -54,5 +54,20 @@ console.log("The student is less than the minimum age: " + (age < minimumAge));
 
 console.log("The student is exactly the minimum age: " + (age === minimumAge));
 
-console.log("The student is not equal to the minimum age: "+ (age != minimumAge));
+console.log("The student is not equal to the minimum age: "+ (age != minimumAge));*/
 
+
+// let username = "Samuel";
+// let password = "12345";
+
+// if (password==="12345") {
+//     console.log("Welcome "+ username)
+// }
+
+
+let studentName = "Samuel";
+let score = 72;
+
+if (score >= 50) {
+    console.log (studentName + " passed the exams.")
+}
