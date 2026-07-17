@@ -113,12 +113,27 @@ if (score >= 90) {
 }*/
 
 
-let purchaseAmount = 150;
+//*let purchaseAmount = 150;
 
-if (purchaseAmount>=1000) {
+/*if (purchaseAmount>=1000) {
     console.log("20% Discount");
 } else if(purchaseAmount >= 500){
     console.log("10% Discount")
 } else {
     console.log("No Discount")
+}*/
+
+
+//first Mini Project
+
+let username = "Samuel";
+let password = "frontend123";
+
+if (username === "Samuel" && password === "frontend123") {
+    console.log ("login successful");
+
+} else {
+    console.log("invalid credentials")
 }
+
+
