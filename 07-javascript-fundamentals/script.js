@@ -137,3 +137,13 @@ if (username === "Samuel" && password === "frontend123") {
 }
 
 
+ //Second Mini Project
+
+let isAdmin = false;
+let isEditor = false;
+
+if (isAdmin === false || isEditor === true) {
+    console.log("Dashboard Access");
+} else {
+    console.log("Access Denied");
+}
