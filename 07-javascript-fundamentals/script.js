@@ -156,3 +156,15 @@ let isLoggedIn = true;
 if (!isLoggedIn) {
     console.log("Please log in.");
 } 
+
+// 4th project
+
+let hasPassport = true;
+let hasVisa = false;
+let isCitizen = false;
+
+if ((hasPassport && hasVisa) || isCitizen) {
+    console.log("Travel Allowed");
+} else {
+    console.log("Travel Not Allowed");
+}
