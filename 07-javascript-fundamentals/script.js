@@ -147,3 +147,12 @@ if (isAdmin === false || isEditor === true) {
 } else {
     console.log("Access Denied");
 }
+
+
+// Third Mini Project
+
+let isLoggedIn = true;
+
+if (!isLoggedIn) {
+    console.log("Please log in.");
+} 
