@@ -151,7 +151,7 @@ if (isAdmin === false || isEditor === true) {
 
 // Third Mini Project
 
-let isLoggedIn = true;
+/*let isLoggedIn = true;
 
 if (!isLoggedIn) {
     console.log("Please log in.");
@@ -167,4 +167,26 @@ if ((hasPassport && hasVisa) || isCitizen) {
     console.log("Travel Allowed");
 } else {
     console.log("Travel Not Allowed");
+}*/
+
+
+// Creating and Calling a Function
+//Mini Project 1
+
+function sayHello(){
+    console.log("Hello World");
 }
+
+sayHello();
+sayHello();
+sayHello();
+
+function showMenu(){
+    console.log("1. Home");
+    console.log("2. About");
+    console.log("3. Contact");
+
+}
+
+showMenu();
+showMenu();
