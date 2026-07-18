@@ -208,7 +208,7 @@ function welcome(user) {
 welcome("Samuel");*/
 
 
-function introduce(name, age) {
+/*function introduce(name, age) {
     console.log("My name is " + name);
     console.log("I am " + age + " years old.");
 }
@@ -231,4 +231,19 @@ function studentCard(name, course, level){
     console.log("Level: "+ level);
 }
 
-studentCard("Samuel", "Computer Science", 300);
+studentCard("Samuel", "Computer Science", 300);*/
+
+function multiply(a,b) {
+    return a * b;
+}
+
+let answer = multiply(4, 6);
+console.log(answer);
+
+
+function fullName(firstname, lastname){
+    return firstname +" "+lastname;
+}
+
+let user = fullName("Samuel", "Boahen");
+console.log(user);
