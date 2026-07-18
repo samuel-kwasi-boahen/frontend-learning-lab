@@ -126,7 +126,7 @@ if (score >= 90) {
 
 //first Mini Project
 
-let username = "Samuel";
+/*let username = "Samuel";
 let password = "frontend123";
 
 if (username === "Samuel" && password === "frontend123") {
@@ -146,7 +146,7 @@ if (isAdmin === false || isEditor === true) {
     console.log("Dashboard Access");
 } else {
     console.log("Access Denied");
-}
+}*/
 
 
 // Third Mini Project
@@ -173,7 +173,7 @@ if ((hasPassport && hasVisa) || isCitizen) {
 // Creating and Calling a Function
 //Mini Project 1
 
-function sayHello(){
+/*function sayHello(){
     console.log("Hello World");
 }
 
@@ -189,4 +189,20 @@ function showMenu(){
 }
 
 showMenu();
-showMenu();
+showMenu();*/
+
+function introduce(name){
+    console.log("My name is " + name);
+}
+
+introduce("Sammy");
+introduce("Kwabena");
+introduce("Ali");
+
+
+
+function welcome(user) {
+    console.log("Welcome " + user);
+}
+
+welcome("Samuel");
