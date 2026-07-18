@@ -191,7 +191,7 @@ function showMenu(){
 showMenu();
 showMenu();*/
 
-function introduce(name){
+/*function introduce(name){
     console.log("My name is " + name);
 }
 
@@ -205,4 +205,30 @@ function welcome(user) {
     console.log("Welcome " + user);
 }
 
-welcome("Samuel");
+welcome("Samuel");*/
+
+
+function introduce(name, age) {
+    console.log("My name is " + name);
+    console.log("I am " + age + " years old.");
+}
+
+introduce("Samuel", 25);
+
+
+function createProfile(name, job){
+    console.log(name + " is a " + job)
+}
+
+createProfile("Samuel", "UI/UX Designer.");
+createProfile("Salu", "Full-stack Developer.");
+createProfile("Mawutor", "Frontend Developer.");
+
+
+function studentCard(name, course, level){
+    console.log("Name: "+ name);
+    console.log("Course: "+ course);
+    console.log("Level: "+ level);
+}
+
+studentCard("Samuel", "Computer Science", 300);
