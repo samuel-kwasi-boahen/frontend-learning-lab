@@ -317,7 +317,7 @@ displayApp();*/
 // ARRAYS
 
 // Mini Project 1
-let fruits = ["Apple", "Banana", "Orange", "Mango"];
+/*let fruits = ["Apple", "Banana", "Orange", "Mango"];
 console.log(fruits);
 
 //Mini Project 2
@@ -335,7 +335,7 @@ let countries = [
 ];
 
 console.log(countries[0]);
-console.log(countries[2]);
+console.log(countries[2]);*/
 
 
 //Adding items with push
@@ -359,7 +359,7 @@ console.log(skills);*/
 ];
 
 skills.pop();
-console.log(skills)*/
+console.log(skills)
 
 
 //Using Variable and index to change an existing item
@@ -395,5 +395,21 @@ let frameworks = [
 ];
 
 frameworks[1] = "Vue";
-console.log(frameworks);
+console.log(frameworks);*/
 
+let hobbies = [
+    "Reading",
+    "Football",
+    "Coding",
+    "Music"
+];
+
+console.log(hobbies.length);
+
+let colors = [
+    "Red",
+    "Blue",
+    "Green"
+];
+
+console.log(colors[colors.length-1])
