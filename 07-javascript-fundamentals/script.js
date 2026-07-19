@@ -246,7 +246,7 @@ function fullName(firstname, lastname){
 }
 
 let user = fullName("Samuel", "Boahen");
-console.log(user);*/
+console.log(user);
 
 function calculateTotal(price, quantity){
     return price * quantity;
@@ -254,3 +254,60 @@ function calculateTotal(price, quantity){
 
 let Total = calculateTotal(50, 4);
 console.log("The total price is GHS"+ " "+ Total);
+
+let name = "Samuel";
+
+function greet() {
+    console.log(name);
+}
+
+greet();*/
+
+//SCOPE
+
+//Mini Project 1
+let website = "samuelboahen.com";
+
+function showWebsite() {
+    console.log(website);
+}
+
+showWebsite();
+
+//Mini Project 2
+
+let language = "English";
+
+function translate() {
+    let language = "French";
+
+    console.log(language);
+}
+
+translate();
+
+console.log(language);
+
+//Mini Project 3
+function student() {
+    let school = "University of Ghana";
+
+    console.log(school);
+}
+
+student();
+
+//console.log(school); >exist outside the function hence cannot access the inside var of the function
+
+//Challenge
+let appName = "Expense Tracker";
+
+function displayApp() {
+    let version = "1.0";
+
+    console.log("Application: " + appName);
+    console.log("Version: " + version);
+}
+
+displayApp();
+//console.log(version); >exist outside the function hence cannot access the inside var of the function
