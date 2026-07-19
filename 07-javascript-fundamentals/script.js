@@ -434,7 +434,7 @@ for (let m = 10; m > 4; m--){
 
 //Looping Through Arrays
 
-let skills = [
+/*let skills = [
     "HTML",
     "CSS",
     "JavaScript",
@@ -473,4 +473,63 @@ let scores = [80, 90, 75, 95, 88];
 for (let i = 0; i < scores.length; i++) {
     console.log("Score: " + scores[i]);
 }
+*/
+
+
+//Using forEach
+
+let skills = [
+    "HTML",
+    "CSS",
+    "JavaScript"
+];
+
+skills.forEach(function(skill) {
+    console.log(skill);
+});
+
+
+
+
+
+let fruits = [
+    "Apple",
+    "Banana",
+    "Orange",
+    "Mango"
+];
+
+fruits.forEach(
+    function(fruit){
+        console.log(fruit);
+    }
+)
+
+
+//Mini project 2
+
+let prices = [
+    10, 25, 50, 100
+];
+
+prices.forEach(
+    function(ball){
+        console.log("Price: " + ball) //the parameter name is just a temporal variable
+    }
+)
+
+
+//Mini project 3
+
+let teammates = [
+    "Samuel",
+    "Kwame",
+    "Akosua"
+];
+
+teammates.forEach(
+    function(person){
+        console.log("Welcome "+ person); //the parameter name can be anything
+    }
+);
 
