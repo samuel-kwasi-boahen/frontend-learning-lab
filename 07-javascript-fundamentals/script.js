@@ -539,7 +539,7 @@ teammates.forEach(
 
 //map() creates a new array. it doesn't replace it
 
-let prices = [10, 20, 30];
+/*let prices = [10, 20, 30];
 
 let doubledPrices = prices.map(function(price) {
     return price * 2;
@@ -615,4 +615,66 @@ let withYears = ages.map(
 )
 
 console.log(withYears);
+*/
 
+
+
+// Filter array method
+
+let scores = [45, 80, 30, 95, 60];
+
+let passed = scores.filter(function(score) {
+    return score >= 50;
+});
+
+console.log(scores);
+console.log(passed);
+
+//new
+
+let ages = [12, 18, 25, 15, 30];
+
+let adults = ages.filter(function(age) {
+    return age >= 18;
+});
+
+console.log(adults);
+
+//mini project 1
+
+let numbers = [5, 10, 15, 20, 25];
+
+let newNum = numbers.filter(
+    function(Asana){
+        return Asana >= 15
+    }
+)
+
+console.log(newNum);
+console.log(numbers);
+
+
+//mini project 2
+let prices = [50, 200, 80, 500, 30];
+
+let filterPrice = prices.filter(
+    function(moi){
+        return moi >= 100;
+    }
+)
+
+//mini project 3
+let names = [
+    "Samuel",
+    "Ama",
+    "Kwame",
+    "Akosua"
+];
+
+ let keepName = names.filter(
+    function(pname){
+        return pname.length > 4;
+    }
+ )
+
+ console.log(keepName);
