@@ -266,7 +266,7 @@ greet();*/
 //SCOPE
 
 //Mini Project 1
-let website = "samuelboahen.com";
+/*let website = "samuelboahen.com";
 
 function showWebsite() {
     console.log(website);
@@ -309,5 +309,30 @@ function displayApp() {
     console.log("Version: " + version);
 }
 
-displayApp();
+displayApp();*/
 //console.log(version); >exist outside the function hence cannot access the inside var of the function
+
+
+
+// ARRAYS
+
+// Mini Project 1
+let fruits = ["Apple", "Banana", "Orange", "Mango"];
+console.log(fruits);
+
+//Mini Project 2
+console.log(fruits[0]);
+console.log(fruits[2]);
+console.log(fruits[3]);
+
+//Mini Project 3
+
+let countries = [
+    "Ghana",
+    "Nigeria",
+    "Kenya",
+    "South Africa"
+];
+
+console.log(countries[0]);
+console.log(countries[2]);
