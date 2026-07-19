@@ -478,7 +478,7 @@ for (let i = 0; i < scores.length; i++) {
 
 //Using forEach
 
-let skills = [
+/*let skills = [
     "HTML",
     "CSS",
     "JavaScript"
@@ -531,5 +531,88 @@ teammates.forEach(
     function(person){
         console.log("Welcome "+ person); //the parameter name can be anything
     }
-);
+);  */
+
+
+
+
+
+//map() creates a new array. it doesn't replace it
+
+let prices = [10, 20, 30];
+
+let doubledPrices = prices.map(function(price) {
+    return price * 2;
+});
+
+console.log(doubledPrices);
+
+
+
+//Mini Project 1
+let names = [
+    "Samuel",
+    "Kwame",
+    "Akosua"
+];
+
+let greetings = names.map(function(name) {
+    return "Hello " + name;
+});
+
+console.log(greetings);
+
+
+//Mini Project 2
+let numbers = [
+    5,
+    10,
+    15,
+    20
+];
+
+let trice = numbers.map(
+    function(bossman){
+        return bossman * 3;
+    }
+)
+
+console.log(trice);
+console.log(numbers);
+
+
+//Mini Project 2
+
+let cities = [
+    "Accra",
+    "Kumasi",
+    "Tamale"
+];
+
+let describe = cities.map(
+    function(tina){
+        return "City: " + tina;
+    }
+)
+
+console.log(describe);
+
+
+
+
+//Mini Project 3
+
+let ages = [
+    18,
+    25,
+    30
+];
+
+let withYears = ages.map(
+    function(Obi){
+        return Obi + " years"
+    }
+)
+
+console.log(withYears);
 
