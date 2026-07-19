@@ -417,7 +417,7 @@ console.log(colors[colors.length-1])*/
 
 // For Loop
 
-for (let i = 0; i < 5; i++) {
+/*for (let i = 0; i < 5; i++) {
     console.log(i);
 }
 
@@ -430,4 +430,47 @@ for (let b = 1; b < 6; b++){
 
 for (let m = 10; m > 4; m--){
     console.log(m);
+}*/
+
+//Looping Through Arrays
+
+let skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React"
+];
+
+for (let i = 0; i < skills.length; i++){
+    console.log(skills[i]);
 }
+
+
+skills.push("UI/UX Design");
+   for (let i = 0; i < skills.length; i++){
+    console.log(skills[i]);
+}
+
+
+
+
+
+//Mini Project 1
+
+let fruits = [
+    "Apple",
+    "Banana",
+    "Orange",
+    "Mango"
+];
+for (let b = 0; b < fruits.length; b++) {
+    console.log(fruits[b]);
+}
+
+
+//Mini Project 2
+let scores = [80, 90, 75, 95, 88];
+for (let i = 0; i < scores.length; i++) {
+    console.log("Score: " + scores[i]);
+}
+
