@@ -233,7 +233,7 @@ function studentCard(name, course, level){
 
 studentCard("Samuel", "Computer Science", 300);*/
 
-function multiply(a,b) {
+/*function multiply(a,b) {
     return a * b;
 }
 
@@ -246,4 +246,11 @@ function fullName(firstname, lastname){
 }
 
 let user = fullName("Samuel", "Boahen");
-console.log(user);
+console.log(user);*/
+
+function calculateTotal(price, quantity){
+    return price * quantity;
+}
+
+let Total = calculateTotal(50, 4);
+console.log("The total price is GHS"+ " "+ Total);
