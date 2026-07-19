@@ -397,7 +397,7 @@ let frameworks = [
 frameworks[1] = "Vue";
 console.log(frameworks);*/
 
-let hobbies = [
+/*let hobbies = [
     "Reading",
     "Football",
     "Coding",
@@ -412,4 +412,22 @@ let colors = [
     "Green"
 ];
 
-console.log(colors[colors.length-1])
+console.log(colors[colors.length-1])*/
+
+
+// For Loop
+
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+
+//mini project 1
+for (let b = 1; b < 6; b++){
+    console.log(b);
+}
+
+//mini project 2
+
+for (let m = 10; m > 4; m--){
+    console.log(m);
+}
