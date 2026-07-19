@@ -336,3 +336,64 @@ let countries = [
 
 console.log(countries[0]);
 console.log(countries[2]);
+
+
+//Adding items with push
+/*let skills = [
+    "HTML",
+    "CSS",
+    "JavaScript"
+];
+
+skills.push("React");
+
+console.log(skills);*/
+
+
+//Removing items with pop
+/*let skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React"
+];
+
+skills.pop();
+console.log(skills)*/
+
+
+//Using Variable and index to change an existing item
+
+let skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React"
+];
+
+skills[2] = "UIUX Design";
+console.log(skills)
+
+//Mini project 1
+let languages = [
+    "HTML",
+    "CSS",
+    "JavaScript"
+];
+
+languages.push("Vue");
+console.log(languages);
+
+//languages.pop();
+//console.log(languages);
+
+//Mini project 2
+let frameworks = [
+    "React",
+    "Angular",
+    "Svelte"
+];
+
+frameworks[1] = "Vue";
+console.log(frameworks);
+
