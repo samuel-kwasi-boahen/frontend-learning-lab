@@ -756,7 +756,7 @@ console.log("Status: "+ expenseTracker.Status)*/
 
 
 //ARRAYS OF OBJECTS
-
+/*
 let projects = [
     {
         name: "Expense Tracker",
@@ -890,3 +890,18 @@ portProjects.forEach(
         console.log("Tool: "+ detail.Tool);
     }
 );
+*/
+
+//Mini project 1
+
+let title = document.getElementById("title");
+title.textContent = "Learning Frontend"
+
+//Mini project 2
+let paragraph = document.getElementById("status");
+paragraph.textContent = "completed";
+
+//Mini project 3
+
+let hero = document.getElementById("heroName");
+hero.textContent = "Samuel Boahen - Product Designer";
