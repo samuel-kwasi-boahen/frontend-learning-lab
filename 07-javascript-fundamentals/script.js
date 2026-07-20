@@ -894,7 +894,7 @@ portProjects.forEach(
 
 //Mini project 1
 
-let title = document.getElementById("title");
+/*let title = document.getElementById("title");
 title.textContent = "Learning Frontend"
 
 //Mini project 2
@@ -905,3 +905,55 @@ paragraph.textContent = "completed";
 
 let hero = document.getElementById("heroName");
 hero.textContent = "Samuel Boahen - Product Designer";
+*/
+
+
+let button11 = document.getElementById("btn");
+button11.addEventListener("click", function(){
+    console.log("Button clicked");
+}
+
+)
+
+
+let message1 = document.getElementById("message");
+let changeBtn = document.getElementById("changeBtn");
+
+changeBtn.addEventListener( 
+    "click", function(){
+        message1.textContent = "Text Changed"
+    }
+)
+
+
+
+//Mini project 1
+
+let button1 = document.getElementById("helloBtn");
+    button1.addEventListener(
+        "click", function(){
+            console.log("Hello Samuel!");
+        }
+    )
+
+    //Mini project 2
+
+let button2 = document.getElementById("statusBtn");
+let message2 = document.getElementById("status");
+
+button2.addEventListener(
+    "click", function(){
+        message2.textContent = "Completed!"
+    }
+)
+
+
+
+let title = document.getElementById("heroTitle");
+let button3 = document.getElementById("roleBtn");
+
+button3.addEventListener(
+    "click", function(){
+        title.textContent = "Samuel Boahen - Product Designer"
+    }
+)
