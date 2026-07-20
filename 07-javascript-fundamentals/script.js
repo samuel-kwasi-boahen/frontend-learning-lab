@@ -678,7 +678,7 @@ let names = [
     }
  )
 
- console.log(keepName);  */
+ console.log(keepName); 
 
 
  // Object
@@ -707,7 +707,7 @@ console.log(phone.model);
 };
 
 student.course = "Computer Science";
-console.log(student)*/
+console.log(student)
 
 //Mini project 1
 let student = {
@@ -752,4 +752,141 @@ console.log("Name: "+ expenseTracker.Name);
 console.log("Role: "+ expenseTracker.Role);
 console.log("Duration: " + expenseTracker.Duration);
 console.log("Tool: "+ expenseTracker.Tool);
-console.log("Status: "+ expenseTracker.Status)
+console.log("Status: "+ expenseTracker.Status)*/
+
+
+//ARRAYS OF OBJECTS
+
+let projects = [
+    {
+        name: "Expense Tracker",
+        role: "UI/UX Designer"
+    },
+    {
+        name: "Food Vendor Dashboard",
+        role: "Product Designer"
+    }
+];
+
+projects.forEach(function(project){
+
+    console.log(project.name);
+
+});
+
+
+
+
+//arrays of objects
+let portfolioProjects = [
+    {
+        name: "Expense Tracker",
+        category: "UI/UX",
+        tool: "Figma"
+    },
+    {
+        name: "Food Vendor Dashboard",
+        category: "UI/UX",
+        tool: "Figma"
+    },
+    {
+        name: "Checkout Redesign",
+        category: "UI/UX",
+        tool: "Figma"
+    }
+];
+
+
+portfolioProjects.forEach(function(project){
+
+    // Create a project card
+
+});
+
+
+
+
+
+//Mini project 1
+
+let students = [
+    {
+        name: "Samuel",
+        course: "Computer Science"
+    },
+    {
+        name: "Ama",
+        course: "Business"
+    },
+    {
+        name: "Kwame",
+        course: "Engineering"
+    }
+];
+
+students.forEach(
+    function(identity){
+        console.log(identity.name)
+    }
+)
+
+
+//Mini project 2
+
+let laptops = [
+    {
+        brand: "HP",
+        ram: "8GB"
+    },
+    {
+        brand: "Dell",
+        ram: "16GB"
+    },
+    {
+        brand: "Lenovo",
+        ram: "32GB"
+    }
+];
+
+laptops.forEach(
+    function(info){
+        console.log(info.brand + " - "+ info.ram)
+    }
+)
+
+
+
+///Mini project 3
+let portProjects = [
+    {
+        name: "SaveWise",
+        role: "UI/UX Designer",
+        duration: "2 Weeks",
+        Tool: "Figma"
+    },
+
+    {
+        name: "NeighborAid",
+        role: "Frontend Developer",
+        duration: "1 Month",
+        Tool: "VS Code"
+
+    },
+
+    {
+        name: "Fibkon",
+        role: "Frontend Developer",
+        duration: "2 Months",
+        Tool: "Sublime Text"
+    }
+
+];
+
+portProjects.forEach(
+    function(detail){
+        console.log(detail.name);
+        console.log("Role: "+ detail.role);
+        console.log("Duration: "+ detail.duration);
+        console.log("Tool: "+ detail.Tool);
+    }
+);
