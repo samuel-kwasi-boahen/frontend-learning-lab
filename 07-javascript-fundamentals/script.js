@@ -5,6 +5,7 @@
 // let enjoysCoding = true;
 // let isLearningJS = true;
 
+
 // console.log("--- Developer Info ---");
 // console.log("fullName:", fullName);
 // console.log("profession:", profession);
@@ -621,7 +622,7 @@ console.log(withYears);
 
 // Filter array method
 
-let scores = [45, 80, 30, 95, 60];
+/*let scores = [45, 80, 30, 95, 60];
 
 let passed = scores.filter(function(score) {
     return score >= 50;
@@ -677,4 +678,78 @@ let names = [
     }
  )
 
- console.log(keepName);
+ console.log(keepName);  */
+
+
+ // Object
+
+ let person = {
+    name: "Samuel",
+    age: 24,
+    job: "UI/UX Designer"
+}; 
+
+console.log(person.age);
+
+
+let phone = {
+    brand: "Samsung",
+    model: "S25",
+    color: "Black"
+};
+
+console.log(phone.brand);
+console.log(phone.model);
+
+//add new properpty
+/*let student = {
+    name: "Samuel"
+};
+
+student.course = "Computer Science";
+console.log(student)*/
+
+//Mini project 1
+let student = {
+    name :"Asana",
+    course : "Development Planning",
+    level : 100
+};
+
+console.log("name: "+ student.name);
+console.log("course: " + student.course);
+console.log("level: " + student.level);
+
+//Mini project 2
+
+let laptop = {
+    brand: "Lenovo",
+    ram: 8+"GB",
+    storage: 500+"GB"
+}
+
+console.log(laptop.brand);
+console.log(laptop.ram);
+console.log(laptop.storage);
+
+laptop.storage = 1+"TB";
+
+console.log(laptop.storage);
+
+
+
+//Mini project 3
+
+let expenseTracker = {
+    Name: "Expense Tracker",
+    Role: "UI/UX Designer",
+    Duration: "2 Weeks",
+    Tool: "Figma",
+    Status: "Completed"
+}
+
+console.log("Name: "+ expenseTracker.Name);
+console.log("Role: "+ expenseTracker.Role);
+console.log("Duration: " + expenseTracker.Duration);
+console.log("Tool: "+ expenseTracker.Tool);
+console.log("Status: "+ expenseTracker.Status)
