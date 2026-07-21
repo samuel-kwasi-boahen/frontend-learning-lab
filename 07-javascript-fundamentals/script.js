@@ -977,6 +977,7 @@ message.style.borderRadius = "10px";
 let text = document.getElementById("text");
 text.style.color = "blue";
 text.style.fontSize = "30px";
+text.style.display = "none";
 
 //mini project 2
 let title = document.getElementById("heroTitle");
@@ -1007,7 +1008,44 @@ button.addEventListener(
         heroName.style.border = "2px solid blue";
         heroName.style.borderRadius = "10px";
     }
+);
+
+
+//Mini project 1
+let msg = document.getElementById("msg");
+let buttonn = document.getElementById("hide");
+
+buttonn.addEventListener(
+    "click", function(){
+        msg.style.display = "none";
+    }
 )
+
+//Mini project 2
+
+let hide = document.getElementById("hide");
+let show = document.getElementById("show");
+
+hide.style.display = "none";
+show.style.display = "block";
+
+
+//mini project 3
+
+let about = document.getElementById("about");
+let button = document.getElementById("aboutBtn");
+
+button.addEventListener(
+    "click", function() {
+        if(about.style.display === "none"){
+            about.style.display = "block";
+
+        } else {
+            about.style.display = "none"
+        }
+    }
+);
+
 
 
 
