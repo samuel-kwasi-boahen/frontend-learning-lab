@@ -908,7 +908,7 @@ hero.textContent = "Samuel Boahen - Product Designer";
 */
 
 
-let button11 = document.getElementById("btn");
+/*let button11 = document.getElementById("btn");
 button11.addEventListener("click", function(){
     console.log("Button clicked");
 }
@@ -956,4 +956,59 @@ button3.addEventListener(
     "click", function(){
         title.textContent = "Samuel Boahen - Product Designer"
     }
+)*/
+
+
+
+
+//Changing CSS with JavaScript
+
+let message = document.getElementById("message");
+message.style.color = "white";
+
+message.style.backgroundColor = "black";
+
+message.style.padding = "20px";
+
+message.style.borderRadius = "10px";
+
+
+//mini project 1
+let text = document.getElementById("text");
+text.style.color = "blue";
+text.style.fontSize = "30px";
+
+//mini project 2
+let title = document.getElementById("heroTitle");
+let button3 = document.getElementById("roleBtn");
+
+button3.addEventListener(
+    "click", function(){
+        title.textContent = "Samuel Boahen - Product Designer";
+        title.style.color = "white";
+        title.style.backgroundColor = "black";
+        title.style.borderRadius = "10px";
+        title.style.padding = "20px";
+
+    }
 )
+
+
+//mini project 3
+let heroName = document.getElementById("heroName");
+let button = document.getElementById("themeBtn");
+button.addEventListener(
+    "click", function(){
+        heroName.style.color = "gold";
+        heroName.style.fontSize = "42px";
+        heroName.style.textDecoration = "underline";
+        heroName.style.backgroundColor = "black";
+        heroName.style.padding = "15px";
+        heroName.style.border = "2px solid blue";
+        heroName.style.borderRadius = "10px";
+    }
+)
+
+
+
+
