@@ -1111,3 +1111,15 @@ duration.textContent = "Duration: 8 Weeks";
 projects.appendChild(duration);
 
 
+let skillsad = document.getElementById("skillsad");
+let buttonskill = document.getElementById("addskill");
+
+buttonskill.addEventListener("click", function () {
+
+    let createskill = document.createElement("p");
+
+    createskill.textContent = "JavaScript";
+
+    skillsad.appendChild(createskill);
+
+});
