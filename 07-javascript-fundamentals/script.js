@@ -963,7 +963,7 @@ button3.addEventListener(
 
 //Changing CSS with JavaScript
 
-let message = document.getElementById("message");
+/*let message = document.getElementById("message");
 message.style.color = "white";
 
 message.style.backgroundColor = "black";
@@ -1122,4 +1122,59 @@ buttonskill.addEventListener("click", function () {
 
     skillsad.appendChild(createskill);
 
+});*/
+
+
+
+//Removing an Element
+
+let messagee = document.getElementById("messagee");
+messagee.remove();
+
+//Removing by click
+
+let note = document.getElementById("note");
+let deleteBtn = document.getElementById("deleteBtn");
+
+deleteBtn.addEventListener("click", function(){
+    note.remove();
+}
+
+)
+
+//mini project 1
+let texti = document.getElementById("texti");
+let removeBtn = document.getElementById("removeBtn");
+removeBtn.addEventListener("click", function(){
+    texti.remove();
 });
+
+
+//mini project 2
+let skilli = document.getElementById("skilli");
+let deleteSkill = document.getElementById("deleteSkill");
+
+deleteSkill.addEventListener("click", function(){
+    skilli.remove();
+});
+
+
+//mini project 3
+let projectCard = document.getElementById("projectCard");
+let buttonDelete = document.getElementById("deleteProject");
+
+buttonDelete.addEventListener(
+    "click", function(){
+        projectCard.remove();
+    }
+)
+
+// DYNAMIC NOTES
+let notes = document.getElementById("notes");
+let ButtonRemove = document.getElementById("removeNote")
+
+ButtonRemove.addEventListener(
+    "click", function(){
+        notes.remove();
+    }
+)
