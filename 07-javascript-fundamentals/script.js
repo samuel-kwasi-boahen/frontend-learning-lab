@@ -1128,7 +1128,7 @@ buttonskill.addEventListener("click", function () {
 
 //Removing an Element
 
-let messagee = document.getElementById("messagee");
+/*let messagee = document.getElementById("messagee");
 messagee.remove();
 
 //Removing by click
@@ -1177,4 +1177,53 @@ ButtonRemove.addEventListener(
     "click", function(){
         notes.remove();
     }
+)
+    */
+
+
+
+//Working with CSS Classes (classList)
+//Mini Project
+let text2 = document.getElementById("text2");
+let highlightBtn = document.getElementById("highlightBtn");
+
+highlightBtn.addEventListener(
+    "click", function(){
+        text2.classList.add("highlight");
+    }
+)
+
+
+
+let card = document.getElementById("card");
+let buttonStyle = document.getElementById("removeStyle");
+card.classList.add("cardStyle");
+
+buttonStyle.addEventListener(
+    "click", function (){
+        card.classList.remove("cardStyle");
+    }
+)
+
+
+//Mini project 3
+let heroTitle = document.getElementById("heroTitle");
+let themeBtn = document.getElementById("themeBtn");
+
+themeBtn.addEventListener(
+    "click", function (){
+        heroTitle.classList.toggle("darkTheme")
+    }
+)
+
+
+//Interactive Project Card
+
+let projectCard = document.getElementById("projectCard");
+let favoriteBtn = document.getElementById("favoriteBtn");
+
+favoriteBtn.addEventListener("click", function(){
+    projectCard.classList.toggle("favorite");
+}
+    
 )

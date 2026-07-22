@@ -1,0 +1,29 @@
+.highlight {
+    color: blue;
+    font-size: 30px;
+}
+
+
+
+.cardStyle {
+    background: black;
+    color: white;
+    padding: 20px;
+}
+
+
+.darkTheme {
+    background: #222;
+    color: gold;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+
+
+.favorite {
+    border: 3px solid gold;
+    background: #222;
+    color: white;
+    transform: scale(1.05);
+}
