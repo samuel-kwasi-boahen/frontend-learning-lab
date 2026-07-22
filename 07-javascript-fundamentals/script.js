@@ -1184,6 +1184,7 @@ ButtonRemove.addEventListener(
 
 //Working with CSS Classes (classList)
 //Mini Project
+/*
 let text2 = document.getElementById("text2");
 let highlightBtn = document.getElementById("highlightBtn");
 
@@ -1226,4 +1227,49 @@ favoriteBtn.addEventListener("click", function(){
     projectCard.classList.toggle("favorite");
 }
     
+)
+*/
+
+
+
+// LOCAL STORAGE
+
+//mini project 1
+
+localStorage.setItem("studentName", "Samuel");
+console.log(localStorage.getItem("studentName"));
+
+//mini project 2
+
+localStorage.setItem("career", "Frontend Developer");
+console.log(
+    localStorage.getItem("career")
+);
+
+//Mini project 3
+
+localStorage.setItem("favoriteProject", "Vendor Checkout");
+localStorage.removeItem("favoriteProject");
+console.log(localStorage.getItem("favoriteProject"));
+
+//Project_Favorite Language Saver
+
+let languagediv = document.getElementById("language");
+let saveBtn = document.getElementById("saveBtn");
+let loadBtn = document.getElementById("loadBtn");
+
+
+saveBtn.addEventListener(
+    "click", function(){
+        localStorage.setItem("language", "JavaScript");
+
+    }
+)
+
+    loadBtn.addEventListener(
+    "click", function(){
+        let language = localStorage.getItem("language");
+        languagediv.textContent = language;
+        
+    }
 )
