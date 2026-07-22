@@ -1033,9 +1033,9 @@ show.style.display = "block";
 //mini project 3
 
 let about = document.getElementById("about");
-let button = document.getElementById("aboutBtn");
+let aboutBtn = document.getElementById("aboutBtn");
 
-button.addEventListener(
+aboutBtn.addEventListener(
     "click", function() {
         if(about.style.display === "none"){
             about.style.display = "block";
@@ -1047,6 +1047,67 @@ button.addEventListener(
 );
 
 
+//Creating New Elements with JavaScript
+let container = document.getElementById("container");
+let paragraph = document.createElement("p");
+paragraph.textContent = "Hello My People!";
+container.appendChild(paragraph);
 
+//example
+let skills = document.getElementById("skills");
+let skill = document.createElement("p")
+skill.textContent = "UI/UX Designer";
+skills.appendChild(skill);
+
+// adding multiple elements
+let skill1 = document.createElement("p");
+skill1.textContent = "CSS"
+skills.appendChild(skill1);
+
+let skill2 = document.createElement("h3");
+skill2.textContent = "JavaScript";
+skills.appendChild(skill2);
+
+let skill3 = document.createElement("p");
+skill3.textContent = "HTML";
+skills.appendChild(skill3)
+
+
+//Mini project 1
+let box1 = document.getElementById("box1");
+let learn = document.createElement("p");
+learn.textContent = "Learning DOM";
+box1.appendChild(learn);
+
+//Mini project 2
+
+let courses = document.getElementById("courses");
+let c1 = document.createElement("p");
+c1.textContent = "HTML";
+courses.appendChild(c1);
+
+let c2 = document.createElement("p");
+c2.textContent = "CSS";
+courses.appendChild(c2);
+
+let c3 = document.createElement("p");
+c3. textContent = "JavaScript";
+courses.appendChild(c3);
+
+
+//Mini project 3
+
+let projects = document.getElementById("projects");
+let name = document.createElement("p");
+name.textContent = "Project: SaveWise";
+projects.appendChild(name);
+
+let role = document.createElement("p");
+role.textContent = "Role: UI/UX Designer"
+projects.appendChild(role);
+
+let duration = document.createElement("p");
+duration.textContent = "Duration: 8 Weeks";
+projects.appendChild(duration);
 
 
