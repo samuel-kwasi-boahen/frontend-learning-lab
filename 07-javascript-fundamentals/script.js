@@ -1266,10 +1266,91 @@ saveBtn.addEventListener(
     }
 )
 
-    loadBtn.addEventListener(
+loadBtn.addEventListener(
     "click", function(){
         let language = localStorage.getItem("language");
         languagediv.textContent = language;
         
     }
 )
+
+
+
+// Persistent Dark Mode (Local Storage + DOM + Events)
+
+let portfolioThemeSection =
+document.getElementById("portfolioThemeSection");
+
+let portfolioThemeToggleButton =
+document.getElementById("portfolioThemeToggleButton");
+
+/*portfolioThemeToggleButton.addEventListener(
+
+    "click",
+
+    function () {
+
+        portfolioThemeSection.classList.toggle(
+            "portfolioDarkTheme"
+        );
+
+    }
+
+);
+
+portfolioThemeSection.classList.contains(
+    "portfolioDarkTheme"
+);   */
+
+
+
+portfolioThemeToggleButton.addEventListener(
+
+    "click",
+
+    function () {
+
+        portfolioThemeSection.classList.toggle(
+            "portfolioDarkTheme"
+        );
+
+        if (
+
+            portfolioThemeSection.classList.contains(
+                "portfolioDarkTheme"
+            )
+
+        ) {
+
+            localStorage.setItem(
+                "portfolioThemePreference",
+                "dark"
+            );
+
+        } else {
+
+            localStorage.setItem(
+                "portfolioThemePreference",
+                "light"
+            );
+
+        }
+
+    }
+
+);
+
+
+let savedPortfolioTheme =
+
+localStorage.getItem(
+    "portfolioThemePreference"
+);
+
+if (savedPortfolioTheme === "dark") {
+
+    portfolioThemeSection.classList.add(
+        "portfolioDarkTheme"
+    );
+
+}

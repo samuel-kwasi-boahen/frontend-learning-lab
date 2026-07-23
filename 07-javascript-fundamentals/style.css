@@ -27,3 +27,14 @@
     color: white;
     transform: scale(1.05);
 }
+
+
+.portfolioDarkTheme {
+
+    background-color: #181818;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+
+}
