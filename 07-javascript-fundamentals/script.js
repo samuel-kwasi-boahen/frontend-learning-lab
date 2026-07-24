@@ -1354,3 +1354,27 @@ if (savedPortfolioTheme === "dark") {
     );
 
 }
+
+
+// Select the theme button and the hero section
+let themeButton = document.getElementById('portfolioHeroThemeButton');
+let heroSection = document.getElementById('portfolioHeroSection');
+
+// 1. When page loads: Automatically restore the theme
+let savedTheme = localStorage.getItem('portfolioHeroTheme');
+
+if (savedTheme === 'dark') {
+  heroSection.classList.add('portfolioHeroDark');
+}
+
+// 2. When button is clicked: Toggle and Save
+themeButton.addEventListener('click', () => {
+  // Toggle the class
+  heroSection.classList.toggle('portfolioHeroDark');
+  
+  // Check if the dark class is now active
+  let isDark = heroSection.classList.contains('portfolioHeroDark');
+  
+  // Save the preference as 'portfolioHeroTheme'
+  localStorage.setItem('portfolioHeroTheme', isDark ? 'dark' : 'light');
+});
