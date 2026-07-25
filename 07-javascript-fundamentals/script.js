@@ -1378,3 +1378,23 @@ themeButton.addEventListener('click', () => {
   // Save the preference as 'portfolioHeroTheme'
   localStorage.setItem('portfolioHeroTheme', isDark ? 'dark' : 'light');
 });
+
+
+let lesson12NameInput =
+    document.getElementById("lesson12NameInput");
+
+let lesson12ShowNameBtn =
+    document.getElementById("lesson12ShowNameBtn");
+
+let lesson12Output =
+    document.getElementById("lesson12Output");
+
+lesson12ShowNameBtn.addEventListener(
+    "click",
+    function () {
+
+        lesson12Output.textContent =
+            lesson12NameInput.value;
+
+    }
+);
