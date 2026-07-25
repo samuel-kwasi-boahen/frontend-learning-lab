@@ -1398,3 +1398,55 @@ lesson12ShowNameBtn.addEventListener(
 
     }
 );
+
+
+// MIni project 1
+
+let lesson12GreetingInput = document.getElementById("lesson12GreetingInput");
+let lesson12GreetingBtn = document.getElementById("lesson12GreetingBtn");
+let lesson12GreetingOutput = document.getElementById("lesson12GreetingOutput");
+
+lesson12GreetingBtn.addEventListener(
+    "click", function (){
+        lesson12GreetingOutput.textContent = lesson12GreetingInput.value
+    }
+)
+
+//Mini project 2
+
+let lesson12SkillInput = document.getElementById("lesson12SkillInput");
+let lesson12SkillBtn = document.getElementById("lesson12SkillBtn");
+let lesson12SkillOutput = document.getElementById("lesson12SkillOutput");
+
+lesson12SkillBtn.addEventListener (
+    "click", function (){
+        lesson12SkillOutput.textContent = "Favorite Skill: "+ lesson12SkillInput.value
+    }
+)
+
+
+//Mini project 3
+let lesson12RoleInput = document.getElementById("lesson12RoleInput");
+let lesson12RoleBtn = document.getElementById("lesson12RoleBtn");
+let lesson12RoleOutput = document.getElementById("lesson12RoleOutput");
+
+lesson12RoleBtn.addEventListener(
+    "click", function (){
+        lesson12RoleOutput.textContent = "Role: " + lesson12RoleInput.value;
+    }
+)
+
+
+// Project_Build a simple introduction generato
+
+let lesson12IntroName = document.getElementById("lesson12IntroName");
+let lesson12IntroRole = document.getElementById("lesson12IntroRole");
+let lesson12GenerateIntroBtn = document.getElementById("lesson12GenerateIntroBtn");
+let lesson12IntroOutput = document.getElementById("lesson12IntroOutput");
+
+lesson12GenerateIntroBtn.addEventListener(
+    "click", function(){
+        lesson12IntroOutput.textContent = "Hello, I'm "+ lesson12IntroName.value + ", a "+ lesson12IntroRole.value+".";
+     
+    }
+)
