@@ -1738,3 +1738,31 @@ lesson12ClearBtn.addEventListener(
 
     }
 );
+
+
+
+//Project_Contact Form
+
+let lesson12ResetNameInput = document.getElementById("lesson12ResetNameInput");
+let lesson12ResetMessageInput = document.getElementById("lesson12ResetMessageInput");
+let lesson12ResetSubmitBtn = document.getElementById("lesson12ResetSubmitBtn");
+let lesson12ResetFeedback = document.getElementById("lesson12ResetFeedback");
+
+
+lesson12ResetSubmitBtn.addEventListener(
+    "click", function(){
+        let cleanName = lesson12ResetNameInput.value.trim();
+        let cleanMessage = lesson12ResetMessageInput.value.trim();
+
+    if (cleanName === "" || cleanMessage === ""){
+        lesson12ResetFeedback.textContent = "Please complete all fields.";
+    } else {
+        lesson12ResetFeedback.textContent = "Thank you, " + cleanName +"! Your message has been sent."
+        
+        lesson12ResetNameInput.value = "";
+        lesson12ResetMessageInput.value = "";
+        
+    }
+    }
+)
+
