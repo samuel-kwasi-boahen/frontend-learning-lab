@@ -1647,3 +1647,20 @@ lesson12ProjectOutput.textContent = "Project information is incomplete."
 )
 
 
+// Project_Mini Contact Preview
+
+let lesson12CardNameInput = document.getElementById("lesson12CardNameInput");
+let lesson12CardRoleInput = document.getElementById("lesson12CardRoleInput");
+let lesson12CardGenerateBtn = document.getElementById("lesson12CardGenerateBtn");
+let lesson12CardOutput = document.getElementById("lesson12CardOutput")
+
+lesson12CardGenerateBtn.addEventListener(
+    "click", function(){
+        if (lesson12CardNameInput.value === "" || lesson12CardRoleInput.value === ""){
+            lesson12CardOutput.textContent = "Please complete both fields.";
+        } else {
+            lesson12CardOutput.innerHTML = "Name: "+ lesson12CardNameInput.value + "<br>" + "Role: "+ lesson12CardRoleInput.value;
+        }
+    }
+)
+
