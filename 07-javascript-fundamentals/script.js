@@ -1552,3 +1552,40 @@ lesson12ContactSubmitBtn.addEventListener(
         }
     }
 )
+
+let lesson12FullNameInput =
+    document.getElementById("lesson12FullNameInput");
+
+let lesson12ProfessionInput =
+    document.getElementById("lesson12ProfessionInput");
+
+let lesson12MultiSubmitBtn =
+    document.getElementById("lesson12MultiSubmitBtn");
+
+let lesson12MultiValidationOutput =
+    document.getElementById("lesson12MultiValidationOutput");
+
+lesson12MultiSubmitBtn.addEventListener(
+    "click",
+    function () {
+
+        if (
+            lesson12FullNameInput.value === "" ||
+            lesson12ProfessionInput.value === ""
+        ) {
+
+            lesson12MultiValidationOutput.textContent =
+                "Please complete all fields.";
+
+        } else {
+
+            lesson12MultiValidationOutput.textContent =
+                "Welcome, " +
+                lesson12FullNameInput.value +
+                "! Profession: " +
+                lesson12ProfessionInput.value;
+
+        }
+
+    }
+);
