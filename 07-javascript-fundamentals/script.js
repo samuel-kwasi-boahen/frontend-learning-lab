@@ -1486,6 +1486,8 @@ lesson12ValidateBtn.addEventListener(
 );
 
 
+
+
 //Mini Project 1
 let lesson12NameCheckInput = document.getElementById("lesson12NameCheckInput");
 let lesson12NameCheckBtn = document.getElementById("lesson12NameCheckBtn");
@@ -1589,3 +1591,59 @@ lesson12MultiSubmitBtn.addEventListener(
 
     }
 );
+
+//FILLING MORE THAN ONE FIELD
+//Mini project 1
+let lesson12ProfileNameInput = document.getElementById("lesson12ProfileNameInput");
+let lesson12ProfileRoleInput = document.getElementById("lesson12ProfileRoleInput");
+let lesson12ProfileBtn = document.getElementById("lesson12ProfileBtn");
+let lesson12ProfileOutput = document.getElementById("lesson12ProfileOutput");
+
+lesson12ProfileBtn.addEventListener(
+    "click", function (){
+        if (lesson12ProfileNameInput.value === "" || lesson12ProfileRoleInput.value === ""){
+          lesson12ProfileOutput.textContent = "Please fill in every field."  
+        } else {
+            lesson12ProfileOutput.textContent = lesson12ProfileNameInput.value+ " - "+ lesson12ProfileRoleInput.value;
+        }
+    }
+)
+
+
+//Mini project 2
+
+let lesson12CourseNameInput = document.getElementById("lesson12CourseNameInput");
+let lesson12CourseInput = document.getElementById("lesson12CourseInput");
+let lesson12CourseBtn = document.getElementById("lesson12CourseBtn");
+let lesson12CourseOutput = document.getElementById("lesson12CourseOutput");
+
+lesson12CourseBtn.addEventListener(
+    "click", function(){
+        if(lesson12CourseNameInput.value ==="" || lesson12CourseInput.value ==="") 
+            {lesson12CourseOutput.textContent = "Registration incomplete."
+        } else { lesson12CourseOutput.textContent = lesson12CourseNameInput.value + " registered for "+ lesson12CourseInput.value;
+
+        }
+    }
+)
+
+
+
+//Mini project 3
+
+let lesson12ProjectNameInput = document.getElementById("lesson12ProjectNameInput");
+let lesson12ProjectDurationInput = document.getElementById("lesson12ProjectDurationInput");
+let lesson12ProjectBtn = document.getElementById("lesson12ProjectBtn");
+let lesson12ProjectOutput = document.getElementById("lesson12ProjectOutput");
+
+lesson12ProjectBtn.addEventListener(
+    "click", function(){
+        if(lesson12ProjectNameInput.value === "" || lesson12ProjectDurationInput.value === ""){
+lesson12ProjectOutput.textContent = "Project information is incomplete."
+        } else { 
+            lesson12ProjectOutput.textContent = lesson12ProjectNameInput.value + " - "+lesson12ProjectDurationInput.value;
+        }
+    }
+)
+
+
