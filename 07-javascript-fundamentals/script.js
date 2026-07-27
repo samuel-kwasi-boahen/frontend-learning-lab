@@ -1700,3 +1700,41 @@ lesson12TrimGenerateBtn.addEventListener(
         }
     }
 )
+
+
+
+//Clearing Form Inputs
+
+
+let lesson12ClearNameInput =
+    document.getElementById("lesson12ClearNameInput");
+
+let lesson12ClearBtn =
+    document.getElementById("lesson12ClearBtn");
+
+let lesson12ClearOutput =
+    document.getElementById("lesson12ClearOutput");
+
+lesson12ClearBtn.addEventListener(
+    "click",
+    function () {
+
+        let cleanName =
+            lesson12ClearNameInput.value.trim();
+
+        if (cleanName === "") {
+
+            lesson12ClearOutput.textContent =
+                "Please enter your name.";
+
+        } else {
+
+            lesson12ClearOutput.textContent =
+                "Welcome, " + cleanName + "!";
+
+            lesson12ClearNameInput.value = "";
+
+        }
+
+    }
+);
