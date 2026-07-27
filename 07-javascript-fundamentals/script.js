@@ -1484,3 +1484,55 @@ lesson12ValidateBtn.addEventListener(
 
     }
 );
+
+
+//Mini Project 1
+let lesson12NameCheckInput = document.getElementById("lesson12NameCheckInput");
+let lesson12NameCheckBtn = document.getElementById("lesson12NameCheckBtn");
+let lesson12NameCheckOutput = document.getElementById("lesson12NameCheckOutput");
+
+lesson12NameCheckBtn.addEventListener(
+    "click", function (){
+        if(lesson12NameCheckInput.value === ""){
+            lesson12NameCheckOutput.textContent = "Please enter your name";
+        } else{
+            lesson12NameCheckOutput.textContent = "Hello, "+  lesson12NameCheckInput.value
+        }
+    }
+)
+
+
+
+//Mini project 2
+
+let lesson12SkillCheckInput = document.getElementById("lesson12SkillCheckInput");
+let lesson12SkillCheckBtn = document.getElementById("lesson12SkillCheckBtn");
+let lesson12SkillCheckOutput = document.getElementById("lesson12SkillCheckOutput");
+
+lesson12SkillCheckBtn.addEventListener(
+    "click", function(){
+        if (lesson12SkillCheckInput.value === "") {
+            lesson12SkillCheckOutput.textContent = "Skill cannot be empty";
+             }  else {
+                lesson12SkillCheckOutput.textContent = "Skill Saved: "+ lesson12SkillCheckInput.value;
+             }
+    }
+)
+
+
+
+// Mini project 3
+
+let lesson12RoleCheckInput = document.getElementById("lesson12RoleCheckInput");
+let lesson12RoleCheckBtn = document.getElementById("lesson12RoleCheckBtn");
+let lesson12RoleCheckOutput = document.getElementById("lesson12RoleCheckOutput");
+
+lesson12RoleCheckBtn.addEventListener (
+    "click", function () {
+        if(lesson12RoleCheckInput.value === "") {
+            lesson12RoleCheckOutput.textContent = "Role is required."
+        } else {lesson12RoleCheckOutput.textContent = "Current Role: "+ lesson12RoleCheckInput.value};
+    }
+)
+
+
