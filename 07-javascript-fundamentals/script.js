@@ -1235,6 +1235,7 @@ favoriteBtn.addEventListener("click", function(){
 // LOCAL STORAGE
 
 //mini project 1
+/*
 
 localStorage.setItem("studentName", "Samuel");
 console.log(localStorage.getItem("studentName"));
@@ -1304,7 +1305,7 @@ portfolioThemeSection.classList.contains(
 
 
 
-portfolioThemeToggleButton.addEventListener(
+/*portfolioThemeToggleButton.addEventListener(
 
     "click",
 
@@ -1400,6 +1401,8 @@ lesson12ShowNameBtn.addEventListener(
 );
 
 
+
+//FORMS AND user INPUT
 // MIni project 1
 
 let lesson12GreetingInput = document.getElementById("lesson12GreetingInput");
@@ -1450,3 +1453,34 @@ lesson12GenerateIntroBtn.addEventListener(
      
     }
 )
+
+*/
+
+
+let lesson12UsernameInput =
+    document.getElementById("lesson12UsernameInput");
+
+let lesson12ValidateBtn =
+    document.getElementById("lesson12ValidateBtn");
+
+let lesson12ValidationMessage =
+    document.getElementById("lesson12ValidationMessage");
+
+lesson12ValidateBtn.addEventListener(
+    "click",
+    function () {
+
+        if (lesson12UsernameInput.value === "") {
+
+            lesson12ValidationMessage.textContent =
+                "Username is required.";
+
+        } else {
+
+            lesson12ValidationMessage.textContent =
+                "Welcome, " + lesson12UsernameInput.value + "!";
+
+        }
+
+    }
+);
