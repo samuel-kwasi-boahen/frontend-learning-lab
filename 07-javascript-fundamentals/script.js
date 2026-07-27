@@ -1664,3 +1664,39 @@ lesson12CardGenerateBtn.addEventListener(
     }
 )
 
+
+
+// Trim() METHOD
+
+
+let username = lesson12UsernameInput.value.trim();
+
+if (username === "") {
+
+    lesson12ValidationMessage.textContent =
+        "Username is required.";
+
+} else {
+
+    lesson12ValidationMessage.textContent =
+        "Welcome, " + username + "!";
+
+}
+
+//Project
+let lesson12TrimNameInput = document.getElementById("lesson12TrimNameInput");
+let lesson12TrimRoleInput = document.getElementById("lesson12TrimRoleInput")
+let lesson12TrimGenerateBtn = document.getElementById("lesson12TrimGenerateBtn");
+let lesson12TrimOutput = document.getElementById("lesson12TrimOutput");
+
+lesson12TrimGenerateBtn.addEventListener(
+    "click", function(){
+        let oboy = lesson12TrimNameInput.value.trim()
+        let ogirl = lesson12TrimRoleInput.value.trim()
+        if (oboy===""|| ogirl===""){
+           lesson12TrimOutput.textContent = "Please complete all fields."
+        } else {
+                lesson12TrimOutput.textContent = "Hello, I'm "+ oboy + ", a "+ ogirl 
+        }
+    }
+)
