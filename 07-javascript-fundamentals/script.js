@@ -1536,3 +1536,19 @@ lesson12RoleCheckBtn.addEventListener (
 )
 
 
+// Project_Contact Validation
+
+let lesson12ContactNameInput = document.getElementById("lesson12ContactNameInput");
+let lesson12ContactSubmitBtn = document.getElementById ("lesson12ContactSubmitBtn");
+let lesson12ContactFeedback = document.getElementById("lesson12ContactFeedback");
+
+lesson12ContactSubmitBtn.addEventListener(
+    "click", function (){
+        if (lesson12ContactNameInput.value === ""){
+           lesson12ContactFeedback.textContent = "Please enter your name before submitting.";
+
+        } else {
+           lesson12ContactFeedback.textContent = "Thank you, " + lesson12ContactNameInput.value+"! Your request has been received." 
+        }
+    }
+)
