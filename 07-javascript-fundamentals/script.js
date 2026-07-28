@@ -1806,3 +1806,32 @@ lesson12ReusableBtn.addEventListener(
 
 
 
+
+
+
+
+//Project_Profile Generator
+
+
+let lesson12ReusableProfileNameInput = document.getElementById("lesson12ReusableProfileNameInput");
+let lesson12ReusableProfileRoleInput = document.getElementById("lesson12ReusableProfileRoleInput");
+let lesson12ReusableProfileBtn = document.getElementById("lesson12ReusableProfileBtn");
+let lesson12ReusableProfileOutput = document.getElementById("lesson12ReusableProfileOutput");
+
+function generateProfile(){
+    let nameTrim = lesson12ReusableProfileNameInput.value.trim();
+    let roleTrim = lesson12ReusableProfileRoleInput.value.trim();
+
+        if(nameTrim==="" || roleTrim === ""){
+            lesson12ReusableProfileOutput.textContent = "Please complete both fields."
+        } else {
+            lesson12ReusableProfileOutput.textContent = nameTrim + " - "+ roleTrim;
+        }
+
+}
+
+
+    lesson12ReusableProfileBtn.addEventListener(
+        "click", 
+        generateProfile
+    )
