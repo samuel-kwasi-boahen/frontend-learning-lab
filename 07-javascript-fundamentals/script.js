@@ -1766,3 +1766,43 @@ lesson12ResetSubmitBtn.addEventListener(
     }
 )
 
+
+
+
+//REUSING FUNCTIONS AND EVENTS
+
+let lesson12ReusableNameInput =
+document.getElementById("lesson12ReusableNameInput");
+
+let lesson12ReusableBtn =
+document.getElementById("lesson12ReusableBtn");
+
+let lesson12ReusableOutput =
+document.getElementById("lesson12ReusableOutput");
+
+function showGreeting() {
+
+    let cleanName =
+    lesson12ReusableNameInput.value.trim();
+
+    if (cleanName === "") {
+
+        lesson12ReusableOutput.textContent =
+        "Please enter your name.";
+
+    } else {
+
+        lesson12ReusableOutput.textContent =
+        "Hello, " + cleanName + "!";
+
+    }
+
+}
+
+lesson12ReusableBtn.addEventListener(
+    "click",
+    showGreeting
+);
+
+
+
