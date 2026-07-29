@@ -1835,3 +1835,48 @@ function generateProfile(){
         "click", 
         generateProfile
     )
+
+
+
+
+
+
+    //Multiple Conditions with else if 
+
+    //example 1
+    
+    let age = 17;
+
+if (age >= 18) {
+
+    console.log("Adult");
+
+} else if (age >= 13) {
+
+    console.log("Teenager");
+
+} else {
+
+    console.log("Child");
+
+}
+
+
+
+//example 2
+
+let projectCount = 5;
+
+if (projectCount === 0) {
+
+    console.log("No projects yet.");
+
+} else if (projectCount < 5) {
+
+    console.log("Portfolio growing.");
+
+} else {
+
+    console.log("Strong portfolio!");
+
+}
