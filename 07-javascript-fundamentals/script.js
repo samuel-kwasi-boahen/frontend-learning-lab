@@ -2114,3 +2114,88 @@ lesson13TechBtn.addEventListener(
     "click",
     addTechnology
 )
+
+
+
+//ARRAY OF OBJECTS
+
+let lesson13DynamicProjectInput = document.getElementById("lesson13DynamicProjectInput");
+let lesson13DynamicRoleInput = document.getElementById("lesson13DynamicRoleInput");
+let lesson13DynamicAddBtn = document.getElementById("lesson13DynamicAddBtn");
+let lesson13DynamicOutput = document.getElementById("lesson13DynamicOutput");
+
+let lesson13DynamicProjectInput =
+document.getElementById(
+    "lesson13DynamicProjectInput"
+);
+
+let lesson13DynamicRoleInput =
+document.getElementById(
+    "lesson13DynamicRoleInput"
+);
+
+let lesson13DynamicAddBtn =
+document.getElementById(
+    "lesson13DynamicAddBtn"
+);
+
+let lesson13DynamicOutput =
+document.getElementById(
+    "lesson13DynamicOutput"
+);
+
+let projects = [];
+
+function addProject() {
+
+    let cleanProject =
+    lesson13DynamicProjectInput.value.trim();
+
+    let cleanRole =
+    lesson13DynamicRoleInput.value.trim();
+
+    if (
+        cleanProject === "" ||
+        cleanRole === ""
+    ) {
+
+        lesson13DynamicOutput.textContent =
+        "Please complete all fields.";
+
+        return;
+    }
+
+    let projectObject = {
+
+        name: cleanProject,
+
+        role: cleanRole
+
+    };
+
+    projects.push(projectObject);
+
+    let outputText = "";
+
+    projects.forEach(function(project){
+
+        outputText +=
+        project.name +
+        " - " +
+        project.role +
+        "<br>";
+
+    });
+
+    lesson13DynamicOutput.innerHTML =
+    outputText;
+
+    lesson13DynamicProjectInput.value = "";
+    lesson13DynamicRoleInput.value = "";
+
+}
+
+lesson13DynamicAddBtn.addEventListener(
+    "click",
+    addProject
+);
