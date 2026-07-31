@@ -2053,3 +2053,35 @@ lesson13ToolBtn.addEventListener(
     "click",
     favTools
 )
+
+
+
+
+
+//Project - Learning Project
+
+let lesson13TopicInput = document.getElementById("lesson13TopicInput");
+let lesson13TopicBtn = document.getElementById ("lesson13TopicBtn");
+let lesson13TopicOutput = document.getElementById("lesson13TopicOutput");
+
+let topics = [];
+
+function addProject(){
+    let topic = lesson13TopicInput.value.trim();
+
+    if (topic === ""){
+        lesson13TopicOutput.textContent = "Please input a topic name";
+    } else {
+        topics.push(topic);
+        lesson13TopicOutput.textContent = topics.join(", ");
+        lesson13TopicInput.value = "";
+    }
+
+}
+
+
+lesson13TopicBtn.addEventListener(
+    "click",
+    addProject
+
+)
