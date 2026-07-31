@@ -1979,3 +1979,52 @@ lesson12ElseIfContactBtn.addEventListener(
     validateContact
 )
 
+
+
+
+// Storing User Data in Arrays
+
+/*let skills=[];
+skills.push("JavaScript");
+skills.push("React");
+console.log(skills);
+*/
+
+let lesson13SkillInput =
+document.getElementById("lesson13SkillInput");
+
+let lesson13SkillBtn =
+document.getElementById("lesson13SkillBtn");
+
+let lesson13SkillOutput =
+document.getElementById("lesson13SkillOutput");
+
+let skills = [];
+
+function addSkill() {
+
+    let skill =
+    lesson13SkillInput.value.trim();
+
+    if (skill === "") {
+
+        lesson13SkillOutput.textContent =
+        "Please enter a skill.";
+
+    } else {
+
+        skills.push(skill);
+
+        lesson13SkillOutput.textContent =
+        skills.join(", ");
+
+        lesson13SkillInput.value = "";
+
+    }
+
+}
+
+lesson13SkillBtn.addEventListener(
+    "click",
+    addSkill
+);
