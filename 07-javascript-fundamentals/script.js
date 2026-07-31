@@ -1922,3 +1922,33 @@ function skillValid(){
 lesson12ElseIfSkillBtn.addEventListener("click",
     skillValid
 )
+
+
+
+
+//Mini Project 3 - Role Validation
+
+let lesson12ElseIfRoleInput = document.getElementById("lesson12ElseIfRoleInput");
+let lesson12ElseIfRoleBtn = document.getElementById("lesson12ElseIfRoleBtn");
+let lesson12ElseIfRoleOutput = document.getElementById("lesson12ElseIfRoleOutput");
+
+function roleValid(){
+    let roleTrim = lesson12ElseIfRoleInput.value.trim();
+    if (roleTrim === ""){
+        lesson12ElseIfRoleOutput.textContent = "Role is required";
+     
+    } else if (roleTrim.length < 5){
+                lesson12ElseIfRoleOutput.textContent = "Role name is too short.";
+
+    } else {
+        lesson12ElseIfRoleOutput.textContent = "Current Role: " + roleTrim;
+
+    }
+
+}
+
+
+lesson12ElseIfRoleBtn.addEventListener(
+    "click",
+    roleValid
+)
