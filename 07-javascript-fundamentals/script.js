@@ -2085,3 +2085,32 @@ lesson13TopicBtn.addEventListener(
     addProject
 
 )
+
+
+
+// Project - Technology Tracker
+
+let lesson13TechInput = document.getElementById("lesson13TechInput");
+let lesson13TechBtn = document.getElementById("lesson13TechBtn");
+let lesson13TechOutput = document.getElementById("lesson13TechOutput");
+
+let technologies = [];
+
+function addTechnology(){
+    let cleanTech = lesson13TechInput.value.trim();
+
+    if(cleanTech ===""){
+        lesson13TechOutput.textContent = "Please type name of technology."
+
+    } else {
+        technologies.push(cleanTech);
+        lesson13TechOutput.textContent = technologies.join(" | ");
+        lesson13TechInput.value = "";
+    }
+}
+
+
+lesson13TechBtn.addEventListener(
+    "click",
+    addTechnology
+)
