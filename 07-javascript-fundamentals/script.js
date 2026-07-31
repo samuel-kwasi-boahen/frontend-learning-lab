@@ -1844,7 +1844,7 @@ function generateProfile(){
     //Multiple Conditions with else if 
 
     //example 1
-    
+
     let age = 17;
 
 if (age >= 18) {
@@ -1880,3 +1880,21 @@ if (projectCount === 0) {
     console.log("Strong portfolio!");
 
 }
+
+
+//Mini Project
+
+let lesson12ElseIfNameInput = document.getElementById("lesson12ElseIfNameInput");
+let lesson12ElseIfNameBtn = document.getElementById("lesson12ElseIfNameBtn");
+let lesson12ElseIfNameOutput = document.getElementById("lesson12ElseIfNameOutput");
+
+lesson12ElseIfNameBtn.addEventListener("click", function() {
+let TrimmName = lesson12ElseIfNameInput.value.trim();
+if (TrimmName === ""){
+    lesson12ElseIfNameOutput.textContent = "Please enter your name."
+} else if (TrimmName.length < 3){
+    lesson12ElseIfNameOutput.textContent = "Name is too short."
+}  else {
+    lesson12ElseIfNameOutput.textContent = "Welcome, "+ TrimmName;
+}}
+)
