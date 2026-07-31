@@ -2028,3 +2028,28 @@ lesson13SkillBtn.addEventListener(
     "click",
     addSkill
 );
+
+
+//project - favorite tools list
+
+let lesson13ToolInput = document.getElementById("lesson13ToolInput");
+let lesson13ToolBtn = document.getElementById("lesson13ToolBtn");
+let lesson13ToolOutput = document.getElementById("lesson13ToolOutput");
+
+let tools = [];
+
+function favTools(){
+    let toolsTrim = lesson13ToolInput.value.trim();
+
+    if(toolsTrim === ""){
+        lesson13ToolOutput.textContent = "Please enter name of tool"
+    } else {tools.push(toolsTrim);
+            lesson13ToolOutput.textContent = tools.join(", ")
+            lesson13ToolInput.value = ""
+    } 
+}
+
+lesson13ToolBtn.addEventListener(
+    "click",
+    favTools
+)
