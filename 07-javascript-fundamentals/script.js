@@ -1952,3 +1952,30 @@ lesson12ElseIfRoleBtn.addEventListener(
     "click",
     roleValid
 )
+
+
+//Project - Contact Validator
+
+let lesson12ElseIfContactNameInput = document.getElementById("lesson12ElseIfContactNameInput");
+let lesson12ElseIfContactBtn = document.getElementById("lesson12ElseIfContactBtn");
+let lesson12ElseIfContactOutput = document.getElementById("lesson12ElseIfContactOutput");
+ 
+function validateContact(){
+
+    let contactTrim = lesson12ElseIfContactNameInput.value.trim();
+    if (contactTrim === ""){
+        lesson12ElseIfContactOutput.textContent = "Please enter your name."
+    } else if (contactTrim.length < 3){
+        lesson12ElseIfContactOutput.textContent = "Name must be at least 3 characters";
+    } else {
+        lesson12ElseIfContactOutput.textContent = "Thank you, "+ contactTrim + "!";
+    }
+
+}
+
+
+lesson12ElseIfContactBtn.addEventListener(
+    "click",
+    validateContact
+)
+
