@@ -1882,7 +1882,7 @@ if (projectCount === 0) {
 }
 
 
-//Mini Project
+//Mini Project - username length
 
 let lesson12ElseIfNameInput = document.getElementById("lesson12ElseIfNameInput");
 let lesson12ElseIfNameBtn = document.getElementById("lesson12ElseIfNameBtn");
@@ -1897,4 +1897,28 @@ if (TrimmName === ""){
 }  else {
     lesson12ElseIfNameOutput.textContent = "Welcome, "+ TrimmName;
 }}
+)
+
+
+// Mini Project 2 - Skill Validation
+
+lesson12ElseIfSkillInput = document.getElementById("lesson12ElseIfSkillInput");
+lesson12ElseIfSkillBtn = document.getElementById("lesson12ElseIfSkillBtn");
+lesson12ElseIfSkillOutput = document.getElementById("lesson12ElseIfSkillOutput");
+
+function skillValid(){
+    let SkillTrim = lesson12ElseIfSkillInput.value.trim();
+    
+    if (SkillTrim === ""){
+        lesson12ElseIfSkillOutput.textContent= "Please enter a skill."
+    } else if (SkillTrim.length<4) {
+       lesson12ElseIfSkillOutput.textContent = "Skill name is too short"
+    } else {
+        lesson12ElseIfSkillOutput.textContent = "Skill saved: "+ SkillTrim;
+
+    }
+}
+
+lesson12ElseIfSkillBtn.addEventListener("click",
+    skillValid
 )
