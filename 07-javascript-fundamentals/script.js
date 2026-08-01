@@ -2713,3 +2713,55 @@ lesson13DeleteTeamBtn.addEventListener(
 );
 
 
+//Portfolio Project Deleter
+
+let lesson13DeletePortfolioBtn =
+document.getElementById("lesson13DeletePortfolioBtn");
+
+let lesson13DeletePortfolioOutput =
+document.getElementById("lesson13DeletePortfolioOutput");
+
+let lesson13DeletePortfolioProjects = [
+    {
+        name: "SaveWise",
+        role: "UI/UX Designer"
+    },
+    {
+        name: "Vendor Dashboard",
+        role: "Product Designer"
+    },
+    {
+        name: "Checkout Redesign",
+        role: "UX Researcher"
+    }
+];
+
+function displayDeletePortfolio(){
+
+    let output = "";
+
+    lesson13DeletePortfolioProjects.forEach(function(project){
+
+        output +=
+        "<div>" +
+        "<h3>" + project.name + "</h3>" +
+        "<p>" + project.role + "</p>" +
+        "</div>";
+
+    });
+
+    lesson13DeletePortfolioOutput.innerHTML = output;
+}
+
+displayDeletePortfolio();
+
+lesson13DeletePortfolioBtn.addEventListener(
+    "click",
+    function(){
+
+        lesson13DeletePortfolioProjects.splice(0, 1);
+
+        displayDeletePortfolio();
+
+    }
+);
