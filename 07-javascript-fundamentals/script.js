@@ -2031,7 +2031,7 @@ console.log(skills);
 
 
 //project - favorite tools list
-
+/*
 let lesson13ToolInput = document.getElementById("lesson13ToolInput");
 let lesson13ToolBtn = document.getElementById("lesson13ToolBtn");
 let lesson13ToolOutput = document.getElementById("lesson13ToolOutput");
@@ -2306,3 +2306,47 @@ function addPortfolioManagerProject() {
 
 
 lesson13PortfolioManagerAddBtn.addEventListener("click", addPortfolioManagerProject);
+*/
+
+
+
+//Rendering Multiple Cards
+//New Concept: Building HTML with JavaScript
+
+let lesson13CourseCardInput = document.getElementById("lesson13CourseCardInput");
+let lesson13CourseCardBtn = document.getElementById("lesson13CourseCardBtn");
+let lesson13CourseCardOutput = document.getElementById("lesson13CourseCardOutput");
+
+let lesson13CourseCards = [];
+function addCourses(){
+    let cleanCard = lesson13CourseCardInput.value.trim();
+
+    if(cleanCard === ""){
+        lesson13CourseCardOutput.textContent = "Please input name of course"
+        return;
+    }
+
+        let cardObject = {
+                name:cleanCard
+        }
+         lesson13CourseCards.push(cardObject)
+
+         let cardOutput = "";
+
+        lesson13CourseCards.forEach( function(coursecard){
+        cardOutput += 
+
+           "<div>" +
+            coursecard.name +
+           "</div>"
+
+        });
+
+        lesson13CourseCardOutput.innerHTML = cardOutput
+        lesson13CourseCardInput.value = "";
+}
+
+lesson13CourseCardBtn.addEventListener(
+    "click",
+    addCourses
+)
