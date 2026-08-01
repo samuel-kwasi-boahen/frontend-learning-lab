@@ -1990,44 +1990,44 @@ skills.push("React");
 console.log(skills);
 */
 
-let lesson13SkillInput =
-document.getElementById("lesson13SkillInput");
+// let lesson13SkillInput =
+// document.getElementById("lesson13SkillInput");
 
-let lesson13SkillBtn =
-document.getElementById("lesson13SkillBtn");
+// let lesson13SkillBtn =
+// document.getElementById("lesson13SkillBtn");
 
-let lesson13SkillOutput =
-document.getElementById("lesson13SkillOutput");
+// let lesson13SkillOutput =
+// document.getElementById("lesson13SkillOutput");
 
-let skills = [];
+// let skills = [];
 
-function addSkill() {
+// function addSkill() {
 
-    let skill =
-    lesson13SkillInput.value.trim();
+//     let skill =
+//     lesson13SkillInput.value.trim();
 
-    if (skill === "") {
+//     if (skill === "") {
 
-        lesson13SkillOutput.textContent =
-        "Please enter a skill.";
+//         lesson13SkillOutput.textContent =
+//         "Please enter a skill.";
 
-    } else {
+//     } else {
 
-        skills.push(skill);
+//         skills.push(skill);
 
-        lesson13SkillOutput.textContent =
-        skills.join(", ");
+//         lesson13SkillOutput.textContent =
+//         skills.join(", ");
 
-        lesson13SkillInput.value = "";
+//         lesson13SkillInput.value = "";
 
-    }
+//     }
 
-}
+// }
 
-lesson13SkillBtn.addEventListener(
-    "click",
-    addSkill
-);
+// lesson13SkillBtn.addEventListener(
+//     "click",
+//     addSkill
+// );
 
 
 //project - favorite tools list
@@ -2201,7 +2201,7 @@ lesson13TechBtn.addEventListener(
 // );
 
 
-//Mini project 1
+//Mini project 1 - Course Tracker
 let lesson13CourseNameInput = document.getElementById("lesson13CourseNameInput");
 let lesson13CourseAddBtn = document.getElementById("lesson13CourseAddBtn");
 let lesson13CourseOutput = document.getElementById("lesson13CourseOutput");
@@ -2233,3 +2233,76 @@ lesson13CourseAddBtn.addEventListener(
     "click",
     addCourse
 );
+
+
+
+//Mini project 2 - Skill Tracker
+
+let lesson13SkillNameInput = document.getElementById("lesson13SkillNameInput");
+let lesson13SkillAddBtn = document.getElementById("lesson13SkillAddBtn");
+let lesson13SkillOutput = document.getElementById("lesson13SkillOutput");
+
+let lesson13SkillObjects = [];
+
+function addSkill() {
+    let cleanSkill = lesson13SkillNameInput.value.trim();
+
+    if (cleanSkill === "") {
+        lesson13SkillOutput.textContent = "Please enter a skill name.";
+        return;
+    }
+
+    let skillObject = {
+        name: cleanSkill
+    };
+    lesson13SkillObjects.push(skillObject);
+    let outputSkill = "";
+    lesson13SkillObjects.forEach(function(skill){
+        outputSkill += skill.name + "<br>";
+    });
+    lesson13SkillOutput.innerHTML = outputSkill;
+    lesson13SkillNameInput.value = "";
+}
+
+lesson13SkillAddBtn.addEventListener(
+    "click",
+    addSkill
+);
+
+
+
+
+//project - project manager
+
+let lesson13PortfolioManagerProjectInput = document.getElementById("lesson13PortfolioManagerProjectInput");
+let lesson13PortfolioManagerRoleInput = document.getElementById("lesson13PortfolioManagerRoleInput");
+let lesson13PortfolioManagerAddBtn = document.getElementById("lesson13PortfolioManagerAddBtn");
+let lesson13PortfolioManagerOutput = document.getElementById("lesson13PortfolioManagerOutput");
+
+let portfolioManagerProjects = [];
+
+function addPortfolioManagerProject() {
+    let cleanProject = lesson13PortfolioManagerProjectInput.value.trim();
+    let cleanRole = lesson13PortfolioManagerRoleInput.value.trim();
+
+    if (cleanProject === "" || cleanRole === "") {
+        lesson13PortfolioManagerOutput.textContent = "Please complete all fields.";
+        return;
+    }
+
+    let portfolioManagerProjectObject = {
+        name: cleanProject,
+        role: cleanRole
+    };
+    portfolioManagerProjects.push(portfolioManagerProjectObject);
+    let PortfolioManagerOutput = "";
+    portfolioManagerProjects.forEach(function(portfolioManagerProject){
+        PortfolioManagerOutput += portfolioManagerProject.name + " - " + portfolioManagerProject.role + "," + "<br>";
+    });
+    lesson13PortfolioManagerOutput.innerHTML = PortfolioManagerOutput;
+    lesson13PortfolioManagerProjectInput.value = "";
+    lesson13PortfolioManagerRoleInput.value = "";
+}
+
+
+lesson13PortfolioManagerAddBtn.addEventListener("click", addPortfolioManagerProject);
