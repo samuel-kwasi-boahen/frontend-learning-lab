@@ -2571,3 +2571,50 @@ lesson13UpdatePortfolioBtn.addEventListener(
 
     }
 );
+
+
+
+//Deleting Existing Data
+
+let lesson13DeleteCourseBtn =
+document.getElementById("lesson13DeleteCourseBtn");
+
+let lesson13DeleteCourseOutput =
+document.getElementById("lesson13DeleteCourseOutput");
+
+let lesson13DeleteCourseObjects = [
+    {
+        name: "HTML"
+    },
+    {
+        name: "CSS"
+    }
+];
+
+function displayDeleteCourses(){
+
+    let output = "";
+
+    lesson13DeleteCourseObjects.forEach(function(course){
+
+        output += course.name + "<br>";
+
+    });
+
+    lesson13DeleteCourseOutput.innerHTML = output;
+}
+
+displayDeleteCourses();
+
+lesson13DeleteCourseBtn.addEventListener(
+    "click",
+    function(){
+
+        lesson13DeleteCourseObjects.splice(0, 1);
+
+        displayDeleteCourses();
+
+    }
+);
+
+
