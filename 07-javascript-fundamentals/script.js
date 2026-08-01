@@ -2313,6 +2313,7 @@ lesson13PortfolioManagerAddBtn.addEventListener("click", addPortfolioManagerProj
 //Rendering Multiple Cards
 //New Concept: Building HTML with JavaScript
 
+//Mini Project 1 - Course Cards
 let lesson13CourseCardInput = document.getElementById("lesson13CourseCardInput");
 let lesson13CourseCardBtn = document.getElementById("lesson13CourseCardBtn");
 let lesson13CourseCardOutput = document.getElementById("lesson13CourseCardOutput");
@@ -2350,3 +2351,41 @@ lesson13CourseCardBtn.addEventListener(
     "click",
     addCourses
 )
+
+
+
+// ship - Project Cards
+
+let lesson13PortfolioCardProjectInput = document.getElementById("lesson13PortfolioCardProjectInput");
+let lesson13PortfolioCardRoleInput = document.getElementById("lesson13PortfolioCardRoleInput");
+let lesson13PortfolioCardBtn = document.getElementById("lesson13PortfolioCardBtn");
+let lesson13PortfolioCardOutput = document.getElementById("lesson13PortfolioCardOutput");
+
+let lesson13PortfolioCards = [];
+function addPortfolioCards(){
+    let cleanProject = lesson13PortfolioCardProjectInput.value.trim();
+    let cleanRole = lesson13PortfolioCardRoleInput.value.trim();
+
+    if (cleanProject === "" || cleanRole === ""){
+        lesson13PortfolioCardOutput.textContent = "Please complete all fields.";
+        return;
+    }
+
+    let portfolioCardObject = {
+        name: cleanProject,
+        role: cleanRole
+    };
+    lesson13PortfolioCards.push(portfolioCardObject);
+    let portfolioCardOutput = "";
+    lesson13PortfolioCards.forEach(function(portfolioCard){
+        portfolioCardOutput += "<div>"+
+        "<h3>" + portfolioCard.name + "</h3>" + 
+        "<p>" + portfolioCard.role + "</p>" +
+        "</div>"
+    });
+    lesson13PortfolioCardOutput.innerHTML = portfolioCardOutput;
+    lesson13PortfolioCardProjectInput.value = "";
+    lesson13PortfolioCardRoleInput.value = "";
+}
+
+lesson13PortfolioCardBtn.addEventListener("click", addPortfolioCards);
