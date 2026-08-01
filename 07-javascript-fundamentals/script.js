@@ -2389,3 +2389,94 @@ function addPortfolioCards(){
 }
 
 lesson13PortfolioCardBtn.addEventListener("click", addPortfolioCards);
+
+
+
+
+
+//Updating Existing Data
+
+let lesson13UpdateCourseBtn =
+document.getElementById("lesson13UpdateCourseBtn");
+
+let lesson13UpdateCourseOutput =
+document.getElementById("lesson13UpdateCourseOutput");
+
+let lesson13UpdateCourseObjects = [
+    {
+        name: "HTML"
+    }
+];
+
+function displayCourses() {
+
+    let output = "";
+
+    lesson13UpdateCourseObjects.forEach(function(course){
+
+        output += course.name + "<br>";
+
+    });
+
+    lesson13UpdateCourseOutput.innerHTML = output;
+}
+
+displayCourses();
+
+lesson13UpdateCourseBtn.addEventListener(
+    "click",
+    function(){
+
+        lesson13UpdateCourseObjects[0].name =
+        "HTML & CSS";
+
+        displayCourses();
+
+    }
+);
+
+
+
+//mini project 2
+
+let lesson13UpdateSkillBtn =
+document.getElementById("lesson13UpdateSkillBtn");
+
+let lesson13UpdateSkillOutput =
+document.getElementById("lesson13UpdateSkillOutput");
+
+let lesson13UpdateSkillObjects = [
+    {
+        name: "JavaScript"
+    }
+];
+
+function displaySkills(){
+
+    let output = "";
+
+    lesson13UpdateSkillObjects.forEach(function(skill){
+
+        output += skill.name + "<br>";
+
+    });
+
+    lesson13UpdateSkillOutput.innerHTML = output;
+}
+
+displaySkills();
+
+lesson13UpdateSkillBtn.addEventListener(
+    "click",
+    function(){
+
+        lesson13UpdateSkillObjects[0].name =
+        "JavaScript ES6";
+
+        displaySkills();
+
+    }
+);
+
+
+
