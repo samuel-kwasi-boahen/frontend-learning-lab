@@ -2119,83 +2119,117 @@ lesson13TechBtn.addEventListener(
 
 //ARRAY OF OBJECTS
 
-let lesson13DynamicProjectInput = document.getElementById("lesson13DynamicProjectInput");
-let lesson13DynamicRoleInput = document.getElementById("lesson13DynamicRoleInput");
-let lesson13DynamicAddBtn = document.getElementById("lesson13DynamicAddBtn");
-let lesson13DynamicOutput = document.getElementById("lesson13DynamicOutput");
+// let lesson13DynamicProjectInput = document.getElementById("lesson13DynamicProjectInput");
+// let lesson13DynamicRoleInput = document.getElementById("lesson13DynamicRoleInput");
+// let lesson13DynamicAddBtn = document.getElementById("lesson13DynamicAddBtn");
+// let lesson13DynamicOutput = document.getElementById("lesson13DynamicOutput");
 
-let lesson13DynamicProjectInput =
-document.getElementById(
-    "lesson13DynamicProjectInput"
-);
+// let lesson13DynamicProjectInput =
+// document.getElementById(
+//     "lesson13DynamicProjectInput"
+// );
 
-let lesson13DynamicRoleInput =
-document.getElementById(
-    "lesson13DynamicRoleInput"
-);
+// let lesson13DynamicRoleInput =
+// document.getElementById(
+//     "lesson13DynamicRoleInput"
+// );
 
-let lesson13DynamicAddBtn =
-document.getElementById(
-    "lesson13DynamicAddBtn"
-);
+// let lesson13DynamicAddBtn =
+// document.getElementById(
+//     "lesson13DynamicAddBtn"
+// );
 
-let lesson13DynamicOutput =
-document.getElementById(
-    "lesson13DynamicOutput"
-);
+// let lesson13DynamicOutput =
+// document.getElementById(
+//     "lesson13DynamicOutput"
+// );
 
-let projects = [];
+// let projects = [];
 
-function addProject() {
+// function addProject() {
 
-    let cleanProject =
-    lesson13DynamicProjectInput.value.trim();
+//     let cleanProject =
+//     lesson13DynamicProjectInput.value.trim();
 
-    let cleanRole =
-    lesson13DynamicRoleInput.value.trim();
+//     let cleanRole =
+//     lesson13DynamicRoleInput.value.trim();
 
-    if (
-        cleanProject === "" ||
-        cleanRole === ""
-    ) {
+//     if (
+//         cleanProject === "" ||
+//         cleanRole === ""
+//     ) {
 
-        lesson13DynamicOutput.textContent =
-        "Please complete all fields.";
+//         lesson13DynamicOutput.textContent =
+//         "Please complete all fields.";
 
+//         return;
+//     }
+
+//     let projectObject = {
+
+//         name: cleanProject,
+
+//         role: cleanRole
+
+//     };
+
+//     projects.push(projectObject);
+
+//     let outputText = "";
+
+//     projects.forEach(function(project){
+
+//         outputText +=
+//         project.name +
+//         " - " +
+//         project.role +
+//         "<br>";
+
+//     });
+
+//     lesson13DynamicOutput.innerHTML =
+//     outputText;
+
+//     lesson13DynamicProjectInput.value = "";
+//     lesson13DynamicRoleInput.value = "";
+
+// }
+
+// lesson13DynamicAddBtn.addEventListener(
+//     "click",
+//     addProject
+// );
+
+
+//Mini project 1
+let lesson13CourseNameInput = document.getElementById("lesson13CourseNameInput");
+let lesson13CourseAddBtn = document.getElementById("lesson13CourseAddBtn");
+let lesson13CourseOutput = document.getElementById("lesson13CourseOutput");
+
+let lesson13CourseObjects = [];
+
+function addCourse() {
+    let cleanCourse = lesson13CourseNameInput.value.trim();
+
+    if (cleanCourse === "") {
+        lesson13CourseOutput.textContent = "Please enter a course name.";
         return;
     }
 
-    let projectObject = {
-
-        name: cleanProject,
-
-        role: cleanRole
-
+    let courseObject = {
+        name: cleanCourse
     };
+    lesson13CourseObjects.push(courseObject);
+    let outputCourse = "";
 
-    projects.push(projectObject);
-
-    let outputText = "";
-
-    projects.forEach(function(project){
-
-        outputText +=
-        project.name +
-        " - " +
-        project.role +
-        "<br>";
-
+    lesson13CourseObjects.forEach(function(course){
+        outputCourse += course.name + "<br>";
     });
-
-    lesson13DynamicOutput.innerHTML =
-    outputText;
-
-    lesson13DynamicProjectInput.value = "";
-    lesson13DynamicRoleInput.value = "";
-
+    lesson13CourseOutput.innerHTML = outputCourse; 
+    lesson13CourseNameInput.value = "";
 }
 
-lesson13DynamicAddBtn.addEventListener(
+lesson13CourseAddBtn.addEventListener(
     "click",
-    addProject
+    addCourse
 );
