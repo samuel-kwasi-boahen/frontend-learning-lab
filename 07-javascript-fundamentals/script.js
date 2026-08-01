@@ -2479,4 +2479,95 @@ lesson13UpdateSkillBtn.addEventListener(
 );
 
 
+//project 3 - team updater
 
+let lesson13UpdateTeamBtn =
+document.getElementById("lesson13UpdateTeamBtn");
+
+let lesson13UpdateTeamOutput =
+document.getElementById("lesson13UpdateTeamOutput");
+
+let lesson13UpdateTeamObjects = [
+    {
+        name: "Samuel",
+        role: "Student"
+    }
+];
+
+function displayTeam(){
+
+    let output = "";
+
+    lesson13UpdateTeamObjects.forEach(function(member){
+
+        output +=
+        member.name +
+        " - " +
+        member.role +
+        "<br>";
+
+    });
+
+    lesson13UpdateTeamOutput.innerHTML = output;
+}
+
+displayTeam();
+
+lesson13UpdateTeamBtn.addEventListener(
+    "click",
+    function(){
+
+        lesson13UpdateTeamObjects[0].role =
+        "Frontend Developer";
+
+        displayTeam();
+
+    }
+);
+
+
+// Portfolio Project Updater
+
+let lesson13UpdatePortfolioBtn =
+document.getElementById("lesson13UpdatePortfolioBtn");
+
+let lesson13UpdatePortfolioOutput =
+document.getElementById("lesson13UpdatePortfolioOutput");
+
+let lesson13UpdatePortfolioProjects = [
+    {
+        name: "SaveWise",
+        role: "UI/UX Designer"
+    }
+];
+
+function displayPortfolio(){
+
+    let output = "";
+
+    lesson13UpdatePortfolioProjects.forEach(function(project){
+
+        output +=
+        "<div>" +
+        "<h3>" + project.name + "</h3>" +
+        "<p>" + project.role + "</p>" +
+        "</div>";
+
+    });
+
+    lesson13UpdatePortfolioOutput.innerHTML = output;
+}
+
+displayPortfolio();
+
+lesson13UpdatePortfolioBtn.addEventListener(
+    "click",
+    function(){
+
+        lesson13UpdatePortfolioProjects[0].name =
+        "SaveWise Finance Tracker";
+
+        displayPortfolio();
+
+    }
+);
