@@ -2618,3 +2618,98 @@ lesson13DeleteCourseBtn.addEventListener(
 );
 
 
+//Mini Project 2 - Skill remover
+let lesson13DeleteSkillBtn =
+document.getElementById("lesson13DeleteSkillBtn");
+
+let lesson13DeleteSkillOutput =
+document.getElementById("lesson13DeleteSkillOutput");
+
+let lesson13DeleteSkillObjects = [
+    {
+        name: "JavaScript"
+    },
+    {
+        name: "React"
+    }
+];
+
+function displayDeleteSkills(){
+
+    let output = "";
+
+    lesson13DeleteSkillObjects.forEach(function(skill){
+
+        output += skill.name + "<br>";
+
+    });
+
+    lesson13DeleteSkillOutput.innerHTML = output;
+}
+
+displayDeleteSkills();
+
+lesson13DeleteSkillBtn.addEventListener(
+    "click",
+    function(){
+
+        lesson13DeleteSkillObjects.splice(0, 1);
+
+        displayDeleteSkills();
+
+    }
+);
+
+
+
+// Team Member Remover
+
+
+let lesson13DeleteTeamBtn =
+document.getElementById("lesson13DeleteTeamBtn");
+
+let lesson13DeleteTeamOutput =
+document.getElementById("lesson13DeleteTeamOutput");
+
+let lesson13DeleteTeamObjects = [
+    {
+        name: "Samuel",
+        role: "Frontend Developer"
+    },
+    {
+        name: "Ama",
+        role: "UI Designer"
+    }
+];
+
+function displayDeleteTeam(){
+
+    let output = "";
+
+    lesson13DeleteTeamObjects.forEach(function(member){
+
+        output +=
+        member.name +
+        " - " +
+        member.role +
+        "<br>";
+
+    });
+
+    lesson13DeleteTeamOutput.innerHTML = output;
+}
+
+displayDeleteTeam();
+
+lesson13DeleteTeamBtn.addEventListener(
+    "click",
+    function(){
+
+        lesson13DeleteTeamObjects.splice(0, 1);
+
+        displayDeleteTeam();
+
+    }
+);
+
+
