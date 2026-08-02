@@ -2911,3 +2911,50 @@ lesson13StorageLoadSkillsBtn.addEventListener(
 
     }
 );
+
+
+
+
+//Project — Persistent Portfolio Manager
+
+let lesson13StoragePortfolioSaveBtn = document.getElementById("lesson13StoragePortfolioSaveBtn");
+let lesson13StoragePortfolioLoadBtn = document.getElementById("lesson13StoragePortfolioLoadBtn");
+let lesson13StoragePortfolioOutput = document.getElementById("lesson13StoragePortfolioOutput");
+
+let lesson13StoragePortfolioProjects = [
+    {
+        name: "SaveWise",
+        role: "UI/UX Designer"
+    },
+    {
+        name: "Vendor Dashboard",
+        role: "Product Designer"
+    }
+];
+
+lesson13StoragePortfolioSaveBtn.addEventListener(
+    "click", function(){
+        localStorage.setItem( 
+            "lesson13StoragePortfolioProjects", JSON.stringify(lesson13StoragePortfolioProjects));
+
+            lesson13StorageSkillsOutput.textContent = "Projects Saved";
+
+
+        });
+
+
+
+lesson13StoragePortfolioLoadBtn.addEventListener(
+    "click", function (){
+        let loadedProjects = JSON.parse(localStorage.getItem("lesson13StoragePortfolioProjects"));
+
+        output = "";
+        loadedProjects.forEach(
+            function(sammy){
+                output += sammy.name + " - " + sammy.role + "<br>";
+
+            }
+        )
+        lesson13StoragePortfolioOutput.innerHTML = output;
+    }
+);
