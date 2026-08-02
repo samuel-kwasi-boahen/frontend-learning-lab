@@ -2860,3 +2860,54 @@ lesson13StorageSkillSaveBtn.addEventListener(
 
     }
 );
+
+
+
+//Mini Project 3 — Save and Load Skills
+
+let lesson13StorageSaveSkillsBtn =
+document.getElementById("lesson13StorageSaveSkillsBtn");
+
+let lesson13StorageLoadSkillsBtn =
+document.getElementById("lesson13StorageLoadSkillsBtn");
+
+let lesson13StorageSkillsOutput =
+document.getElementById("lesson13StorageSkillsOutput");
+
+let lesson13StorageSkills = [
+    "HTML",
+    "CSS",
+    "JavaScript"
+];
+
+lesson13StorageSaveSkillsBtn.addEventListener(
+    "click",
+    function(){
+
+        localStorage.setItem(
+            "lesson13StorageSkills",
+            JSON.stringify(
+                lesson13StorageSkills
+            )
+        );
+
+    }
+);
+
+lesson13StorageLoadSkillsBtn.addEventListener(
+    "click",
+    function(){
+
+        let savedSkills =
+        localStorage.getItem(
+            "lesson13StorageSkills"
+        );
+
+        let loadedSkills =
+        JSON.parse(savedSkills);
+
+        lesson13StorageSkillsOutput.textContent =
+        loadedSkills.join(", ");
+
+    }
+);
