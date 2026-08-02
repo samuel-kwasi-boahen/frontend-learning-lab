@@ -2765,3 +2765,67 @@ lesson13DeletePortfolioBtn.addEventListener(
 
     }
 );
+
+
+//Local Storage + Arrays of Objects
+
+// let skills = [
+//     "HTML",
+//     "CSS",
+//     "JavaScript"
+// ]
+
+// localstorage.setitem("skills", JSON.stringify(skills)); //saving an array
+
+// let storedSkills = localstorage.getItem("skills");
+// let skills = JSON.parse(storedSkills); //retrieving or loading an array
+
+/*
+let projects = [
+    {
+        name: "SaveWise",
+        role: "UI/UX Designer"
+    }
+];
+
+//save
+localStorage.setItem(
+    "portfolioProjects",
+    JSON.stringify(projects)
+);
+
+//Load
+
+let projects = JSON.parse(localStorage.getItem("portfolioProjects"));
+*/
+
+
+//mini project 1 - save courses 
+
+let lesson13StorageCourseSaveBtn =
+document.getElementById("lesson13StorageCourseSaveBtn");
+
+let lesson13StorageCourseOutput =
+document.getElementById("lesson13StorageCourseOutput");
+
+let lesson13StorageCourses = [
+    "HTML",
+    "CSS"
+];
+
+lesson13StorageCourseSaveBtn.addEventListener(
+    "click",
+    function(){
+
+        localStorage.setItem(
+            "lesson13StorageCourses",
+            JSON.stringify(
+                lesson13StorageCourses
+            )
+        );
+
+        lesson13StorageCourseOutput.textContent =
+        "Courses Saved";
+
+    }
+);
