@@ -2958,3 +2958,290 @@ lesson13StoragePortfolioLoadBtn.addEventListener(
         lesson13StoragePortfolioOutput.innerHTML = output;
     }
 );
+
+
+
+
+//Portfolio Project Manager Pro
+/*
+let lesson13FinalProjectNameInput = document.getElementById("lesson13FinalProjectNameInput");
+let lesson13FinalProjectRoleInput = document.getElementById("lesson13FinalProjectRoleInput");
+let lesson13FinalProjectAddBtn = document.getElementById("lesson13FinalProjectAddBtn");
+let lesson13FinalDeleteBtn = document.getElementById("lesson13FinalDeleteBtn");
+let lesson13FinalSaveBtn = document.getElementById("lesson13FinalSaveBtn");
+let lesson13FinalLoadBtn = document.getElementById("lesson13FinalLoadBtn");
+let lesson13FinalOutput = document.getElementById("lesson13FinalOutput");
+
+let lesson13FinalProjects = [];
+
+function displayFinalProjects(){
+
+ let finalNameInput = lesson13FinalProjectNameInput.value.trim();
+ let finalRoleInput = lesson13FinalProjectRoleInput.value.trim();
+
+
+    if (finalNameInput === "" || finalRoleInput === ""){
+        lesson13FinalOutput.textContent = "Please complete all fields.";
+        return;
+    }
+
+    let finalProjectObjects = {
+        name: finalNameInput,
+        role: finalRoleInput
+    }
+
+         let finalOutput = "";
+        lesson13FinalProjects.push(finalProjectObjects);
+        lesson13FinalProjects.forEach(function(finalProject){
+            finalOutput += "<div>" + "<h3>" + finalProject.name + "</h3>" + "<p>" + finalProject.role + "</p>" + "</div>";
+        });
+
+        lesson13FinalOutput.innerHTML = finalOutput;
+        lesson13FinalProjectNameInput.value = "";
+        lesson13FinalProjectRoleInput.value = "";
+
+
+
+}
+
+lesson13FinalAddBtn.addEventListener(
+    "click",
+    displayFinalProjects
+);
+
+
+lesson13FinalDeleteBtn.addEventListener(
+    "click",
+    function(){
+        lesson13FinalProjects.splice(0, 1);
+        displayFinalProjects();
+    }
+);
+
+
+lesson13FinalSaveBtn.addEventListener(
+    "click",
+    function(){localStorage.setItem("lesson13FinalProjects", JSON.stringify(lesson13FinalProjects));
+    lesson13FinalOutput.textContent = "Projects Saved";
+    });
+
+lesson13FinalLoadBtn.addEventListener(
+    "click",
+    function(){
+        let finalloadedProjects = JSON.parse(localStorage.getItem("lesson13FinalProjects"));
+        let finalOutput = "";
+        finalloadedProjects.forEach(function(finalProject){
+            finalOutput += "<div>" + "<h3>" + finalProject.name + "</h3>" + "<p>" + finalProject.role + "</p>" + "</div>";
+        });
+        lesson13FinalOutput.innerHTML = finalOutput;
+    });
+*/    //wrong
+
+
+
+
+// Portfolio Project Manager Pro
+
+let lesson13FinalProjectNameInput =
+document.getElementById(
+    "lesson13FinalProjectNameInput"
+);
+
+let lesson13FinalProjectRoleInput =
+document.getElementById(
+    "lesson13FinalProjectRoleInput"
+);
+
+let lesson13FinalProjectAddBtn =
+document.getElementById(
+    "lesson13FinalProjectAddBtn"
+);
+
+let lesson13FinalDeleteBtn =
+document.getElementById(
+    "lesson13FinalDeleteBtn"
+);
+
+let lesson13FinalSaveBtn =
+document.getElementById(
+    "lesson13FinalSaveBtn"
+);
+
+let lesson13FinalLoadBtn =
+document.getElementById(
+    "lesson13FinalLoadBtn"
+);
+
+let lesson13FinalOutput =
+document.getElementById(
+    "lesson13FinalOutput"
+);
+
+
+// MAIN ARRAY
+
+let lesson13FinalProjects = [];
+
+
+// DISPLAY PROJECTS
+
+function displayProjects() {
+
+    let output = "";
+
+    lesson13FinalProjects.forEach(
+        function(project) {
+
+            output +=
+            "<div>" +
+                "<h3>" +
+                project.name +
+                "</h3>" +
+
+                "<p>" +
+                project.role +
+                "</p>" +
+            "</div>";
+
+        }
+    );
+
+    lesson13FinalOutput.innerHTML =
+    output;
+}
+
+
+// ADD PROJECT
+
+function addProject() {
+
+    let cleanName =
+    lesson13FinalProjectNameInput.value.trim();
+
+    let cleanRole =
+    lesson13FinalProjectRoleInput.value.trim();
+
+    if (
+        cleanName === "" ||
+        cleanRole === ""
+    ) {
+
+        lesson13FinalOutput.textContent =
+        "Please complete all fields.";
+
+        return;
+    }
+
+    let projectObject = {
+
+        name: cleanName,
+
+        role: cleanRole
+
+    };
+
+    lesson13FinalProjects.push(
+        projectObject
+    );
+
+    displayProjects();
+
+    lesson13FinalProjectNameInput.value =
+    "";
+
+    lesson13FinalProjectRoleInput.value =
+    "";
+}
+
+
+// DELETE PROJECT
+
+function deleteProject() {
+
+    if (
+        lesson13FinalProjects.length === 0
+    ) {
+
+        lesson13FinalOutput.textContent =
+        "No projects to delete.";
+
+        return;
+    }
+
+    lesson13FinalProjects.splice(
+        0,
+        1
+    );
+
+    displayProjects();
+}
+
+
+// SAVE PROJECTS
+
+function saveProjects() {
+
+    localStorage.setItem(
+        "lesson13FinalProjects",
+        JSON.stringify(
+            lesson13FinalProjects
+        )
+    );
+
+    lesson13FinalOutput.textContent =
+    "Projects Saved";
+}
+
+
+// LOAD PROJECTS
+
+function loadProjects() {
+
+    let savedProjects =
+    localStorage.getItem(
+        "lesson13FinalProjects"
+    );
+
+    if (
+        savedProjects === null
+    ) {
+
+        lesson13FinalOutput.textContent =
+        "No saved projects found.";
+
+        return;
+    }
+
+    lesson13FinalProjects =
+    JSON.parse(
+        savedProjects
+    );
+
+    displayProjects();
+}
+
+
+// EVENT LISTENERS
+
+lesson13FinalAddBtn.addEventListener(
+    "click",
+    addProject
+);
+
+lesson13FinalDeleteBtn
+.addEventListener(
+    "click",
+    deleteProject
+);
+
+lesson13FinalSaveBtn
+.addEventListener(
+    "click",
+    saveProjects
+);
+
+lesson13FinalLoadBtn
+.addEventListener(
+    "click",
+    loadProjects
+);
