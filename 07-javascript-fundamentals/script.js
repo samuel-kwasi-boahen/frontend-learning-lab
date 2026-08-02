@@ -2829,3 +2829,34 @@ lesson13StorageCourseSaveBtn.addEventListener(
 
     }
 );
+
+//Mini Project 2 — Save Array of Objects
+
+let lesson13StorageSkillSaveBtn =
+document.getElementById("lesson13StorageSkillSaveBtn");
+
+let lesson13StorageSkillOutput =
+document.getElementById("lesson13StorageSkillOutput");
+
+let lesson13StorageSkillObjects = [
+    {
+        name: "JavaScript"
+    }
+];
+
+lesson13StorageSkillSaveBtn.addEventListener(
+    "click",
+    function(){
+
+        localStorage.setItem(
+            "lesson13StorageSkillObjects",
+            JSON.stringify(
+                lesson13StorageSkillObjects
+            )
+        );
+
+        lesson13StorageSkillOutput.textContent =
+        "Skills Saved";
+
+    }
+);
