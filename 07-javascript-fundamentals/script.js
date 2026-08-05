@@ -3276,4 +3276,18 @@ lesson14SkillBtn.addEventListener(
         lesson14SkillOutput.textContent = `Favorite Skill: ${skill14}`;
     });
 
-    
+
+    //Mini project 3
+
+    let lesson14RoleInput = document.getElementById("lesson14RoleInput");
+    let lesson14RoleBtn = document.getElementById("lesson14RoleBtn");
+    let lesson14RoleOutput = document.getElementById("lesson14RoleOutput");
+
+    lesson14RoleBtn.addEventListener(
+        "click",
+        function(){
+            let role14 = lesson14RoleInput.value.trim();
+            lesson14RoleOutput.textContent = `Current Role: ${role14}`;
+            lesson14RoleInput.value = "";
+        }
+    )
