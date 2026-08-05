@@ -3245,3 +3245,18 @@ lesson13FinalLoadBtn
     "click",
     loadProjects
 );
+
+
+
+
+let lesson14NameInput = document.getElementById("lesson14NameInput");
+let lesson14NameBtn = document.getElementById("lesson14NameBtn");
+let lesson14NameOutput = document.getElementById("lesson14NameOutput");
+
+lesson14NameBtn.addEventListener(
+    "click", 
+    function(){
+        let name14 = lesson14NameInput.value.trim();
+        lesson14NameOutput.textContent = `Hello, ${name14}!`;
+    }
+)
