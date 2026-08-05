@@ -3432,3 +3432,37 @@ portProjectOutput += `
 )
 
 lesson14PortfolioCardsOutput.innerHTML = portProjectOutput;
+
+
+//CRUD replacement with template literals
+
+let lesson14CourseCardsOutput = document.getElementById("lesson14CourseCardsOutput");
+
+let lesson14CourseCards = [
+    {
+        name: "Google UX Design"
+    },
+
+    {
+        name: "ALX Data Analytics"
+    }
+];
+
+function courseCard(){
+ let cardOutput = "";
+lesson14CourseCards.forEach(
+    function(samCard){
+       cardOutput += `
+       <div>
+            <h3>${samCard.name}</h3>
+       </div>
+       ` 
+    }
+)
+lesson14CourseCardsOutput.innerHTML = cardOutput; 
+
+}
+
+courseCard()
+
+
