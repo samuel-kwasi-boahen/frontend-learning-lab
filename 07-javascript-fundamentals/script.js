@@ -3260,3 +3260,20 @@ lesson14NameBtn.addEventListener(
         lesson14NameOutput.textContent = `Hello, ${name14}!`;
     }
 )
+
+
+
+//Mini project 2
+
+let lesson14SkillInput = document.getElementById("lesson14SkillInput");
+let lesson14SkillBtn = document.getElementById("lesson14SkillBtn");
+let lesson14SkillOutput = document.getElementById("lesson14SkillOutput");
+
+lesson14SkillBtn.addEventListener(
+    "click",
+    function(){
+        let skill14 = lesson14SkillInput.value.trim();
+        lesson14SkillOutput.textContent = `Favorite Skill: ${skill14}`;
+    });
+
+    
