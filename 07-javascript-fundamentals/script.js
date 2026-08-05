@@ -3399,3 +3399,36 @@ lesson14Projects.forEach(function(project){
 
 lesson14ProjectArrayOutput.innerHTML =
 lesson14ProjectOutput;
+
+
+//project - array of objects renderer
+
+let  portfolioArray = [
+    {
+        name: "SaveWise",
+        role: "Product Designer"
+    },
+    {
+        name: "Vendor Dashboard",
+        role: "UI/UX Designer"
+    }
+];
+
+let lesson14PortfolioCardsOutput =
+document.getElementById(
+    "lesson14PortfolioCardsOutput"
+);
+
+portProjectOutput = "";
+portfolioArray.forEach(
+    function(samProject){
+portProjectOutput += `
+<div>
+    <h3> ${ samProject.name} </h3>
+    <p> ${ samProject.role} </p>
+</div>
+`;
+    }
+)
+
+lesson14PortfolioCardsOutput.innerHTML = portProjectOutput;
