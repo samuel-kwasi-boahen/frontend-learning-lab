@@ -3248,7 +3248,7 @@ lesson13FinalLoadBtn
 
 
 
-
+//mini project 1
 let lesson14NameInput = document.getElementById("lesson14NameInput");
 let lesson14NameBtn = document.getElementById("lesson14NameBtn");
 let lesson14NameOutput = document.getElementById("lesson14NameOutput");
@@ -3289,5 +3289,32 @@ lesson14SkillBtn.addEventListener(
             let role14 = lesson14RoleInput.value.trim();
             lesson14RoleOutput.textContent = `Current Role: ${role14}`;
             lesson14RoleInput.value = "";
+        }
+    )
+
+
+
+    //Project - mini profile generator
+    let lesson14ProfileNameInput = document.getElementById("lesson14ProfileNameInput");
+    let lesson14ProfileRoleInput = document.getElementById("lesson14ProfileRoleInput");
+    let lesson14ProfileGenerateBtn = document.getElementById("lesson14ProfileGenerateBtn");
+    let lesson14ProfileOutput = document.getElementById("lesson14ProfileOutput");
+
+    lesson14ProfileGenerateBtn.addEventListener(
+        "click",
+        function(){
+            let profileName = lesson14ProfileNameInput.value.trim();
+            let profileRole = lesson14ProfileRoleInput.value.trim();
+
+            if (profileName === "" || profileRole === "") {
+                lesson14ProfileOutput.textContent = "Please complete all fields.";
+                return;
+            }
+
+            lesson14ProfileOutput.innerHTML = 
+            `<p>Name: ${profileName} </p>
+             <p>Role: ${profileRole}</p>`;
+            lesson14ProfileNameInput.value = "";
+            lesson14ProfileRoleInput.value = "";
         }
     )
