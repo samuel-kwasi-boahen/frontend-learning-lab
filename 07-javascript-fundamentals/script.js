@@ -3435,7 +3435,7 @@ lesson14PortfolioCardsOutput.innerHTML = portProjectOutput;
 
 
 //CRUD replacement with template literals
-
+//project 1
 let lesson14CourseCardsOutput = document.getElementById("lesson14CourseCardsOutput");
 
 let lesson14CourseCards = [
@@ -3487,10 +3487,10 @@ let lesson14SkillCards = [
 ];
 
 
-skillCardOuput = "";
+skillCardOutput = "";
 lesson14SkillCards.forEach(
     function(skillCard){
-        skillCardOuput += `
+        skillCardOutput += `
         <div>
         <p>${skillCard.skill}</p>
         </div>
@@ -3498,8 +3498,99 @@ lesson14SkillCards.forEach(
     }
 )
 
-lesson14SkillCardsOutput.innerHTML = skillCardOuput;
+lesson14SkillCardsOutput.innerHTML = skillCardOutput;
 
 }
 
 skillCarding();
+
+
+
+//Mini project 3
+
+let lesson14RoleCardsOutput =
+document.getElementById(
+    "lesson14RoleCardsOutput"
+);
+
+let lesson14RoleCards = [
+
+    {
+        role: "Designer"
+    },
+
+    {
+        role: "Frontend Developer"
+    }
+
+];
+
+function displayRoleCards(){
+
+    let roleOutput = "";
+
+    lesson14RoleCards.forEach(
+        function(roleCard){
+
+            roleOutput += `
+            <div>
+                <p>${roleCard.role}</p>
+            </div>
+            `;
+
+        }
+    );
+
+    lesson14RoleCardsOutput.innerHTML =
+    roleOutput;
+
+}
+
+displayRoleCards();
+
+
+//Project - Portfolio showcase
+
+let lesson14PortfolioShowcaseProjectsOutput = document.getElementById("lesson14PortfolioShowcaseProjectsOutput");
+
+let lesson14PortfolioShowcaseProjects = [
+    {
+        name: "SaveWise",
+        role: "Product Designer"
+    },
+
+    {
+        name: "Vendor Dashboard",
+        role: "UI/UX Designer"
+    },
+
+    {
+        name: "Checkout Redesign",
+        role: "UX Designer"
+    }
+];
+
+
+function projectShowCase(){
+
+let showCaseOutput = "";
+lesson14PortfolioShowcaseProjects.forEach(
+    function(showProject){
+        showCaseOutput += `
+        <div>
+            <h3>${showProject.name} </h3>
+
+            <p>${showProject.role} </p>
+
+        </div>
+        
+        `
+    }
+)
+
+
+lesson14PortfolioShowcaseProjectsOutput.innerHTML = showCaseOutput;
+
+}
+
+projectShowCase();
