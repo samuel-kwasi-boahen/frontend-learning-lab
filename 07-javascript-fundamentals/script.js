@@ -3318,3 +3318,35 @@ lesson14SkillBtn.addEventListener(
             lesson14ProfileRoleInput.value = "";
         }
     )
+
+
+
+
+    //Rendering HTML with Template Literals
+//mini project 1 - skill array renderer
+
+let lesson14Skills = [
+    "HTML",
+    "CSS",
+    "JavaScript"
+];
+
+let lesson14SkillArrayOutput =
+document.getElementById(
+    "lesson14SkillArrayOutput"
+);
+
+let lesson14ArrayOutput = "";
+
+lesson14Skills.forEach(function(skill){
+
+    lesson14ArrayOutput += `
+    <div>
+        ${skill}
+    </div>
+    `;
+
+});
+
+lesson14SkillArrayOutput.innerHTML =
+lesson14ArrayOutput;
