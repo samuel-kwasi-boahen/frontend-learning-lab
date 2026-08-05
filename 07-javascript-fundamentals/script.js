@@ -3350,3 +3350,24 @@ lesson14Skills.forEach(function(skill){
 
 lesson14SkillArrayOutput.innerHTML =
 lesson14ArrayOutput;
+
+
+//mini project 2
+
+roleArray = [
+    "Frontend Developer",
+    "Backend Developer",
+    "Full Stack Developer"
+];
+
+let lesson14RoleArrayOutput = document.getElementById("lesson14RoleArrayOutput");
+
+let RoleArrayOutput = "";
+
+roleArray.forEach(function(samRole){
+   RoleArrayOutput += `<div>
+        <h3>${samRole}</h3>
+    </div>`
+});
+
+lesson14RoleArrayOutput.innerHTML = RoleArrayOutput;
