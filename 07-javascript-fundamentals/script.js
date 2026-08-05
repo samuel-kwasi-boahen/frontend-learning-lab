@@ -3371,3 +3371,31 @@ roleArray.forEach(function(samRole){
 });
 
 lesson14RoleArrayOutput.innerHTML = RoleArrayOutput;
+
+//mini project 3
+
+let lesson14Projects = [
+    "SaveWise",
+    "Vendor Dashboard",
+    "Checkout Redesign"
+];
+
+let lesson14ProjectArrayOutput =
+document.getElementById(
+    "lesson14ProjectArrayOutput"
+);
+
+let lesson14ProjectOutput = "";
+
+lesson14Projects.forEach(function(project){
+
+    lesson14ProjectOutput += `
+    <div>
+        ${project}
+    </div>
+    `;
+
+});
+
+lesson14ProjectArrayOutput.innerHTML =
+lesson14ProjectOutput;
