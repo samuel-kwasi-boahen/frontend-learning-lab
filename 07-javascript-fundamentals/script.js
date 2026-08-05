@@ -3466,3 +3466,40 @@ lesson14CourseCardsOutput.innerHTML = cardOutput;
 courseCard()
 
 
+
+//Mini project 2
+
+let lesson14SkillCardsOutput = document.getElementById("lesson14SkillCardsOutput");
+
+function skillCarding(){
+let lesson14SkillCards = [
+    {
+        skill: "HTML"
+    },
+
+    {
+        skill: "CSS"
+    },
+
+    {
+        skill: "JavaScript"
+    }
+];
+
+
+skillCardOuput = "";
+lesson14SkillCards.forEach(
+    function(skillCard){
+        skillCardOuput += `
+        <div>
+        <p>${skillCard.skill}</p>
+        </div>
+        `
+    }
+)
+
+lesson14SkillCardsOutput.innerHTML = skillCardOuput;
+
+}
+
+skillCarding();
