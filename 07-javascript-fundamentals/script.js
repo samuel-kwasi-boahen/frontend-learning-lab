@@ -3689,3 +3689,63 @@ technicianJob(
 
 
 
+//Parameter + Template Literals
+//example 1
+function showProject(project, role) {
+    console.log(`${project} - ${role}`);
+}
+
+
+//example 2
+function greet(name) {
+    console.log(`Hello, ${name}!`);
+}
+
+greet("Samuel");
+
+
+//example 3
+function showSkill(skill) {
+    console.log(`Favorite Skill: ${skill}`);
+}
+
+showSkill("JavaScript");
+
+//example 4
+function portfolioCard(project, role) {
+    let output = `
+        <div>
+            <h3>${project}</h3>
+            <p>${role}</p>
+        </div>
+    `;
+
+    console.log(output);
+}
+
+portfolioCard(
+    "SaveWise",
+    "Product Designer"
+);
+
+
+//example 5 
+
+function technicianCard(
+    technician,
+    location
+) {
+    let output = `
+        <div>
+            <h3>${technician}</h3>
+            <p>${location}</p>
+        </div>
+    `;
+
+    console.log(output);
+}
+
+technicianCard(
+    "Kwame",
+    "Accra"
+);
