@@ -3594,3 +3594,14 @@ lesson14PortfolioShowcaseProjectsOutput.innerHTML = showCaseOutput;
 }
 
 projectShowCase();
+
+
+//Functions with Parameters
+
+ function showSkill(skill){
+    console.log(skill);
+ }
+
+ showSkill("JavaScript");
+ showSkill("HTML");
+ showSkill("UIUX");
