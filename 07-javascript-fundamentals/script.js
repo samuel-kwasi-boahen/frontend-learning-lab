@@ -3776,3 +3776,25 @@ function showSkill15(skill) {
 
 showSkill15("JavaScript");
 
+
+//Rendering HTML
+
+let lesson15Output3 = document.getElementById("lesson15Output3");
+
+function projectCard15(
+    project,
+    role
+) {
+
+    lesson15Output3.innerHTML = `
+        <div>
+            <h3>${project}</h3>
+            <p>${role}</p>
+        </div>
+    `;
+}
+
+projectCard15(
+    "SaveWise",
+    "Product Designer"
+);
