@@ -3749,3 +3749,30 @@ technicianCard(
     "Kwame",
     "Accra"
 );
+
+
+
+//Parameters Inside DOM Projects
+
+//example 1
+
+let lesson15Output = document.getElementById("lesson15Output");
+function showName(name) {
+    lesson15Output.textContent = name;
+}
+
+showName("Samuel");
+showName("Kwame");
+showName("Michael");
+
+
+//example 2
+let lesson15Output2 = document.getElementById("lesson15Output2");
+
+function showSkill15(skill) {
+    lesson15Output2.textContent =
+    `Favorite Skill: ${skill}`;
+}
+
+showSkill15("JavaScript");
+
