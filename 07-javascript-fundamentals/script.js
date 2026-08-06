@@ -3624,3 +3624,18 @@ function showProject(name, role) {
 
 showProject("SaveWise", "Product Designer");
 
+
+
+function showPortfolio(project, role) {
+    console.log(project + " - " + role);
+}
+
+showPortfolio(
+    "SaveWise",
+    "Product Designer"
+);
+
+showPortfolio(
+    "Vendor Dashboard",
+    "UI/UX Designer"
+);
