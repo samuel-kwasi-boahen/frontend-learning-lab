@@ -3639,3 +3639,53 @@ showPortfolio(
     "Vendor Dashboard",
     "UI/UX Designer"
 );
+
+
+
+function showCourse(course, level) {
+    console.log(course + " : " + level);
+}
+
+showCourse(
+    "JavaScript",
+    "Beginner"
+);
+
+
+function portfolioCard(project, role) {
+    console.log(project + " - " + role);
+}
+
+portfolioCard(
+    "SaveWise",
+    "Product Designer"
+);
+
+portfolioCard(
+    "Vendor Dashboard",
+    "UI/UX Designer"
+);
+
+
+
+function technicianJob(
+    technician,
+    location
+) {
+    console.log(
+        technician + " : " + location
+    );
+}
+
+technicianJob(
+    "Kwame",
+    "Accra"
+);
+
+technicianJob(
+    "Michael",
+    "Kumasi"
+);
+
+
+
