@@ -3605,3 +3605,22 @@ projectShowCase();
  showSkill("JavaScript");
  showSkill("HTML");
  showSkill("UIUX");
+
+
+ function displayProject(project) {
+    console.log(project);
+}
+
+displayProject("SaveWise");
+displayProject("Vendor Dashboard");
+displayProject("Checkout Redesign");
+
+
+//Multiple Parameters
+
+function showProject(name, role) {
+    console.log(name + " - " + role);
+}
+
+showProject("SaveWise", "Product Designer");
+
