@@ -3828,4 +3828,30 @@ lesson15NameBtn.addEventListener(
 );
 
 
+// mini project 2
+
+let lesson15SkillInput = document.getElementById("lesson15SkillInput");
+let lesson15SkillBtn = document.getElementById("lesson15SkillBtn");
+let lesson15SkillOutput = document.getElementById("lesson15SkillOutput");
+
+function showSkilling(skill) {
+    lesson15SkillOutput.textContent = `Favorite Skill: ${skill}`;
+}
+
+lesson15SkillBtn.addEventListener(
+    "click",
+    function () {
+        let enterSkill = lesson15SkillInput.value.trim();
+
+        if (enterSkill === "") {
+            lesson15SkillOutput.textContent = "Please enter a skill.";
+            return;
+        }
+
+        showSkilling(enterSkill);
+
+        lesson15SkillInput.value = "";
+    }
+);
+
 
