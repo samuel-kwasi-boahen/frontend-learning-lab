@@ -3798,3 +3798,34 @@ projectCard15(
     "SaveWise",
     "Product Designer"
 );
+
+
+
+//mini project 1
+
+let lesson15NameInput = document.getElementById("lesson15NameInput");
+let lesson15NameBtn = document.getElementById("lesson15NameBtn");
+let lesson15NameOutput = document.getElementById("lesson15NameOutput");
+
+function greeting(name) {
+    lesson15NameOutput.textContent = `Hello ${name}`;
+}
+
+lesson15NameBtn.addEventListener(
+    "click",
+    function () {
+        let enterName = lesson15NameInput.value.trim();
+
+        if (enterName === "") {
+            lesson15NameOutput.textContent = "Please enter a name.";
+            return;
+        }
+
+        greeting(enterName);
+
+        lesson15NameInput.value = "";
+    }
+);
+
+
+
