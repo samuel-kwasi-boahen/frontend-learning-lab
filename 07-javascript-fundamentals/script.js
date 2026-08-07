@@ -3880,3 +3880,42 @@ lesson15RoleBtn.addEventListener("click",
         lesson15RoleInput.value = "";
     }
 );
+
+
+
+//Project - card generator
+
+
+let lesson15ProjectInput = document.getElementById("lesson15ProjectInput");
+let lesson15ProjectRoleInput = document.getElementById("lesson15ProjectRoleInput");
+let lesson15ProjectBtn = document.getElementById("lesson15ProjectBtn");
+let lesson15ProjectOutput = document.getElementById("lesson15ProjectOutput");
+
+function createProjectCard(projectName, projectRole){
+    lesson15ProjectOutput.innerHTML +=
+    `<div>
+    <h3>${projectName}<h3>
+    <p> ${projectRole} </p>
+    </div>
+    `;
+}
+
+
+lesson15ProjectBtn.addEventListener(
+    "click", function(){
+        let cleanInput = lesson15ProjectInput.value.trim();
+        let cleanRoleInput = lesson15ProjectRoleInput.value.trim();
+
+        if (cleanInput === "" || cleanRoleInput === ""){
+            lesson15ProjectOutput.textContent = "Please complete all fields.";
+            return;
+
+        }
+
+        createProjectCard(
+    cleanInput,
+    cleanRoleInput);
+    lesson15ProjectInput.value = "";
+    lesson15ProjectRoleInput.value = "";
+    }
+)
