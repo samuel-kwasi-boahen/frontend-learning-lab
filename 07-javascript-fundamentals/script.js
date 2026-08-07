@@ -3855,3 +3855,28 @@ lesson15SkillBtn.addEventListener(
 );
 
 
+//Mini project 3
+
+//mini project 3
+let lesson15RoleInput = document.getElementById("lesson15RoleInput");
+let lesson15RoleBtn = document.getElementById("lesson15RoleBtn");
+let lesson15RoleOutput = document.getElementById("lesson15RoleOutput");
+
+function showRole(role){
+    lesson15RoleOutput.textContent = `Current Role: ${role}`;
+}
+
+
+lesson15RoleBtn.addEventListener("click",
+    function(){
+        let trimmedRole = lesson15RoleInput.value.trim();
+
+        if (trimmedRole === ""){
+            lesson15RoleOutput.textContent = "Please input role name";
+            return;
+        }
+
+        showRole(trimmedRole);
+        lesson15RoleInput.value = "";
+    }
+);
