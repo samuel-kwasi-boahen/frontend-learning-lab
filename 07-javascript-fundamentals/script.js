@@ -4088,3 +4088,70 @@ lesson16CalculateBtn.addEventListener("click", function () {
 
     lesson16CalculateOutput.textContent = `Total: GHS ${total}`;
 });
+
+
+// project - profile generator
+
+let lesson16ProfileNameInput =
+    document.getElementById("lesson16ProfileNameInput");
+
+let lesson16ProfileRoleInput =
+    document.getElementById("lesson16ProfileRoleInput");
+
+let lesson16ProfileSkillInput =
+    document.getElementById("lesson16ProfileSkillInput");
+
+let lesson16ProfileBtn =
+    document.getElementById("lesson16ProfileBtn");
+
+let lesson16ProfileOutput =
+    document.getElementById("lesson16ProfileOutput");
+
+
+function createProfile(name, role, skill) {
+
+    return `
+        <div>
+            <h2>${name}</h2>
+
+            <p>Role: ${role}</p>
+
+            <p>Skill: ${skill}</p>
+        </div>
+    `;
+}
+
+
+lesson16ProfileBtn.addEventListener("click", function () {
+
+    let name =
+        lesson16ProfileNameInput.value.trim();
+
+    let role =
+        lesson16ProfileRoleInput.value.trim();
+
+    let skill =
+        lesson16ProfileSkillInput.value.trim();
+
+
+    if (name === "" || role === "" || skill === "") {
+
+        lesson16ProfileOutput.textContent =
+            "Please complete all fields.";
+
+        return;
+    }
+
+
+    let profile =
+        createProfile(name, role, skill);
+
+
+    lesson16ProfileOutput.innerHTML =
+        profile;
+
+
+    lesson16ProfileNameInput.value = "";
+    lesson16ProfileRoleInput.value = "";
+    lesson16ProfileSkillInput.value = "";
+});
