@@ -4155,3 +4155,40 @@ lesson16ProfileBtn.addEventListener("click", function () {
     lesson16ProfileRoleInput.value = "";
     lesson16ProfileSkillInput.value = "";
 });
+
+
+
+//SCOPE - Global, function/local, block scope
+
+let lesson17ProjectInput =
+    document.getElementById("lesson17ProjectInput");
+
+let lesson17ProjectBtn =
+    document.getElementById("lesson17ProjectBtn");
+
+let lesson17ProjectOutput =
+    document.getElementById("lesson17ProjectOutput");
+
+
+function displayingProject() {
+
+    let projectName =
+        lesson17ProjectInput.value.trim();
+
+    if (projectName === "") {
+
+        lesson17ProjectOutput.textContent =
+            "Please enter a project.";
+
+        return;
+    }
+
+    lesson17ProjectOutput.textContent =
+        `Project: ${projectName}`;
+}
+
+
+lesson17ProjectBtn.addEventListener(
+    "click",
+    displayingProject
+);
