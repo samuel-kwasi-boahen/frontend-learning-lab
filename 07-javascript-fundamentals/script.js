@@ -4207,3 +4207,19 @@ function showLesson17Project() {
 showLesson17Project();
 
 console.log(lesson17GlobalProject);
+
+// console.log(lesson17LocalProject);
+
+
+// Mini Project 2 — Block Scope
+let lesson17Skill = "JavaScript";
+
+if (lesson17Skill === "JavaScript") {
+    let lesson17Message = "You are learning JavaScript.";
+
+    console.log(lesson17Message);
+}
+
+console.log(lesson17Skill);
+
+// console.log(lesson17Message);
