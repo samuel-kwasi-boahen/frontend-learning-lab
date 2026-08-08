@@ -4026,3 +4026,38 @@ console.log(card)
 let output = document.getElementById("lesson16ProjectOutput");
 
 output.innerHTML = card;
+
+
+//project 3 - Project Information Generator
+
+let lesson16ProjectNameInput = document.getElementById("lesson16ProjectNameInput");
+let lesson16ProjectRoleInput = document.getElementById("lesson16ProjectRoleInput");
+let lesson16ProjectBtn = document.getElementById("lesson16ProjectBtn");
+let lesson16ProjectOutput = document.getElementById("lesson16ProjectOutput");
+
+function createProject(name, role) {
+    return `
+        <div>
+            <h3>${name}</h3>
+            <p>Role: ${role}</p>
+        </div>
+    `;
+}
+
+lesson16ProjectBtn.addEventListener("click", function () {
+
+    let projectName = lesson16ProjectNameInput.value.trim();
+    let projectRole = lesson16ProjectRoleInput.value.trim();
+
+    if (projectName === "" || projectRole === "") {
+        lesson16ProjectOutput.textContent = "Please complete all fields.";
+        return;
+    }
+
+    let projectCard = createProject(projectName, projectRole);
+
+    lesson16ProjectOutput.innerHTML = projectCard;
+
+    lesson16ProjectNameInput.value = "";
+    lesson16ProjectRoleInput.value = "";
+});
