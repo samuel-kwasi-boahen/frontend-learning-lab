@@ -4192,3 +4192,18 @@ lesson17ProjectBtn.addEventListener(
     "click",
     displayingProject
 );
+
+
+// Mini Project 1 — Local vs Global
+let lesson17GlobalProject = "SaveWise";
+
+function showLesson17Project() {
+    let lesson17LocalProject = "Vendor Dashboard";
+
+    console.log(lesson17GlobalProject);
+    console.log(lesson17LocalProject);
+}
+
+showLesson17Project();
+
+console.log(lesson17GlobalProject);
