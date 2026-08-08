@@ -3938,3 +3938,14 @@ function calculatePrice(price, quantity){
 
  let project = createProjectName("SaveWise");
  console.log(project);
+
+ //Parameters + Return
+function introduce(name, role){
+    return `Hello ${name}, you're a ${role}.`
+}
+
+let introduction = introduce("Samuel", "Frontend Developer");
+console.log(introduction);
+
+//return ends a function > anything after return in the function doesn't execute
+
