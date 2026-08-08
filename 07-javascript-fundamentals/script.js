@@ -4240,3 +4240,54 @@ let lesson17Project =
     );
 
 console.log(lesson17Project);
+
+
+// Portfolio Project Generator
+let lesson17ProjectOutput2 =
+    document.getElementById("lesson17ProjectOutput2");
+
+let lesson17ProjectBtn2 =
+    document.getElementById("lesson17ProjectBtn2");
+
+
+function createProject(name, role, description) {
+
+    let projectCard = `
+        <article>
+            <h3>${name}</h3>
+            <p>${role}</p>
+            <p>${description}</p>
+        </article>
+    `;
+
+    return projectCard;
+}
+
+
+function displayProject2() {
+
+    let projectName = "SaveWise";
+
+    let projectRole = "Product Designer";
+
+    let projectDescription =
+        "Expense tracking and savings app for young professionals.";
+
+
+    let project =
+        createProject(
+            projectName,
+            projectRole,
+            projectDescription
+        );
+
+
+    lesson17ProjectOutput2.innerHTML =
+        project;
+}
+
+
+lesson17ProjectBtn2.addEventListener(
+    "click",
+    displayProject2
+);
