@@ -3962,3 +3962,19 @@ let projectObjec = createProject();
 console.log(projectObjec.name);
 console.log(projectObjec.role);
 console.log(projectObjec);
+
+
+//returning an array
+
+function getSkill(){
+    return ["HTML", "JavaScript", "UIUX", "Product Design"];
+}
+
+let skillis = getSkill();
+console.log(skillis);
+
+skillis.forEach(
+    function(skill){
+        console.log(skill)
+    }
+)
