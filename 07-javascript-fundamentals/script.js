@@ -3990,12 +3990,19 @@ function createGreeting(name) {
     return `Hello ${name}!`;
 }
 
-lesson16NameBtn.addEventListener("click", function() {
+lesson16NameBtn.addEventListener("click", function () {
     let name = lesson16NameInput.value.trim();
+
+    if (name === "") {
+        lesson16NameOutput.textContent = "Please enter your name.";
+        return;
+    }
 
     let greeting = createGreeting(name);
 
     lesson16NameOutput.textContent = greeting;
+
+    lesson16NameInput.value = "";
 });
 
 
