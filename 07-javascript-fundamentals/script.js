@@ -3997,3 +3997,25 @@ lesson16NameBtn.addEventListener("click", function() {
 
     lesson16NameOutput.textContent = greeting;
 });
+
+
+//mini project 2
+function createProjectCard(name, role){
+    return  `
+    <div>
+        <h3>${name}</h3>
+        <p>${role}</p>
+    </div>
+    `
+};
+
+let card = createProjectCard(
+    "SaveWise",
+    "Product Designer"
+)
+
+console.log(card)
+
+let output = document.getElementById("lesson16ProjectOutput");
+
+output.innerHTML = card;
