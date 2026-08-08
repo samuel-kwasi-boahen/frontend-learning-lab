@@ -3978,3 +3978,22 @@ skillis.forEach(
         console.log(skill)
     }
 )
+
+
+//Mini Project 1 — Greeting Generator
+
+let lesson16NameInput = document.getElementById("lesson16NameInput");
+let lesson16NameBtn = document.getElementById("lesson16NameBtn");
+let lesson16NameOutput = document.getElementById("lesson16NameOutput");
+
+function createGreeting(name) {
+    return `Hello ${name}!`;
+}
+
+lesson16NameBtn.addEventListener("click", function() {
+    let name = lesson16NameInput.value.trim();
+
+    let greeting = createGreeting(name);
+
+    lesson16NameOutput.textContent = greeting;
+});
