@@ -3949,3 +3949,16 @@ console.log(introduction);
 
 //return ends a function > anything after return in the function doesn't execute
 
+//returning an object
+
+function createProject(){
+    return{
+        name: "SaveWise",
+        role: "Product Designer"
+    }
+}
+
+let projectObjec = createProject();
+console.log(projectObjec.name);
+console.log(projectObjec.role);
+console.log(projectObjec);
