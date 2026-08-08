@@ -4223,3 +4223,20 @@ if (lesson17Skill === "JavaScript") {
 console.log(lesson17Skill);
 
 // console.log(lesson17Message);
+
+// Mini Project 3 — Scope + Function + Return
+function createLesson17Project(name, role) {
+
+    let projectDescription =
+        `${name} — ${role}`;
+
+    return projectDescription;
+}
+
+let lesson17Project =
+    createLesson17Project(
+        "SaveWise",
+        "Product Designer"
+    );
+
+console.log(lesson17Project);
