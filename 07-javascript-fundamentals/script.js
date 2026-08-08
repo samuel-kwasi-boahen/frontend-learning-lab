@@ -4061,3 +4061,30 @@ lesson16ProjectBtn.addEventListener("click", function () {
     lesson16ProjectNameInput.value = "";
     lesson16ProjectRoleInput.value = "";
 });
+
+
+//mini project 4 - Calculate Project Total
+
+let lesson16PriceInput = document.getElementById("lesson16PriceInput");
+let lesson16QuantityInput = document.getElementById("lesson16QuantityInput");
+let lesson16CalculateBtn = document.getElementById("lesson16CalculateBtn");
+let lesson16CalculateOutput = document.getElementById("lesson16CalculateOutput");
+
+function calculateTotal(price, quantity) {
+    return price * quantity;
+}
+
+lesson16CalculateBtn.addEventListener("click", function () {
+
+    let price = Number(lesson16PriceInput.value);
+    let quantity = Number(lesson16QuantityInput.value);
+
+    if (price <= 0 || quantity <= 0) {
+        lesson16CalculateOutput.textContent = "Enter valid values.";
+        return;
+    }
+
+    let total = calculateTotal(price, quantity);
+
+    lesson16CalculateOutput.textContent = `Total: GHS ${total}`;
+});
