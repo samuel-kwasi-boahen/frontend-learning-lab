@@ -3919,3 +3919,22 @@ lesson15ProjectBtn.addEventListener(
     lesson15ProjectRoleInput.value = "";
     }
 )
+
+
+
+//RETURN STATEMENTS
+function calculatePrice(price, quantity){
+  return price * quantity;  
+ }
+
+ let total = calculatePrice(50, 3);
+ console.log(`Your total price is GHS${total}`)
+
+
+ //example 2
+ function createProjectName(name){
+    return `Project: ${name}`
+ }
+
+ let project = createProjectName("SaveWise");
+ console.log(project);
