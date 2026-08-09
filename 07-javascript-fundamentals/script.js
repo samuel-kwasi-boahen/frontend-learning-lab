@@ -4335,6 +4335,17 @@ skills.unshift("HTML");
 console.log(skills);
 
 
+//shift - removes the first item
+
+let skills = [
+    "HTML",
+    "CSS",
+    "JavaScript"
+];
+
+skills.shift();
+
+console.log(skills);
 
 // Project: Dynamic Skills List
 
