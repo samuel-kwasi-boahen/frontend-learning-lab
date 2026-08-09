@@ -4315,6 +4315,17 @@ skills.push("JavaScript");
 console.log(skills); 
 
 
+//pop()
+let skills = [
+    "HTML",
+    "CSS",
+    "JavaScript"
+];
+
+skills.pop();
+
+console.log(skills);
+
 // Project: Dynamic Skills List
 
 let lesson18SkillsOutput = document.getElementById("lesson18SkillsOutput");
