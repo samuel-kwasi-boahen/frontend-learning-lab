@@ -4360,6 +4360,28 @@ projects.forEach(function(project) {
     console.log(project);
 });
 
+
+//example 2 - for each with objects
+
+let projects = [
+    {
+        name: "SaveWise",
+        role: "Product Designer"
+    },
+
+    {
+        name: "Vendor Dashboard",
+        role: "UI/UX Designer"
+    }
+];
+
+projects.forEach(function(project) {
+
+    console.log(project.name);
+    console.log(project.role);
+
+});
+
 // Project: Dynamic Skills List
 
 let lesson18SkillsOutput = document.getElementById("lesson18SkillsOutput");
