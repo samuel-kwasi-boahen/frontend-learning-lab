@@ -4296,7 +4296,7 @@ lesson17ProjectBtn2.addEventListener(
 
 
 // ARRAYS: PRACTICAL MASTERY
-let skills = [
+/*let skills = [
     "HTML",
     "CSS",
     "JavaScript"
@@ -4439,11 +4439,11 @@ let project = projects.find(function(project) {
 
 console.log(project);
 
+*/
 
 
 
-
-// Project: Dynamic Skills List
+// mini Project 1: Dynamic Skills List
 
 let lesson18SkillsOutput = document.getElementById("lesson18SkillsOutput");
 
@@ -4474,3 +4474,47 @@ let displayMe = renderSkills();
     lesson18SkillsOutput.innerHTML = displayMe;
 
 
+
+    //mini project 2: portfolio project names
+
+    let lesson18ProjectNamesOutput = document.getElementById("lesson18ProjectNamesOutput");
+    let lesson18Projects = [
+    {
+        name: "SaveWise",
+        role: "Product Designer"
+    },
+
+    {
+        name: "Vendor Dashboard",
+        role: "UI/UX Designer"
+    },
+
+    {
+        name: "Checkout Redesign",
+        role: "UX Designer"
+    }
+];
+
+
+function renderProjectNames() {
+    let newProjectNames = lesson18Projects.map(function(object){
+        return object.name
+    }
+    )
+
+    let namesOutput = "";
+    newProjectNames.forEach(function(object2){
+        return namesOutput += `
+        <div>
+            <h3>${object2}</h3>
+
+        </div>
+        `
+        }
+    );
+    return namesOutput;
+    
+}
+
+let projectNames = renderProjectNames();
+lesson18ProjectNamesOutput.innerHTML = projectNames;
