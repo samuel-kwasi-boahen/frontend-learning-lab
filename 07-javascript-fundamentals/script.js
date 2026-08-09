@@ -4495,7 +4495,7 @@ let displayMe = renderSkills();
     }
 ];
 
-
+/*
 function renderProjectNames() {
     let newProjectNames = lesson18Projects.map(function(object){
         return object.name
@@ -4515,6 +4515,24 @@ function renderProjectNames() {
     return namesOutput;
     
 }
+
+let projectNames = renderProjectNames();
+lesson18ProjectNamesOutput.innerHTML = projectNames;*/
+
+
+//Simplified version with map()
+function renderProjectNames() {
+    let newProjectNames = lesson18Projects.map(function(object){
+        return `
+            <div>
+            <h3>${object.name}</h3>
+            </div>
+        `});
+
+        return newProjectNames.join("");
+    }
+    
+
 
 let projectNames = renderProjectNames();
 lesson18ProjectNamesOutput.innerHTML = projectNames;
