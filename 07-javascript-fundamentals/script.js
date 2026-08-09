@@ -4536,3 +4536,63 @@ function renderProjectNames() {
 
 let projectNames = renderProjectNames();
 lesson18ProjectNamesOutput.innerHTML = projectNames;
+
+
+
+//Mini project 3 -Portfolio Project Filter
+
+let lesson18AllBtn = document.getElementById("lesson18AllBtn");
+let lesson18DesignBtn = document.getElementById("lesson18DesignBtn");
+let lesson18FrontendBtn = document.getElementById("lesson18FrontendBtn");
+let lesson18PortfolioOutput = document.getElementById("lesson18PortfolioOutput");
+
+let lesson18PortfolioProjects = [
+    {
+        name: "SaveWise",
+        role: "Product Designer",
+        category: "design"
+    },
+
+    {
+        name: "Vendor Dashboard",
+        role: "Product Designer",
+        category: "design"
+    },
+
+    {
+        name: "Checkout Redesign",
+        role: "UX Designer",
+        category: "design"
+    },
+
+    {
+        name: "Portfolio Website",
+        role: "Frontend Developer",
+        category: "frontend"
+    }
+];
+
+function renderProjects(projects){
+    let portfolioCards = projects.map(function(project3){
+        return `
+                <div>
+                    <h3>${project3.name}</h3>
+                    <p>${project3.role}</p>
+
+                </div>
+        `
+    })
+    return portfolioCards.join("");
+}
+
+lesson18PortfolioOutput.innerHTML = renderProjects(lesson18PortfolioProjects);
+
+
+lesson18DesignBtn.addEventListener("click", function(){
+    let portfolioFilter = lesson18PortfolioProjects.filter(function(proFil){
+        return proFil.category === "design";
+    });
+
+    lesson18PortfolioOutput.innerHTML = renderProjects(portfolioFilter);
+});
+
