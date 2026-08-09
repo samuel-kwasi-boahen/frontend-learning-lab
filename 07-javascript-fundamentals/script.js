@@ -4347,6 +4347,19 @@ skills.shift();
 
 console.log(skills);
 
+
+//forEach() - does something every item 
+
+let projects = [
+    "SaveWise",
+    "Vendor Dashboard",
+    "Checkout Redesign"
+];
+
+projects.forEach(function(project) {
+    console.log(project);
+});
+
 // Project: Dynamic Skills List
 
 let lesson18SkillsOutput = document.getElementById("lesson18SkillsOutput");
