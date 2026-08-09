@@ -4296,6 +4296,19 @@ lesson17ProjectBtn2.addEventListener(
 
 
 // ARRAYS: PRACTICAL MASTERY
+let skills = [
+    "HTML",
+    "CSS",
+    "JavaScript"
+];
+
+console.log(skills[0]); //array index starts at zero
+
+//length
+console.log(skills.length);
+
+
+
 // Project: Dynamic Skills List
 
 let lesson18SkillsOutput = document.getElementById("lesson18SkillsOutput");
