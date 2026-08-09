@@ -4596,3 +4596,30 @@ lesson18DesignBtn.addEventListener("click", function(){
     lesson18PortfolioOutput.innerHTML = renderProjects(portfolioFilter);
 });
 
+
+//frontend only
+
+lesson18FrontendBtn.addEventListener("click", function(){
+    let portfolioFilter = lesson18PortfolioProjects.filter(function(proFil){
+        return proFil.category === "frontend";
+    });
+
+    lesson18PortfolioOutput.innerHTML = renderProjects(portfolioFilter);
+});
+
+//all 
+
+/*lesson18AllBtn.addEventListener("click", function(){
+    let portfolioFilter = lesson18PortfolioProjects.filter(function(proFil){
+         return proFil
+    });
+
+    lesson18PortfolioOutput.innerHTML = renderProjects(portfolioFilter);
+});
+*/ //works but use the below to implement
+
+lesson18AllBtn.addEventListener("click", function(){
+   lesson18PortfolioOutput.innerHTML = renderProjects(lesson18PortfolioProjects);
+
+    });
+
