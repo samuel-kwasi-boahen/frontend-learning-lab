@@ -4403,6 +4403,31 @@ let projectNames = projects.map(function(project) {
 
 
 
+//filter() - captures all true conditions and creates a new array for them
+
+let projects = [
+    {
+        name: "SaveWise",
+        role: "Product Designer"
+    },
+
+    {
+        name: "Portfolio Website",
+        role: "Frontend Developer"
+    },
+
+    {
+        name: "Vendor Dashboard",
+        role: "Product Designer"
+    }
+];
+
+let designProjects = projects.filter(function(project) {
+
+    return project.role === "Product Designer";
+
+});
+
 
 
 // Project: Dynamic Skills List
