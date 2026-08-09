@@ -4429,6 +4429,19 @@ let designProjects = projects.filter(function(project) {
 });
 
 
+//find() - finds the first matching item and displays the object
+
+let project = projects.find(function(project) {
+
+    return project.name === "SaveWise";
+
+});
+
+console.log(project);
+
+
+
+
 
 // Project: Dynamic Skills List
 
