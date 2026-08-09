@@ -4307,6 +4307,12 @@ console.log(skills[0]); //array index starts at zero
 //length
 console.log(skills.length);
 
+//push()
+let skills = ["HTML", "CSS"];
+
+skills.push("JavaScript");
+
+console.log(skills); 
 
 
 // Project: Dynamic Skills List
