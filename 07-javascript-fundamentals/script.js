@@ -4382,6 +4382,29 @@ projects.forEach(function(project) {
 
 });
 
+
+//map() - transfroms every item and creates a new array
+
+let projects = [
+    {
+        name: "SaveWise",
+        role: "Product Designer"
+    },
+
+    {
+        name: "Vendor Dashboard",
+        role: "UI/UX Designer"
+    }
+];
+
+let projectNames = projects.map(function(project) {
+    return project.name;
+});
+
+
+
+
+
 // Project: Dynamic Skills List
 
 let lesson18SkillsOutput = document.getElementById("lesson18SkillsOutput");
