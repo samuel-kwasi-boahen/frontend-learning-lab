@@ -4326,6 +4326,16 @@ skills.pop();
 
 console.log(skills);
 
+
+//unshift - adds to the beginning 
+let skills = ["CSS", "JavaScript"];
+
+skills.unshift("HTML");
+
+console.log(skills);
+
+
+
 // Project: Dynamic Skills List
 
 let lesson18SkillsOutput = document.getElementById("lesson18SkillsOutput");
