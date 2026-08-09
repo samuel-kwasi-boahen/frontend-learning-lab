@@ -4291,3 +4291,39 @@ lesson17ProjectBtn2.addEventListener(
     "click",
     displayProject2
 );
+
+
+
+
+// ARRAYS: PRACTICAL MASTERY
+// Project: Dynamic Skills List
+
+let lesson18SkillsOutput = document.getElementById("lesson18SkillsOutput");
+
+let lesson18Skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Git",
+    "Figma"
+];
+
+
+function renderSkills(){
+    let displayOutput = "";
+    lesson18Skills.forEach(
+        function(display){
+            displayOutput += `
+            <div>
+                <p>${display}</p>
+            </div>
+            `
+        }
+    )
+
+    return displayOutput;
+}
+let displayMe = renderSkills();
+    lesson18SkillsOutput.innerHTML = displayMe;
+
+
