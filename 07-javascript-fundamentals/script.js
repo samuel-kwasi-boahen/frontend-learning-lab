@@ -4623,3 +4623,83 @@ lesson18AllBtn.addEventListener("click", function(){
 
     });
 
+
+
+
+    //FINAL PROJECT
+let lesson18FinalAllBtn = document.getElementById("lesson18FinalAllBtn");
+let lesson18FinalDesignBtn = document.getElementById("lesson18FinalDesignBtn");
+let lesson18FinalFrontendBtn = document.getElementById("lesson18FinalFrontendBtn");
+let lesson18FinalOutput = document.getElementById("lesson18FinalOutput");
+
+let lesson18FinalProject = [
+  {
+    name: "SaveWise Vendor Dashboard",
+    role: "Product Designer",
+    category: "design"
+  },
+  {
+    name: "Checkout Redesign",
+    role: "Product Designer",
+    category: "design"
+  },
+  {
+    name: "Portfolio Website",
+    role: "Frontend Developer",
+    category: "frontend"
+  },
+  {
+    name: "Delbondtek FTTH",
+    role: "Frontend Developer",
+    category: "frontend"
+  },
+  {
+    name: "New App",
+    role: "Frontend Developer",
+    category: "frontend"
+  },
+  {
+    name: "HealthTrack Mobile Experience",
+    role: "Product Designer",
+    category: "design"
+  }
+];
+
+
+function renderFinalProject(project){
+    let finalProject = project.map(function(objectProject){
+        return `
+        <div>
+            <h3>${objectProject.name}</h3>
+            <p>${objectProject.role}</p>
+            <p>${objectProject.category}</p>
+        </div>
+        `
+    })
+    return finalProject.join("");
+}
+lesson18FinalOutput.innerHTML = renderFinalProject(lesson18FinalProject);
+
+lesson18FinalAllBtn.addEventListener(
+    "click", function(){
+        lesson18FinalOutput.innerHTML = renderFinalProject(lesson18FinalProject);
+    }
+);
+
+
+lesson18FinalDesignBtn.addEventListener("click", function(){
+    let finalFilter = lesson18FinalProject.filter(function(filtering){
+        return filtering.category === "design";
+    })
+ lesson18FinalOutput.innerHTML = renderFinalProject(finalFilter);
+
+});
+
+
+lesson18FinalFrontendBtn.addEventListener("click", function(){
+    let finalFilter = lesson18FinalProject.filter(function(filtering){
+        return filtering.category === "frontend";
+    });
+ lesson18FinalOutput.innerHTML = renderFinalProject(finalFilter);
+
+});
