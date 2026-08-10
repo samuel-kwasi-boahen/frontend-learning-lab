@@ -5191,3 +5191,35 @@ function renderFrontendNames() {
 lesson20FrontendNamesOutput.innerHTML =
     renderFrontendNames();
 
+/*let javascriptProjects = lesson20Projects.filter(function(project) {
+    return project.technologies.includes("JavaScript");
+});*/
+
+
+
+let lesson20JavaScriptOutput =
+    document.getElementById("lesson20JavaScriptOutput");
+
+function renderJavaScriptProjects() {
+
+    let javascriptProjects =
+        lesson20Projects.filter(function(project) {
+            return project.technologies.includes("JavaScript");
+        });
+
+    let projectHTML = "";
+
+    javascriptProjects.forEach(function(project) {
+        projectHTML += `
+            <div>
+                <h3>${project.name}</h3>
+                <p>${project.role}</p>
+            </div>
+        `;
+    });
+
+    return projectHTML;
+}
+
+lesson20JavaScriptOutput.innerHTML =
+    renderJavaScriptProjects();
