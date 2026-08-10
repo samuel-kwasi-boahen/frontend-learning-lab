@@ -5376,3 +5376,18 @@ console.log(category);
 console.log(screens);
 
 
+// Mini Project 2 — Array Destructuring
+let technologies = [
+    "HTML",
+    "CSS",
+    "JavaScript"
+];
+
+let [
+    first,
+    second,
+    third
+] = technologies;
+
+console.log(first);
+console.log(third);
