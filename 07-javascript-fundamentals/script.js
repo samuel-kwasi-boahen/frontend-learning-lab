@@ -4585,7 +4585,7 @@ function renderProjects(projects){
     return portfolioCards.join("");
 }
 
-lesson18PortfolioOutput.innerHTML = renderProjects(lesson18PortfolioProjects);
+// lesson18PortfolioOutput.innerHTML = renderProjects(lesson18PortfolioProjects);
 
 
 lesson18DesignBtn.addEventListener("click", function(){
@@ -5042,3 +5042,122 @@ ls20projectc
     ls20projectc.map(function(project) {
     return project.technologies;
 });
+
+
+
+
+
+// Mini Project — Portfolio Data Explorer
+
+let lesson20AllBtn =
+    document.getElementById("lesson20AllBtn");
+
+let lesson20DesignBtn =
+    document.getElementById("lesson20DesignBtn");
+
+let lesson20FrontendBtn =
+    document.getElementById("lesson20FrontendBtn");
+
+let lesson20Output =
+    document.getElementById("lesson20Output");
+
+let lesson20Projects = [
+    {
+        name: "SaveWise",
+        role: "Product Designer",
+        category: "design",
+        technologies: ["Figma", "FigJam"]
+    },
+
+    {
+        name: "Vendor Dashboard",
+        role: "Product Designer",
+        category: "design",
+        technologies: ["Figma"]
+    },
+
+    {
+        name: "Portfolio Website",
+        role: "Frontend Developer",
+        category: "frontend",
+        technologies: ["HTML", "CSS", "JavaScript"]
+    },
+
+    {
+        name: "Delbondtek FTTH",
+        role: "Frontend Developer",
+        category: "frontend",
+        technologies: ["HTML", "CSS", "JavaScript"]
+    }
+];
+
+
+// create our renderer
+function renderProjects(projectsParameter) {
+
+    let projectHTML = "";
+
+    projectsParameter.forEach(function(project) {
+
+        projectHTML += `
+            <div>
+                <h3>${project.name}</h3>
+                <p>${project.role}</p>
+                <p>${project.category}</p>
+                <p>${project.technologies.join(", ")}</p>
+            </div>
+        `;
+
+    });
+
+    return projectHTML;
+}
+
+// Display everything initially:
+lesson20Output.innerHTML =
+    renderProjects(lesson20Projects);
+
+// Design button
+lesson20DesignBtn.addEventListener("click", function() {
+
+    let designProjects = lesson20Projects.filter(function(project) {
+        return project.category === "design";
+    });
+
+    lesson20Output.innerHTML =
+        renderProjects(designProjects);
+});
+
+
+//Frontend button
+lesson20FrontendBtn.addEventListener("click", function() {
+
+    let frontendProjects = lesson20Projects.filter(function(project) {
+        return project.category === "frontend";
+    })
+
+    lesson20Output.innerHTML =
+        renderProjects(frontendProjects);
+});
+
+// All button
+
+lesson20AllBtn.addEventListener("click", function() {
+
+    lesson20Output.innerHTML =
+        renderProjects(lesson20Projects);
+});
+
+
+// Chaining filter() and map()
+// // let frontendNames = lesson20Projects
+// //     .filter(function(project) {
+// //         return project.category === "frontend";
+// //     })  .map(function(project) {
+//         return project.name;
+//     });
+  
+// That's called method chaining.
+
+
+
