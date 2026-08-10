@@ -5223,3 +5223,105 @@ function renderJavaScriptProjects() {
 
 lesson20JavaScriptOutput.innerHTML =
     renderJavaScriptProjects();
+
+
+
+
+    // FINAL PROJECT
+
+let lesson20FinalAllBtn = document.getElementById("lesson20FinalAllBtn");
+let lesson20FinalDesignBtn = document.getElementById("lesson20FinalDesignBtn");
+let lesson20FinalFrontendBtn = document.getElementById("lesson20FinalFrontendBtn");
+let lesson20FinalJavaScriptBtn = document.getElementById("lesson20FinalJavaScriptBtn");
+let lesson20FinalOutput = document.getElementById("lesson20FinalOutput");
+
+
+
+let lesson20FinalProjects = [
+    {
+        name: "SaveWise",
+        role: "Product Designer",
+        category: "design",
+        technologies: ["Figma", "FigJam"]
+    },
+
+    {
+        name: "Vendor Dashboard",
+        role: "Product Designer",
+        category: "design",
+        technologies: ["Figma", "FigJam"]
+    },
+
+    {
+        name: "Portfolio Website",
+        role: "Frontend Developer",
+        category: "frontend",
+        technologies: ["HTML", "CSS", "JavaScript"]
+    },
+
+    {
+        name: "Delbondtek FTTH",
+        role: "Frontend Developer",
+        category: "frontend",
+        technologies: ["HTML", "CSS", "JavaScript"]
+    }
+];
+
+function renderFinalProjects(projects) {
+
+let finalProjects = "";
+projects.forEach(function(finalParameter){
+    finalProjects += `
+    <div>
+        <h3>${finalParameter.name}</h3>
+        <p>${finalParameter.role}</p>
+        <p>${finalParameter.category}</p>
+        <p>${finalParameter.technologies.join(", ")}
+    </div>
+    `
+})
+    return finalProjects
+}
+
+lesson20FinalOutput.innerHTML = renderFinalProjects(lesson20FinalProjects);
+
+
+//ALL BUTTON
+lesson20FinalAllBtn.addEventListener("click", function(){
+    lesson20FinalOutput.innerHTML = renderFinalProjects(lesson20FinalProjects);
+});
+
+
+// design filter
+lesson20FinalDesignBtn.addEventListener("click", function(){
+    let finaldesign = lesson20FinalProjects.filter(function(finalPara){
+      return finalPara.category === "design";
+    })
+
+    lesson20FinalOutput.innerHTML = 
+    renderFinalProjects(finaldesign);
+
+});
+
+// frontend
+lesson20FinalFrontendBtn.addEventListener("click", function(){
+    let finalFrontend = lesson20FinalProjects.filter(function(finalPara){
+      return finalPara.category === "frontend";
+    })
+
+    lesson20FinalOutput.innerHTML = 
+    renderFinalProjects(finalFrontend);
+});
+
+
+
+// JavaScript Button
+
+lesson20FinalJavaScriptBtn.addEventListener("click", function(){
+    let includesJS = lesson20FinalProjects.filter(function(finalPara){
+      return finalPara.technologies.includes("JavaScript");
+    })
+
+    lesson20FinalOutput.innerHTML = 
+    renderFinalProjects(includesJS);
+});
