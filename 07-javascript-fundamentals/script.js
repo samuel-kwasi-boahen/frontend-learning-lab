@@ -4938,3 +4938,38 @@ let simplifiedProjects = ls20project.map(function(project) {
 });
 
 
+
+
+
+
+// filter() works with nested properties
+let designProjects = projects.filter(function(project) {
+    return project.category === "design";
+});
+
+
+// filter using a nested property
+let projects = [
+    {
+        name: "SaveWise",
+        details: {
+            category: "design",
+            screens: 25
+        }
+    },
+
+    {
+        name: "Delbondtek FTTH",
+        details: {
+            category: "enterprise",
+            screens: 202
+        }
+    }
+];
+
+let largeProjects = projects.filter(function(project) {
+    return project.details.screens > 100;
+});
+
+
+
