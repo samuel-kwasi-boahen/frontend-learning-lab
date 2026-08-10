@@ -5391,3 +5391,21 @@ let [
 
 console.log(first);
 console.log(third);
+
+// Object destructuring matches property names, while array destructuring matches positions.
+
+
+// Renaming Destructured Variables/ storing property names into a variable
+let project21 = {
+    name: "SaveWise",
+    role: "Product Designer"
+};
+
+let {
+    name: projectName,
+    role: projectRole
+} = project21;
+
+// means Take the object's name property and store it in a variable called projectName.
+//old variable are name and role and new variable are projectName and projectRole
+console.log(projectName);
