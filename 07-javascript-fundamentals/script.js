@@ -4703,3 +4703,37 @@ lesson18FinalFrontendBtn.addEventListener("click", function(){
  lesson18FinalOutput.innerHTML = renderFinalProject(finalFilter);
 
 });
+
+
+// Objects & Object Methods - store related information together using key-value pairs.
+let projectOb = {
+    name: "SaveWise",
+    role: "Product Designer",
+    category: "design"
+};
+
+//Accessing object properties
+
+//You can also use bracket notation or dot notation
+console.log(projectOb["name"]);
+console.log(projectOb.name);
+
+// Changing an object property
+projectOb.role = "Frontend Developer";
+console.log(projectOb.role);
+
+// Adding a new property
+projectOb.year = 2026;
+
+// Deleting a property
+delete projectOb.year;
+
+// Objects can contain arrays
+let project2 = {
+    name: "Delbondtek FTTH",
+    role: "Product Designer",
+    technologies: ["Figma", "HTML", "CSS", "JavaScript"]
+};
+
+console.log(project2.technologies);
+console.log(project2.technologies[0]);
