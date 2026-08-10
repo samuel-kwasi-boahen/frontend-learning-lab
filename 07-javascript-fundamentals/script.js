@@ -5431,3 +5431,10 @@ let {
 console.log(category1);
 
 
+// Default Values + Renaming
+let {
+    name: projectName,
+    category: projectCategory = "Uncategorized"
+} = project;
+
+
