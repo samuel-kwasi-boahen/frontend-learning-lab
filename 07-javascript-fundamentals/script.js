@@ -4778,3 +4778,22 @@ let lesson19Project = {
 
 lesson19ProjectOutput.textContent =
     lesson19Project.showDetails();
+
+    // Mini Project 2 — Add a Method
+
+    let lesson19Project1 = {
+    name: "SaveWise",
+    role: "Product Designer",
+    category: "design",
+
+    showDetails: function() {
+        return `${this.name} - ${this.role}`;
+    },
+
+    showCategory: function() {
+        return `Category: ${this.category}`;
+    }
+};
+
+console.log(lesson19Project1.showDetails());
+console.log(lesson19Project1.showCategory());
