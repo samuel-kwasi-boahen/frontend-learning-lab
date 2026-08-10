@@ -4737,3 +4737,26 @@ let project2 = {
 
 console.log(project2.technologies);
 console.log(project2.technologies[0]);
+
+// Objects can contain functions
+let project3 = {
+    name: "SaveWise",
+    
+    showProject: function() {
+        console.log("SaveWise is a product design project");
+    }
+};
+
+project3.showProject();
+// A function stored inside an object is called a method.
+
+// A method can use the object's data - (this refers to the object that is currently using the method.)
+let project = {
+    name: "SaveWise",
+    role: "Product Designer",
+
+    showDetails: function() {
+        console.log(`${this.name} - ${this.role}`);
+    }
+};
+
