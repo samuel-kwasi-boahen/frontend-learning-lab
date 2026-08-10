@@ -5161,3 +5161,33 @@ lesson20AllBtn.addEventListener("click", function() {
 
 
 
+// Mini Project 5 — Frontend Project Names
+let lesson20FrontendNamesOutput =
+    document.getElementById("lesson20FrontendNamesOutput");
+
+function renderFrontendNames() {
+
+    let frontendNames = lesson20Projects
+        .filter(function(project) {
+            return project.category === "frontend";
+        })
+        .map(function(project) {
+            return project.name;
+        });
+
+    let namesHTML = "";
+
+    frontendNames.forEach(function(name) {
+        namesHTML += `
+            <div>
+                <h3>${name}</h3>
+            </div>
+        `;
+    });
+
+    return namesHTML;
+}
+
+lesson20FrontendNamesOutput.innerHTML =
+    renderFrontendNames();
+
