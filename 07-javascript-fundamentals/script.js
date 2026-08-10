@@ -5409,3 +5409,25 @@ let {
 // means Take the object's name property and store it in a variable called projectName.
 //old variable are name and role and new variable are projectName and projectRole
 console.log(projectName);
+
+// Default Values
+let project21b = {
+    name1: "SaveWise",
+    role: "Product Designer"
+};
+
+// let {
+//     name1,
+//     category1
+// } = project21b;
+
+// console.log(category1);
+
+let {
+    name1,
+    category1 = "Uncategorized"
+} = project;
+
+console.log(category1);
+
+
