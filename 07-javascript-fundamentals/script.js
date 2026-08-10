@@ -5325,3 +5325,54 @@ lesson20FinalJavaScriptBtn.addEventListener("click", function(){
     lesson20FinalOutput.innerHTML = 
     renderFinalProjects(includesJS);
 });
+
+
+
+
+
+// Destructuring
+
+/*projects.forEach(function(project) {
+
+    let {
+        name,
+        role,
+        category,
+        technologies
+    } = project;
+
+    projectHTML += `
+        <div>
+            <h3>${name}</h3>
+            <p>${role}</p>
+            <p>${category}</p>
+            <p>${technologies.join(", ")}</p>
+        </div>
+    `;
+
+});
+*/
+
+
+// Mini Project 1 — Destructure a Project
+
+let lesson21Project = {
+    name: "Delbondtek FTTH",
+    role: "Product Designer",
+    category: "frontend",
+    screens: 202
+};
+
+let {
+    name,
+    role,
+    category,
+    screens
+} = lesson21Project;
+
+console.log(name);
+console.log(role);
+console.log(category);
+console.log(screens);
+
+
