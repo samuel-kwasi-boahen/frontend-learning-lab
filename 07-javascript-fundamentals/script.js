@@ -4943,13 +4943,13 @@ let simplifiedProjects = ls20project.map(function(project) {
 
 
 // filter() works with nested properties
-let designProjects = projects.filter(function(project) {
+let designProjects = ls20project.filter(function(project) {
     return project.category === "design";
 });
 
 
 // filter using a nested property
-let projects = [
+let ls20projectb = [
     {
         name: "SaveWise",
         details: {
@@ -4967,9 +4967,78 @@ let projects = [
     }
 ];
 
-let largeProjects = projects.filter(function(project) {
+let largeProjects = ls20projectb.filter(function(project) {
     return project.details.screens > 100;
 });
 
 
 
+
+// Combining filter() and map()
+
+let frontendNames = ls20projectb
+    .filter(function(project) {
+        return project.category === "frontend";
+    }).map(function(project) {
+        return project.name;
+    });
+
+
+
+
+
+    // example
+    let ls20projectc = [
+    {
+        name: "SaveWise",
+        role: "Product Designer",
+        category: "design",
+        technologies: ["Figma", "FigJam"]
+    },
+
+    {
+        name: "Vendor Dashboard",
+        role: "Product Designer",
+        category: "design",
+        technologies: ["Figma", "FigJam"]
+    },
+
+    {
+        name: "Portfolio Website",
+        role: "Frontend Developer",
+        category: "frontend",
+        technologies: ["HTML", "CSS", "JavaScript"]
+    },
+
+    {
+        name: "Delbondtek FTTH",
+        role: "Frontend Developer",
+        category: "frontend",
+        technologies: ["HTML", "CSS", "JavaScript"]
+    }
+];
+
+// All project names
+ls20projectc.map(function(project) {
+    return project.name;
+});
+
+// Only design projects
+ls20projectc.filter(function(project) {
+    return project.category === "design";
+});
+
+// Only frontend project names
+ls20projectc
+    .filter(function(project) {
+        return project.category === "frontend";
+    })
+    .map(function(project) {
+        return project.name;
+    });
+
+
+    // Technologies of each project
+    ls20projectc.map(function(project) {
+    return project.technologies;
+});
