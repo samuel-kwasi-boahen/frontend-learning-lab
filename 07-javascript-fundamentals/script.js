@@ -4797,3 +4797,20 @@ lesson19ProjectOutput.textContent =
 
 console.log(lesson19Project1.showDetails());
 console.log(lesson19Project1.showCategory());
+
+
+// Part 2: Object Methods
+/*Object.keys()
+Object.values()
+Object.entries()*/
+
+let project5 = {
+    name: "Delbondtek FTTH",
+    role: "Product Designer",
+    category: "Enterprise",
+    screens: 202
+};
+
+console.log(Object.keys(project5));
+console.log(Object.values(project5));
+console.log(Object.entries(project5));
