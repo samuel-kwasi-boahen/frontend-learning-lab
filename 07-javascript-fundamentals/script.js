@@ -4868,3 +4868,27 @@ dashboardData.forEach(function(item) {
 });
 
 lesson19DashboardOutput.innerHTML = dashboardHTML;
+
+
+// nested objects
+let delbondtek = {
+    name: "Delbondtek FTTH",
+
+    contractor: {
+        screens: 54,
+        modules: ["Dispatch", "QA Review", "Binding Queue"]
+    },
+
+    subcontractor: {
+        screens: 78,
+        modules: ["Job Management", "Technician Assignment"]
+    },
+
+    technician: {
+        screens: 70,
+        platform: "Mobile"
+    }
+};
+
+console.log(delbondtek.contractor.screens);
+console.log(delbondtek.contractor.modules[0]);
