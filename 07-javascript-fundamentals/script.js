@@ -4751,7 +4751,7 @@ project3.showProject();
 // A function stored inside an object is called a method.
 
 // A method can use the object's data - (this refers to the object that is currently using the method.)
-let project = {
+let project4 = {
     name: "SaveWise",
     role: "Product Designer",
 
@@ -4760,3 +4760,21 @@ let project = {
     }
 };
 
+
+// Mini Project 1 — Project Object
+
+let lesson19ProjectOutput =
+    document.getElementById("lesson19ProjectOutput");
+
+let lesson19Project = {
+    name: "SaveWise",
+    role: "Product Designer",
+    category: "design",
+
+    showDetails: function() {
+        return `${this.name} - ${this.role}`;
+    }
+};
+
+lesson19ProjectOutput.textContent =
+    lesson19Project.showDetails();
