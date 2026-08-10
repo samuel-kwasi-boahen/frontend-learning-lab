@@ -4892,3 +4892,49 @@ let delbondtek = {
 
 console.log(delbondtek.contractor.screens);
 console.log(delbondtek.contractor.modules[0]);
+
+
+// Advanced Objects & Data Structures
+// Working With Nested Arrays & Objects
+
+let ls20project = [
+    {
+        name: "SaveWise",
+        role: "Product Designer",
+        category: "design",
+        technologies: ["Figma", "FigJam"]
+    },
+
+    {
+        name: "Portfolio Website",
+        role: "Frontend Developer",
+        category: "frontend",
+        technologies: ["HTML", "CSS", "JavaScript"]
+    }
+];
+
+ls20project[0].technologies[0]
+
+
+// map() can access nested data
+let project20Names = ls20project.map(function(project) {
+    return project.name;
+});
+
+
+let projectTechnologies = ls20project.map(function(project) {
+    return project.technologies;
+});
+
+
+
+
+// map() can create a new object
+let simplifiedProjects = ls20project.map(function(project) {
+    return {
+        title: project.name,
+        type: project.category
+    };
+});
+
+
