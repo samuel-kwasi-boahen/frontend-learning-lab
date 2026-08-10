@@ -4814,3 +4814,57 @@ let project5 = {
 console.log(Object.keys(project5));
 console.log(Object.values(project5));
 console.log(Object.entries(project5));
+
+
+//Mini Project 3 — Project Information Renderer
+
+let lesson19ProjectInfoOutput =
+    document.getElementById("lesson19ProjectInfoOutput");
+
+let lesson19ProjectObject = {
+    name: "Delbondtek FTTH",
+    role: "Product Designer",
+    category: "Enterprise",
+    screens: 202
+};
+
+let projectInfo = Object.entries(lesson19ProjectObject);
+
+let projectOutput = "";
+
+projectInfo.forEach(function(item) {
+    projectOutput += `
+        <div>
+            <strong>${item[0]}</strong>
+            <p>${item[1]}</p>
+        </div>
+    `;
+});
+
+lesson19ProjectInfoOutput.innerHTML = projectOutput;
+
+// Mini Project 4 — Object Dashboard
+let lesson19DashboardOutput =
+    document.getElementById("lesson19DashboardOutput");
+
+let lesson19ProjectOb = {
+    name: "Delbondtek FTTH",
+    role: "Product Designer",
+    screens: 202,
+    platforms: 3
+};
+
+let dashboardData = Object.entries(lesson19ProjectOb);
+
+let dashboardHTML = "";
+
+dashboardData.forEach(function(item) {
+    dashboardHTML += `
+        <div>
+            <h3>${item[0]}</h3>
+            <p>${item[1]}</p>
+        </div>
+    `;
+});
+
+lesson19DashboardOutput.innerHTML = dashboardHTML;
