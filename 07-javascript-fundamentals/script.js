@@ -5525,3 +5525,58 @@ let {
 
 console.log (technicianScreens);
 console.log (technicianPlatform);
+
+
+// Final Destructuring Mini Project
+
+let lesson21Portfolio = {
+    designer: {
+        name: "Samuel Boahen",
+        role: "Product Designer",
+        skills: [
+            "Figma",
+            "UX Research",
+            "UI Design"
+        ]
+    },
+
+    developer: {
+        name: "Samuel Boahen",
+        role: "Frontend Developer",
+        skills: [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
+    }
+};
+
+
+let {
+    developer:
+    {
+        name:developerName,
+        role:developerRole,
+        skills:developerSkills
+    }
+} = lesson21Portfolio;
+
+
+
+console.log(developerName);
+console.log(developerRole);
+console.log(developerSkills);
+
+
+// Array destructuring >developerSkills
+
+let[
+            first1,
+            second1,
+            third1
+            
+        ] = developerSkills;
+
+console.log(first1);
+console.log(second1);
+console.log(third1);
