@@ -5711,3 +5711,21 @@ function addScores(a, b, c) {
 // addScores(scores[0], scores[1], scores[2]);
 console.log(addScores(...scores));
 // console.log(addScores(80, 90, 70));
+
+
+
+//example 2
+let technologies = [
+    "HTML",
+    "CSS",
+    "JavaScript"
+];
+
+function displaySkills(first, second, third) {
+    console.log(first);
+    console.log(second);
+    console.log(third);
+}
+
+displaySkills(...technologies);
+
