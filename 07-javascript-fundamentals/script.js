@@ -5800,3 +5800,14 @@ createProject21(
 );
 
 
+
+// Mini Project 7 — Your Turn
+function displayPortfolioSkills(...skiili) {
+console.log(skiili);
+}
+
+displayPortfolioSkills("HTML",
+"CSS",
+"JavaScript",
+"Git",
+"Figma");
