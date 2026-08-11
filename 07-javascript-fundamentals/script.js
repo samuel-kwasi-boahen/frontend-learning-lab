@@ -5580,3 +5580,13 @@ let[
 console.log(first1);
 console.log(second1);
 console.log(third1);
+
+
+// Spread Operator ...
+// The spread operator takes the contents of an array or object and spreads them out.
+
+// With an array:
+let skills = ["HTML", "CSS", "JavaScript"];
+
+let moreSkills = [...skills, "Git"];
+console.log(moreSkills);
