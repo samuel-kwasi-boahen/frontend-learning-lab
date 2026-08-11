@@ -5660,3 +5660,23 @@ let lesson21UpdatedSkills = [
 ]
 
 console.log(lesson21UpdatedSkills)
+
+
+
+// Mini Project 2 — Combine Your Skill Sets
+let lesson21DesignSkills = [
+    "Figma",
+    "UX Research"
+];
+
+let lesson21FrontendSkills = [
+    "HTML",
+    "CSS",
+    "JavaScript"
+];
+
+let lesson21AllSkills = [
+    ...lesson21DesignSkills,...lesson21FrontendSkills
+]
+
+console.log(lesson21AllSkills);
