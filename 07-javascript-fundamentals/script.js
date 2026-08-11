@@ -5759,3 +5759,17 @@ function displayDeveloperSkills(first, second, third) {
 
 // pass the array into the function
 displayDeveloperSkills(...lesson21DeveloperSkills);
+
+
+
+// Mini project
+let final21Array = ["SaveWise", "Product Designer", "design"]
+
+function displayFinal(first,second,third){
+    console.log(`Product: ${first}`);
+        console.log(`Role: ${second}`);
+            console.log(`Category: ${third}`);
+
+}
+
+displayFinal(...final21Array);
