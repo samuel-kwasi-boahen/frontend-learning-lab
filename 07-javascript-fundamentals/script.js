@@ -5715,7 +5715,7 @@ console.log(addScores(...scores));
 
 
 //example 2
-let technologies = [
+let technologies21= [
     "HTML",
     "CSS",
     "JavaScript"
@@ -5727,5 +5727,16 @@ function displaySkills(first, second, third) {
     console.log(third);
 }
 
-displaySkills(...technologies);
+displaySkills(...technologies21);
+
+
+
+
+// Mini Project 4 — Spread into a Function
+let lesson21Numbers = [10, 20, 30];
+function calculateTotal(a, b, c) {
+    return a + b + c;
+}
+
+console.log(calculateTotal(...lesson21Numbers));
 
