@@ -5773,3 +5773,30 @@ function displayFinal(first,second,third){
 }
 
 displayFinal(...final21Array);
+
+
+
+
+// REST PARAMETERS
+
+// Spread = take things apart
+// Rest = collect things together
+
+function displaySkills(...skills) {
+    console.log(skills);
+}
+
+displaySkills("HTML", "CSS", "JavaScript");
+
+
+function createProject21(...details) {
+    console.log(details);
+}
+
+createProject21(
+    "SaveWise",
+    "Product Designer",
+    "design"
+);
+
+
