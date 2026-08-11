@@ -5509,3 +5509,19 @@ let {
 
 console.log(contractorScreens);
 console.log(contractorPlatform);
+
+let {
+    technician: {
+        screens:technicianScreens
+    }
+} = lesson21FTTH;
+
+let {
+    technician: {
+        platform:technicianPlatform
+    }
+} = lesson21FTTH;
+
+
+console.log (technicianScreens);
+console.log (technicianPlatform);
