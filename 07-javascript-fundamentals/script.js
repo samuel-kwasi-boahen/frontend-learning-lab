@@ -5432,9 +5432,42 @@ console.log(category1);
 
 
 // Default Values + Renaming
-let {
+/*let {
     name: projectName,
     category: projectCategory = "Uncategorized"
 } = project;
+*/
+
+
+
+// Nested Destructuring
+let delbondtek2 = {
+    name: "Delbondtek FTTH",
+
+    contractor: {
+        screens1: 54
+    },
+
+    subcontractor: {
+        screens1: 78
+    }
+};
+/*
+// first
+let {
+    contractor
+} = delbondtek;
+
+// second
+let {
+    screens1
+} = contractor;
+*/
+// doing all at once
+let {
+    contractor: {
+        screens1
+    }
+} = delbondtek2;
 
 
