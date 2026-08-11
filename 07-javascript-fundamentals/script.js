@@ -5604,3 +5604,13 @@ let updatedProject = {
 };
 
 console.log(updatedProject);
+
+
+// Spread is extremely useful for copying
+let skills = [
+    "HTML",
+    "CSS",
+    "JavaScript"
+];
+
+let copiedSkills = [...skills];
