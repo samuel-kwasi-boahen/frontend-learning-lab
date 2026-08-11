@@ -5811,3 +5811,28 @@ displayPortfolioSkills("HTML",
 "JavaScript",
 "Git",
 "Figma");
+
+
+
+//Combining concepts
+// Mini Project 8 — Portfolio Project Builder
+// ... is rest because you're taking multiple arguments and collecting them into an array.
+
+function createPortfolioProject(name, role, ...technologies) {
+    return {
+        name: name,
+        role: role,
+        technologies: technologies
+    };
+}
+
+let newProject = createPortfolioProject(
+    "Portfolio Website",
+    "Frontend Developer",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Git"
+);
+
+console.log(newProject);
