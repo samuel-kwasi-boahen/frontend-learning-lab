@@ -5740,3 +5740,22 @@ function calculateTotal(a, b, c) {
 
 console.log(calculateTotal(...lesson21Numbers));
 
+
+
+// Mini Project 5 — Portfolio Skills
+let lesson21DeveloperSkills = [
+    "HTML",
+    "CSS",
+    "JavaScript"
+];  //array of skills
+
+
+function displayDeveloperSkills(first, second, third) {
+    console.log("Skill 1:", first);
+    console.log("Skill 2:", second);
+    console.log("Skill 3:", third);
+}  //function argument considering index position
+
+
+// pass the array into the function
+displayDeveloperSkills(...lesson21DeveloperSkills);
