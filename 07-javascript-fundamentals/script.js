@@ -5614,3 +5614,15 @@ let skills = [
 ];
 
 let copiedSkills = [...skills];
+
+
+// Adding items without changing the original
+let originalSkills = [
+    "HTML",
+    "CSS"
+];
+
+let updatedSkills = [
+    ...originalSkills,
+    "JavaScript"
+];
