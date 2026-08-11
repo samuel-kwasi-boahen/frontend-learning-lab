@@ -5626,3 +5626,21 @@ let updatedSkills = [
     ...originalSkills,
     "JavaScript"
 ];
+
+
+// Combining arrays
+let frontendSkills = [
+    "HTML",
+    "CSS",
+    "JavaScript"
+];
+
+let designSkills = [
+    "Figma",
+    "FigJam"
+];
+
+let allSkills = [
+    ...frontendSkills,
+    ...designSkills
+];
