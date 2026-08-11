@@ -5680,3 +5680,19 @@ let lesson21AllSkills = [
 ]
 
 console.log(lesson21AllSkills);
+
+
+// Mini Project 3 — Update a Project
+let lesson21Projectb = {
+    name: "SaveWise",
+    role: "Product Designer"
+};
+
+let lesson21UpdatedProject = {
+    ...lesson21Project,
+    category: "design",
+    status: "completed"
+}
+
+console.log(lesson21UpdatedProject);
+console.log(lesson21Projectb);
