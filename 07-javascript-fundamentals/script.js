@@ -5689,7 +5689,7 @@ let lesson21Projectb = {
 };
 
 let lesson21UpdatedProject = {
-    ...lesson21Project,
+    ...lesson21Projectb,
     category: "design",
     status: "completed"
 }
