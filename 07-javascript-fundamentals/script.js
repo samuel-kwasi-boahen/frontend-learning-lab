@@ -5696,3 +5696,18 @@ let lesson21UpdatedProject = {
 
 console.log(lesson21UpdatedProject);
 console.log(lesson21Projectb);
+
+
+
+
+// Spread with Function Arguments
+
+let scores = [80, 90, 70];
+function addScores(a, b, c) {
+    return a + b + c;
+}
+
+
+// addScores(scores[0], scores[1], scores[2]);
+console.log(addScores(...scores));
+// console.log(addScores(80, 90, 70));
