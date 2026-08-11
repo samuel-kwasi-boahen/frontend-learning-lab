@@ -5590,3 +5590,17 @@ let skills = ["HTML", "CSS", "JavaScript"];
 
 let moreSkills = [...skills, "Git"];
 console.log(moreSkills);
+
+
+
+// Spread with objects
+let project21sp = {
+    name: "SaveWise",
+    role: "Product Designer"
+};
+// create a new object containing everything from project:
+let updatedProject = {
+   ...project21sp, category: "design"
+};
+
+console.log(updatedProject);
