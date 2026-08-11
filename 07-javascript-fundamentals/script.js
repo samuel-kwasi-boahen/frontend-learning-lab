@@ -5607,7 +5607,7 @@ console.log(updatedProject);
 
 
 // Spread is extremely useful for copying
-let skills = [
+let skills21 = [
     "HTML",
     "CSS",
     "JavaScript"
@@ -5644,3 +5644,19 @@ let allSkills = [
     ...frontendSkills,
     ...designSkills
 ];
+
+
+
+// Mini Project 1 — Add a Skill
+
+let lesson21Skills = [
+    "HTML",
+    "CSS",
+    "JavaScript"
+];
+
+let lesson21UpdatedSkills = [
+    ...lesson21Skills, "Git"
+]
+
+console.log(lesson21UpdatedSkills)
