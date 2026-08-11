@@ -5471,3 +5471,41 @@ let {
 } = delbondtek2;
 
 
+
+// Mini Project — Destructure Your FTTH Data
+let lesson21FTTH = {
+    name: "Delbondtek FTTH",
+
+    contractor: {
+        screens: 54,
+        platform: "Web"
+    },
+
+    subcontractor: {
+        screens: 78,
+        platform: "Web"
+    },
+
+    technician: {
+        screens: 70,
+        platform: "Mobile"
+    }
+};
+
+// destructure contractor's screen
+let { 
+    contractor: {
+        screens: contractorScreens
+
+    }
+ } = lesson21FTTH;
+
+
+ let {
+    contractor: {
+        platform:contractorPlatform
+    }
+ } = lesson21FTTH;
+
+console.log(contractorScreens);
+console.log(contractorPlatform);
