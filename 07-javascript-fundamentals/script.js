@@ -5786,9 +5786,9 @@ function displaySkills(...skills) {
     console.log(skills);
 }
 
-displaySkills("HTML", "CSS", "JavaScript");
+displaySkills("HTML", "CSS", "JavaScript");  //calling the function with the arguments to be collected into array
 
-
+// example
 function createProject21(...details) {
     console.log(details);
 }
@@ -5836,3 +5836,52 @@ let newProject = createPortfolioProject(
 );
 
 console.log(newProject);
+
+
+// Final challenge on spread and rest
+function create21FinalProject(name, role, category, ...technologies) {
+    return {
+        name,
+        role,
+        category,
+        technologies
+    }}
+let project21Final = create21FinalProject(
+    "Portfolio Website",
+    "Frontend Developer",
+    "frontend",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Git"
+);
+
+
+
+// destructure the result
+let {
+    name: projectName1,
+    role: projectRole1,
+    category: projectCategory1,
+    technologies: projectTechnologies1
+} = project21Final;
+
+
+// Destructure the technologies
+let [
+       firstTechnology,
+        secondTechnology,
+        thirdTechnology,
+        fourthTechnology
+] = projectTechnologies1;
+
+
+// Spread it into another function
+function display21Technologies(first, second, third, fourth) {
+    console.log(first);
+    console.log(second);
+    console.log(third);
+    console.log(fourth);
+}
+
+display21Technologies(...projectTechnologies1);
