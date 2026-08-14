@@ -5884,4 +5884,17 @@ function display21Technologies(first, second, third, fourth) {
     console.log(fourth);
 }
 
-display21Technologies(...projectTechnologies1);
+display21Technologies(...projectTechnologies1); //I took an array, called the arguments by position and used spread to pass the array into the function
+
+
+
+// Ternary Operator ? :
+// The ternary operator is basically a short way of writing a simple if...else.
+// ? if true and : if false
+let lesson22age = 25;
+
+let result = lesson22age >= 18
+    ? "Adult"
+    : "Minor";
+
+console.log(result);
