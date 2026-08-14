@@ -5994,3 +5994,20 @@ let lesson22Cardb = `
 `
 console.log(lesson22Cardb);
 
+// use ternary operators for small decision and if...else for complex decision
+
+
+
+
+// Optional Chaining ?.
+let ChainLessonproject = {
+    name: "SaveWise",
+    role: "Product Designer"
+};
+
+console.log(ChainLessonproject.name);
+console.log(ChainLessonproject.client.name);  //can crash because client doesn't exist.
+console.log(ChainLessonproject.client?.name);  //The ?. means:
+
+// If the thing before me exists, continue. If it doesn't, stop safely.
+
