@@ -6006,7 +6006,7 @@ let ChainLessonproject = {
 };
 
 console.log(ChainLessonproject.name);
-console.log(ChainLessonproject.client.name);  //can crash because client doesn't exist.
+// console.log(ChainLessonproject.client.name);  //can crash because client doesn't exist.
 console.log(ChainLessonproject.client?.name);  //The ?. means:
 
 // If the thing before me exists, continue. If it doesn't, stop safely.
@@ -6014,7 +6014,7 @@ console.log(ChainLessonproject.client?.name);  //The ?. means:
 
 
 // Nested optional chaining
-let project = {
+let nestedChainproject = {
     name: "SaveWise",
     client: {
         company: {
@@ -6023,10 +6023,56 @@ let project = {
     }
 };
 
-console.log(project.client?.company?.name);
+console.log(nestedChainproject.client?.company?.name);
 
 // if client didn't exist, it would safely return: undefined and the code continues
 
 
+// Optional chaining with arrays
+let OptionalChainproject = {
+    technologies: ["HTML", "CSS", "JavaScript"]
+};
 
+console.log (OptionalChainproject.technologies?.[0]
+);
+
+
+
+// Mini Project 3 — Optional Project Client
+let lesson22ChainProject = {
+    name: "SaveWise",
+    role: "Product Designer",
+    client: {
+        company: "TechCorp"
+    }
+};
+
+console.log(lesson22ChainProject.client?.company);
+
+
+let lesson22ChainProjectb = {
+    name: "SaveWise",
+    role: "Product Designer"
+};
+
+console.log(lesson22ChainProjectb.client?.company);
+
+
+// Mini Project 4 — Technologies
+let lesson22ProjectThree = {
+    name: "Portfolio Website",
+    technologies: [
+        "HTML",
+        "CSS",
+        "JavaScript"
+    ]
+};
+
+console.log(lesson22ProjectThree.technologies?.[0]);
+
+let lesson22ProjectThreeb = {
+    name: "Portfolio Website"
+};
+
+console.log(lesson22ProjectThreeb.technologies?.[0]);
 
