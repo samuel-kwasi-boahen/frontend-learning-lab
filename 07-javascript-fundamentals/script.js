@@ -6011,3 +6011,22 @@ console.log(ChainLessonproject.client?.name);  //The ?. means:
 
 // If the thing before me exists, continue. If it doesn't, stop safely.
 
+
+
+// Nested optional chaining
+let project = {
+    name: "SaveWise",
+    client: {
+        company: {
+            name: "Tech Company"
+        }
+    }
+};
+
+console.log(project.client?.company?.name);
+
+// if client didn't exist, it would safely return: undefined and the code continues
+
+
+
+
