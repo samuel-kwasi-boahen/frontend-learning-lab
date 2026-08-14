@@ -5957,7 +5957,7 @@ let lesson22Card = `
     console.log(lesson22Message);
 
 // condition   ? value if true   : value if false
-category === "frontend"
+    category === "frontend"
     ? "Developer"
     : "Designer";
 // If category is frontend, use Developer; otherwise use Designer.
@@ -5966,7 +5966,31 @@ category === "frontend"
 // Mini Project 1 — Project Status
 
 let lesson22Status = "completed";
-statusMessage = lesson22Status === "completed"
+let statusMessage = lesson22Status === "completed"
 ? "Project Completed"
 : "Project in Progress"
+
+
+
+// Mini Project 2 — Portfolio Card
+let lesson22PortfolioProject = {
+    name: "SaveWise",
+    role: "Product Designer",
+    category: "design",
+    status: "completed"
+};
+
+
+let lesson22Cardb = `
+<div>
+<h3>${lesson22PortfolioProject.name}</h3>
+<p>${lesson22PortfolioProject.role}</p>
+<p>${lesson22PortfolioProject.category}</p>
+<p>${lesson22PortfolioProject.status === "completed"
+    ? "completed"
+    : "In Progress"}</p>
+</div>
+
+`
+console.log(lesson22Cardb);
 
