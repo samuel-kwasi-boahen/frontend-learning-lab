@@ -5915,4 +5915,15 @@ if (role === "Product Designer") {
     department = "Engineering";
 } 
     */
+// example 3
 
+let lesson22Project = {
+    name: "Portfolio Website",
+    category: "frontend"
+};
+
+projectType = lesson22Project.category === "frontend"
+? "Development Project"
+: "Design Project";
+
+console.log(projectType);
