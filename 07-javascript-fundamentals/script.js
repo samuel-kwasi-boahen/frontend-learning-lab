@@ -5898,3 +5898,21 @@ let result = lesson22age >= 18
     : "Minor";
 
 console.log(result);
+
+let lesson22role = "Product Designer";
+
+let department = lesson22role === "Product Designer"
+    ? "Design"
+    : "Engineering";
+    console.log(department);
+
+// equivalent if___else statement
+/*let department;
+
+if (role === "Product Designer") {
+    department = "Design";
+} else {
+    department = "Engineering";
+} 
+    */
+
