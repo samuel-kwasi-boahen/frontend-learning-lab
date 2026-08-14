@@ -5927,3 +5927,46 @@ projectType = lesson22Project.category === "frontend"
 : "Design Project";
 
 console.log(projectType);
+
+
+// Ternary inside HTML
+let lesson22Projectb = {
+    name: "SaveWise",
+    status: "completed"
+};
+
+let lesson22Card = `
+    <div>
+        <h3>${lesson22Projectb.name}</h3>
+        <p>
+            ${lesson22Projectb.status === "completed"
+            ? "Completed"
+            : "In Progress"}
+        </p>
+
+    </div>
+    `;
+
+
+    // Ternary returns a value
+
+    let lesson22Message = true
+    ? "Yes"
+    : "No";
+
+    console.log(lesson22Message);
+
+// condition   ? value if true   : value if false
+category === "frontend"
+    ? "Developer"
+    : "Designer";
+// If category is frontend, use Developer; otherwise use Designer.
+
+
+// Mini Project 1 — Project Status
+
+let lesson22Status = "completed";
+statusMessage = lesson22Status === "completed"
+? "Project Completed"
+: "Project in Progress"
+
