@@ -6092,3 +6092,14 @@ console.log(displayName);
 let clientName1 = "TechCorp";
 let displayName1 = clientName1 ?? "Unknown Client";
 console.log(displayName1);
+
+
+// Optional chaining + nullish coalescing
+let projectCole = {
+    name: "SaveWise"
+};
+
+let companyName =
+    projectCole.client?.company ?? "Unknown Client";
+
+console.log(companyName);
