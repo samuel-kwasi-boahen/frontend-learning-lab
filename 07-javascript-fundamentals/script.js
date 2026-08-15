@@ -6156,3 +6156,39 @@ let designProjectsFindb = projectsFind.find(function(project) {
 });
 console.log(designProjectsFindb);
 
+
+// Example
+let lesson22Projects = [
+    {
+        nameF: "SaveWise",
+        roleF: "Product Designer",
+        categoryF: "design"
+    },
+    {
+        nameF: "Portfolio Website",
+        roleF: "Frontend Developer",
+        categoryF: "frontend"
+    },
+    {
+        nameF: "Delbondtek FTTH",
+        roleF: "Product Designer",
+        categoryF: "design"
+    }
+];
+
+let lesson22FoundProject = lesson22Projects.find(function(project) {
+    return project.nameF === "Delbondtek FTTH";
+});
+
+console.log(lesson22FoundProject);
+
+// find() + destructuring
+let {
+    nameF,
+    roleF,
+    categoryF
+} = lesson22FoundProject;
+
+console.log(nameF);
+console.log(roleF);
+console.log(categoryF);
