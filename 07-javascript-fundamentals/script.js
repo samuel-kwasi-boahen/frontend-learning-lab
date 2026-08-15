@@ -6192,3 +6192,31 @@ let {
 console.log(nameF);
 console.log(roleF);
 console.log(categoryF);
+
+
+
+// Mini Project 8 — Find a Project
+let lesson22FindProjects = [
+    {
+        name: "SaveWise",
+        role: "Product Designer",
+        category: "design"
+    },
+    {
+        name: "Portfolio Website",
+        role: "Frontend Developer",
+        category: "frontend"
+    },
+    {
+        name: "Vendor Dashboard",
+        role: "Product Designer",
+        category: "design"
+    }
+];
+
+let lesson22FoundPortfolio = lesson22FindProjects.find(function(findPro){
+   return findPro.name === "Portfolio Website";
+});
+
+console.log(lesson22FoundPortfolio);
+
