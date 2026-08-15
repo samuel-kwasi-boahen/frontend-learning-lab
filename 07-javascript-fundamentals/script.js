@@ -6103,3 +6103,25 @@ let companyName =
     projectCole.client?.company ?? "Unknown Client";
 
 console.log(companyName);
+
+// Mini Project 5 — Default Client
+let lesson22ClientProject = {
+    name: "SaveWise",
+    role: "Product Designer"
+};
+
+let clientName2 = lesson22ClientProject.client ?? "Unknown Cient";
+console.log(clientName2);
+
+
+// Mini Project 6 — Existing Client
+let lesson22ClientProjectTwo = {
+    name: "Vendor Dashboard",
+    role: "Product Designer",
+    client: {
+        company: "Telecom Ghana"
+    }
+};
+
+let companyCoalName = lesson22ClientProjectTwo.client?.company ?? "Unknown Company";
+console.log(companyCoalName);
