@@ -6076,3 +6076,19 @@ let lesson22ProjectThreeb = {
 
 console.log(lesson22ProjectThreeb.technologies?.[0]);
 
+
+
+// Nullish Coalescing ??
+// This pairs extremely well with optional chaining.
+
+// it answers "If the value is missing, what should I use instead?"
+
+let clientName = null;
+
+let displayName = clientName ?? "Unknown Client";
+
+console.log(displayName);
+
+let clientName1 = "TechCorp";
+let displayName1 = clientName1 ?? "Unknown Client";
+console.log(displayName1);
