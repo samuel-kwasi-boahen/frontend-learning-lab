@@ -6220,3 +6220,8 @@ let lesson22FoundPortfolio = lesson22FindProjects.find(function(findPro){
 
 console.log(lesson22FoundPortfolio);
 
+let lesson22FoundPortfoliob = lesson22FindProjects.find(function(findPro){
+   return findPro.name === "Vendor Dashboard";
+}).role;
+
+console.log(lesson22FoundPortfoliob);
