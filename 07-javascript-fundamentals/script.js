@@ -6134,3 +6134,25 @@ let lesson22ProjectFive = {
 
 let findTech = lesson22ProjectFive.technologies?.[0] ?? "No Technologies"
 console.log(findTech);
+
+
+// Array Methods — find() some() every() includes()
+// filter() → ALL matching items
+// find()   → FIRST matching item
+
+let projectsFind = [
+    { name: "SaveWise", category: "design" },
+    { name: "Portfolio Website", category: "frontend" },
+    { name: "Vendor Dashboard", category: "design" }
+];
+
+let designProjectsFind = projectsFind.filter(function(project) {
+    return project.category === "design";
+});
+console.log(designProjectsFind);
+
+let designProjectsFindb = projectsFind.find(function(project) {
+    return project.category === "design";
+});
+console.log(designProjectsFindb);
+
