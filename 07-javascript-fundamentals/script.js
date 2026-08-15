@@ -6125,3 +6125,12 @@ let lesson22ClientProjectTwo = {
 
 let companyCoalName = lesson22ClientProjectTwo.client?.company ?? "Unknown Company";
 console.log(companyCoalName);
+
+
+// Mini Project 7 — Missing Technologies
+let lesson22ProjectFive = {
+    name: "New Project"
+};
+
+let findTech = lesson22ProjectFive.technologies?.[0] ?? "No Technologies"
+console.log(findTech);
