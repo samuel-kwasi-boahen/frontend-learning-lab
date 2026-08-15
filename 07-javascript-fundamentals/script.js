@@ -6225,3 +6225,11 @@ let lesson22FoundPortfoliob = lesson22FindProjects.find(function(findPro){
 }).role;
 
 console.log(lesson22FoundPortfoliob);
+
+let lesson22FoundPortfolioc = lesson22FindProjects.find(function(findPro){
+   return findPro.name === "Not Exist";
+});
+
+console.log(lesson22FoundPortfolioc);
+console.log(lesson22FoundPortfolioc?.name);  //code crashes without ?
+
