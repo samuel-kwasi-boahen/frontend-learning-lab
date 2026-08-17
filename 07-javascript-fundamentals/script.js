@@ -6372,3 +6372,25 @@ let allDesignProjects = lesson22EveryProjects.every(function(project) {
 
 console.log(allDesignProjects);
 
+
+// Mini Project 13 — All Projects Have JavaScript
+let lesson22EveryProjectsTwo = [
+    {
+        name: "Portfolio Website",
+        technologies: ["HTML", "CSS", "JavaScript"]
+    },
+    {
+        name: "Delbondtek FTTH",
+        technologies: ["HTML", "CSS", "JavaScript"]
+    },
+    {
+        name: "New App",
+        technologies: ["HTML", "CSS", "JavaScript"]
+    }
+];
+
+let allHaveJavaScript = lesson22EveryProjectsTwo.every(function(project) {
+    return project.technologies.includes("JavaScript");
+});
+
+console.log(allHaveJavaScript);
