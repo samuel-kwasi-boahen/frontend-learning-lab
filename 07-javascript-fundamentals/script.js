@@ -6257,3 +6257,28 @@ console.log(hasNumberAbove25b);
 
 
 
+
+// using some() with my projects
+// Does my portfolio contain at least one frontend project
+let lesson22Projectsb = [
+    {
+        name: "SaveWise",
+        category: "design"
+    },
+    {
+        name: "Portfolio Website",
+        category: "frontend"
+    },
+    {
+        name: "Vendor Dashboard",
+        category: "design"
+    }
+];
+
+let hasFrontendProject = lesson22Projectsb.some(function(project){
+    return project.category === "frontend";
+});
+
+console.log(hasFrontendProject)
+
+
