@@ -6345,3 +6345,26 @@ let allNumbersAbove5b = lesson22EvNumbersb.every(function(number) {
 console.log(allNumbersAbove5b);
 
 
+// Using every() with my projects
+let lesson22EveryProjects = [
+    {
+        name: "SaveWise",
+        category: "design"
+    },
+    {
+        name: "Vendor Dashboard",
+        category: "design"
+    },
+    {
+        name: "Checkout Redesign",
+        category: "design"
+    },
+    
+];
+
+let allDesignProjects = lesson22EveryProjects.every(function(project) {
+    return project.category === "design";
+});
+
+console.log(allDesignProjects);
+
