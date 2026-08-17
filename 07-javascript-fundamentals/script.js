@@ -6305,3 +6305,17 @@ let hasJavaScript = lesson22SomeProjectsTwo.some(function(project){
 console.log(hasJavaScript);
 
 
+// real-world use
+let users = [
+    { name: "Samuel", role: "designer" },
+    { name: "John", role: "developer" },
+    { name: "Mary", role: "designer" }
+];
+
+let hasDeveloper = users.some(function(user) {
+    return user.role === "developer";
+});
+
+if (hasDeveloper) {
+    console.log("A developer exists.");
+}
