@@ -6233,3 +6233,27 @@ let lesson22FoundPortfolioc = lesson22FindProjects.find(function(findPro){
 console.log(lesson22FoundPortfolioc);
 console.log(lesson22FoundPortfolioc?.name);  //code crashes without ?
 
+
+// some()
+// some() asks: "Does at least ONE item meet this condition?"
+// it returns a boolean
+let lesson22Numbers = [10, 20, 30, 40];
+
+let hasNumberAbove25 = lesson22Numbers.some(function(number) {
+    return number > 25;
+});
+
+console.log(hasNumberAbove25);
+
+
+
+let lesson22Numbersb = [10, 20, 15, 5];
+
+let hasNumberAbove25b = lesson22Numbersb.some(function(number) {
+    return number > 25;
+});
+
+console.log(hasNumberAbove25b);
+
+
+
