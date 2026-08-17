@@ -6318,4 +6318,30 @@ let hasDeveloper = users.some(function(user) {
 
 if (hasDeveloper) {
     console.log("A developer exists.");
-}
+}    //Check whether something exists before doing something.
+
+
+
+
+// every()
+// "Do ALL of them satisfy this condition?" 
+// it returns a boolean
+let lesson22EvNumbers = [10, 20, 30];
+
+let allNumbersAbove5 = lesson22EvNumbers.every(function(number) {
+    return number > 5;
+});
+
+console.log(allNumbersAbove5);
+
+// example 2
+
+let lesson22EvNumbersb = [10, 20, 3];
+
+let allNumbersAbove5b = lesson22EvNumbersb.every(function(number) {
+    return number > 5;
+});
+
+console.log(allNumbersAbove5b);
+
+
