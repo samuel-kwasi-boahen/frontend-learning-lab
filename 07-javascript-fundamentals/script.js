@@ -6282,3 +6282,26 @@ let hasFrontendProject = lesson22Projectsb.some(function(project){
 console.log(hasFrontendProject)
 
 
+//mini project 11
+let lesson22SomeProjectsTwo = [
+    {
+        name: "SaveWise",
+        technologies: ["Figma", "FigJam"]
+    },
+    {
+        name: "Portfolio Website",
+        technologies: ["HTML", "CSS", "JavaScript"]
+    },
+    {
+        name: "Vendor Dashboard",
+        technologies: ["Figma", "FigJam"]
+    }
+];
+
+let hasJavaScript = lesson22SomeProjectsTwo.some(function(project){
+    return project.technologies?.includes("JavaScript");
+});
+
+console.log(hasJavaScript);
+
+
