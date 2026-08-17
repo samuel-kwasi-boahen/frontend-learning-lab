@@ -6394,3 +6394,59 @@ let allHaveJavaScript = lesson22EveryProjectsTwo.every(function(project) {
 });
 
 console.log(allHaveJavaScript);
+
+
+
+// reduce()
+
+let numbers = [10, 20, 30];
+
+let totalNum = numbers.reduce(function(sum, number) {
+    return sum + number;
+}, 0);
+
+console.log(totalNum);
+
+// sum = the accumulator — what we've built so far, number = the current item, 0 = the starting value of the accumulator
+
+// Mini Project 14 — Total Project Screens
+
+let lesson22ProjectsWithScreens = [
+    {
+        name: "SaveWise",
+        screens: 25
+    },
+    {
+        name: "Vendor Dashboard",
+        screens: 42
+    },
+    {
+        name: "Delbondtek FTTH",
+        screens: 202
+    }
+];
+
+let totalScreens = lesson22ProjectsWithScreens.reduce(function(sum, number){
+    return sum + number.screens
+},0);
+
+console.log(totalScreens);
+
+
+// Mini Project 15 — Total Technologies
+let lesson22TechnologyProjects = [
+    {
+        name: "Portfolio Website",
+        technologies: ["HTML", "CSS", "JavaScript"]
+    },
+    {
+        name: "Delbondtek FTTH",
+        technologies: ["HTML", "CSS", "JavaScript", "React"]
+    }
+];
+
+let totalTechnologies = lesson22TechnologyProjects.reduce(function(total, project){
+    return total + project.technologies.length;
+}, 0);
+
+console.log(totalTechnologies);
