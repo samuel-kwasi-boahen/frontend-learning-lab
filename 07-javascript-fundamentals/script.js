@@ -6359,6 +6359,10 @@ let lesson22EveryProjects = [
         name: "Checkout Redesign",
         category: "design"
     },
+    {
+    name: "Portfolio Website",
+    category: "frontend"
+}
     
 ];
 
