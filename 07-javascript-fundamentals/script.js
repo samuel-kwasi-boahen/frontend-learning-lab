@@ -6500,3 +6500,41 @@ getProject(function(project) {
 });
 
 
+
+// Promises
+// A Promise represents the eventual result of an asynchronous operation.
+// Promise says "I don't have the result yet, but I promise I'll eventually give you the result or tell you that it failed."
+// Promise has three states: Pending, fulfilled, rejected
+
+// Creating a Promise
+let projectPromise = new Promise(function(resolve, reject) {
+
+    let projectLoaded = true;
+
+    if (projectLoaded) {
+        resolve("Project loaded successfully");
+    } else {
+        reject("Project failed to load");
+    }
+
+});
+
+
+// Consuming a Promise
+projectPromise.then(function(result) {
+    console.log(result);
+}); //Project loaded successfully
+
+
+// Handling failure
+projectPromise
+    .then(function(result) {
+        console.log(result);
+    })
+    .catch(function(error) {
+        console.log(error);
+    });  
+
+
+    
+
