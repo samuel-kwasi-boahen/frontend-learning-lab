@@ -6486,6 +6486,7 @@ processProject(finished);
 
 
 // Callback with data
+/*
 function getProject(callback) {
     let project = {
         name: "SaveWise",
@@ -6499,6 +6500,7 @@ getProject(function(project) {
     console.log(project.name);
 });
 
+*/
 
 
 // Promises
@@ -6539,6 +6541,7 @@ projectPromise
 
 
 // Promise chaining
+/*
 getProject()
     .then(function(project) {
         return processProject(project);
@@ -6552,4 +6555,33 @@ getProject()
     .catch(function(error) {
         console.log(error);
     });
-    
+*/
+
+
+    // Promise example with my portfolio
+
+    function loadPortfolio() {
+    return new Promise(function(resolve, reject) {
+
+        let projects = [
+            {
+                name: "SaveWise",
+                role: "Product Designer"
+            },
+            {
+                name: "Portfolio Website",
+                role: "Frontend Developer"
+            }
+        ];
+
+        resolve(projects);
+    });
+}
+
+loadPortfolio()
+    .then(function(projects) {
+        console.log(projects);
+    })
+    .catch(function(error) {
+        console.log(error);
+    });
