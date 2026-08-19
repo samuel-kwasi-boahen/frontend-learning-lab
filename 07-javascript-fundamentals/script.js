@@ -6536,5 +6536,20 @@ projectPromise
     });  
 
 
-    
 
+
+// Promise chaining
+getProject()
+    .then(function(project) {
+        return processProject(project);
+    })
+    .then(function(result) {
+        return saveProject(result);
+    })
+    .then(function(finalResult) {
+        console.log(finalResult);
+    })
+    .catch(function(error) {
+        console.log(error);
+    });
+    
