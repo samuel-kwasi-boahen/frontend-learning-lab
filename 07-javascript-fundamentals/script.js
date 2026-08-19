@@ -6468,3 +6468,17 @@ setTimeout(
 
 console.log("Project Finished");
 
+
+//Callbacks - is a function passed into another function so it can be executed later
+
+function processProject(callback) {
+    console.log("Processing project...");
+
+    callback();
+}
+
+function finished() {
+    console.log("Project finished!");
+}
+
+processProject(finished);
