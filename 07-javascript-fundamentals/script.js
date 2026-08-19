@@ -6482,3 +6482,21 @@ function finished() {
 }
 
 processProject(finished);
+
+
+
+// Callback with data
+function getProject(callback) {
+    let project = {
+        name: "SaveWise",
+        role: "Product Designer"
+    };
+
+    callback(project);
+}
+
+getProject(function(project) {
+    console.log(project.name);
+});
+
+
