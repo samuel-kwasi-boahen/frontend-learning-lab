@@ -6450,3 +6450,21 @@ let totalTechnologies = lesson22TechnologyProjects.reduce(function(total, projec
 }, 0);
 
 console.log(totalTechnologies);
+
+
+
+// Asynchronous JavaScript
+console.log("A");
+console.log("B");
+console.log("C");
+
+
+console.log("Project Started");
+setTimeout(
+    function(){
+        console.log("Project Data Loaded");
+    },2000
+);
+
+console.log("Project Finished");
+
