@@ -6585,3 +6585,16 @@ loadPortfolio()
     .catch(function(error) {
         console.log(error);
     });
+
+
+
+    // async / await
+// can be written as
+async function displayPortfolio() {
+
+    let projects = await loadPortfolio();
+
+    console.log(projects);
+}
+
+// An async function is a function designed to work with asynchronous operations. await can normally be used inside an async function.
