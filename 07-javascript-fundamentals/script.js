@@ -6621,3 +6621,22 @@ async function displayProject() {
 }
 
 displayProject();
+
+// try/catch with async/await
+async function getProjects() {
+
+    try {
+
+        let response = await fetch("API_URL");
+
+        let data = await response.json();
+
+        console.log(data);
+
+    } catch (error) {
+
+        console.log(error);
+
+    }
+
+}
