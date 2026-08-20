@@ -6640,3 +6640,30 @@ async function getProjects() {
     }
 
 }
+
+// fetch() returns a Promise
+/*let response = await fetch("https://example.com"); */
+// Now response represents the fulfilled result: a Response object.
+
+
+async function getProjects() {
+
+    try {
+
+        let response = await fetch("API_URL");
+
+        if (!response.ok) {
+            throw new Error("Failed to fetch projects");
+        }
+
+        let projects = await response.json();
+
+        console.log(projects);
+
+    } catch (error) {
+
+        console.log(error);
+
+    }
+
+}
