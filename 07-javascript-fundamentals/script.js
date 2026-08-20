@@ -6452,7 +6452,7 @@ let totalTechnologies = lesson22TechnologyProjects.reduce(function(total, projec
 console.log(totalTechnologies);
 
 
-
+/*
 // Asynchronous JavaScript
 console.log("A");
 console.log("B");
@@ -6466,7 +6466,7 @@ setTimeout(
     },2000
 );
 
-console.log("Project Finished");
+console.log("Project Finished"); */
 
 
 //Callbacks - is a function passed into another function so it can be executed later
@@ -6598,3 +6598,26 @@ async function displayPortfolio() {
 }
 
 // An async function is a function designed to work with asynchronous operations. await can normally be used inside an async function.
+
+function loadProject() {
+    return new Promise(function(resolve) {
+
+        setTimeout(function() {
+            resolve("SaveWise loaded");
+        }, 2000);
+
+    });
+}
+
+async function displayProject() {
+
+    console.log("Starting...");
+
+    let project = await loadProject();
+
+    console.log(project);
+
+    console.log("Finished");
+}
+
+displayProject();
