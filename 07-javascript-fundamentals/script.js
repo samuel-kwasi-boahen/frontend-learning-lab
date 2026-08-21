@@ -6770,3 +6770,61 @@ export default function renderProjects() {
 import renderProjects from "./projects.js";
 // there is a syntax difference.
 */
+
+
+/*
+// Classes & Object-Oriented JavaScript
+
+class Project {
+
+    constructor(name, role, category) {
+
+        this.name = name;
+        this.role = role;
+        this.category = category;
+
+    }
+
+}
+
+let projectOne = new Project(
+    "SaveWise",
+    "Product Designer",
+    "design"
+);
+
+console.log(projectOne.name);
+
+
+// Methods inside classes
+class ProjectCl {
+
+    constructor(name, role) {
+
+        this.name = name;
+        this.role = role;
+
+    }
+
+    displayProject() {
+
+        console.log(this.name);
+        console.log(this.role);
+
+    }
+
+}
+
+let projectClass = new Project(
+    "SaveWise",
+    "Product Designer"
+);
+
+ProjectCl.displayProject();
+
+// with class, I mainly need to recognize: class
+constructor
+this
+new
+methods
+*/
