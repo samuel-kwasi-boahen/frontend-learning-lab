@@ -6667,3 +6667,38 @@ async function getProjects() {
     }
 
 }
+
+
+
+// Real API Workflow
+
+// API → data → filter → render
+async function loadProjects() {
+
+    try {
+
+        let response = await fetch("API_URL");
+
+        if (!response.ok) {
+            throw new Error("Unable to load projects");
+        }
+
+        let projects = await response.json();
+
+        let frontendProjects = projects.filter(function(project) {
+            return project.category === "frontend";
+        });
+
+        let projectNames = frontendProjects.map(function(project) {
+            return project.name;
+        });
+
+        console.log(projectNames);
+
+    } catch (error) {
+
+        console.log(error);
+
+    }
+
+}
