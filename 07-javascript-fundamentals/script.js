@@ -6854,3 +6854,60 @@ console.log(counter());
 console.log(counter());
 console.log(counter());
 
+
+
+// JavaScript and the Browser
+// organizing my understanding of the browser environment.
+// JavaScript running in the browser has access to browser APIs. E.g document, window, localStorage, fetch
+
+// window represents the browser window/environment.
+console.log(window.innerWidth);
+
+// document represents the webpage.
+document.getElementById()
+document.querySelector()
+
+// querySelector
+let button = document.querySelector("#submitButton");  //or
+document.querySelector(".card");  //or
+document.querySelector("h1");
+
+
+// querySelectorAll
+let cards = document.querySelectorAll(".card");  //This gives you a collection of matching elements.
+
+// I can iterate through them:
+cards.forEach(function(card) {
+
+    console.log(card);
+
+});
+
+// Event Listeners
+// Event object
+button.addEventListener("click", function(event) {
+
+    console.log(event);
+
+});
+
+event.target  //tells me which element triggered the event.
+
+// Forms
+form.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+});  //preventDefault() prevents the browser's default form submission behavior.Then I can process the data yourself.
+
+
+
+// Form values
+let name = nameInput.value;
+console.log(name);
+
+// I can create an object and eventually send to an API
+let user = {
+    name: nameInput.value,
+    email: emailInput.value
+};
