@@ -6702,3 +6702,52 @@ async function loadProjects() {
     }
 
 }
+
+
+
+// Sending JSON
+/*
+let projectJ = {
+    name: "SaveWise",
+    role: "Product Designer"
+};
+
+let response = await fetch("/projects", {
+
+    method: "POST",
+
+    headers: {
+        "Content-Type": "application/json"
+    },
+
+    body: JSON.stringify(projectJ)
+
+});  */
+
+
+// JavaScript Modules
+// Modules allow us to split code into separate files.
+
+// Export 
+/*
+// projects.js
+
+let projects = [
+    {
+        name: "SaveWise"
+    }
+];
+
+export { projects };*/
+
+// Make projects available to other files.
+
+
+// Import
+/*
+import { projects } from "./projects.js";
+
+console.log(projects);  
+*/
+
+
