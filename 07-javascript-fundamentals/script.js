@@ -6750,4 +6750,23 @@ import { projects } from "./projects.js";
 console.log(projects);  
 */
 
+/*
+// Exporting functions
+export function getProjects() {
 
+    return projects;
+
+}
+
+import { getProjects } from "./projects.js";
+
+
+// Default export
+export default function renderProjects() {
+
+}
+
+
+import renderProjects from "./projects.js";
+// there is a syntax difference.
+*/
